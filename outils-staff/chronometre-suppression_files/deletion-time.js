@@ -115,8 +115,9 @@ function tick() {
 	} else {
 		html += '<div style="color:green">' + message1 + ':</div>';
 		html += '<div style="font-size:12pt;font-weight:bold">';
+    html+= 'il y a '
 		html += formatTimeInterval(timestamp.getTime(), now.getTime());
-		html += ' ago</div>'
+		html += '</div>'
 	}
 	$('#allcontent').html(html);
 }
@@ -178,7 +179,7 @@ function initGenerators() {
 	}
 	html += '</select>';
 	html += '<select id="gen1Year" name="year">';
-	for (i = 2010; i < 2016; i ++) {
+	for (i = 2022; i < 2027; i ++) {
 		html += '<option value="' + i + '"' + (now.getFullYear() == i ? ' selected' : '') + '>' + i + '</option>';
 	}
 	html += '</select>';
