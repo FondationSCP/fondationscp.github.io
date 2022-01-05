@@ -72,12 +72,12 @@ function generateDeletionLink1() {
 	var type = $('input:radio[name=type]:checked').val();
 	var timestamp = new Date(year, month, day, hour, minute, 0, 0);
 	var html = '';
-	html += '<div>Copy this code to drop the timer into a post or page:</div>';
+	html += '<div>Copiez ce code pour inclure le compte à rebours dans un message ou une page :</div>';
 	html += '<div>';
-	html += '<blockquote><strong>[[iframe http://aelanna.com/Tools/deletion-time.html?timestamp=' + timestamp.getTime() + '&type=' + type + ' style="width: 400px; height: 50px;"]]</strong></blockquote>';
+	html += '<blockquote><strong>[[iframe https://fondationscp.github.io/outils-staff/chronometre-suppression.html?timestamp=' + timestamp.getTime() + '&type=' + type + ' style="width: 400px; height: 50px;"]]</strong></blockquote>';
 	html += '</div>';
 	html += '<div>';
-	html += '<iframe src="http://aelanna.com/Tools/deletion-time.html?timestamp=' + timestamp.getTime() + '&type=' + type + '" style="width: 400px; height: 50px;"></iframe>';
+	html += '<iframe src="https://fondationscp.github.io/outils-staff/chronometre-suppression.html?timestamp=' + timestamp.getTime() + '&type=' + type + '" style="width: 400px; height: 50px;"></iframe>';
 	html += '</div>';
 	$('#generated').html(html);
 }
@@ -90,12 +90,12 @@ function generateDeletionLink2() {
 	var now = new Date();
 	var timestamp = new Date(now.getTime() + (day * 24*60*60*1000) + (hour * 60*60*1000) + (minute * 60*1000));
 	var html = '';
-	html += '<div>Copy this code to drop the timer into a post or page:</div>';
+	html += '<div>Copiez ce code pour inclure le compte à rebours dans un message ou une page :</div>';
 	html += '<div>';
-	html += '<blockquote><strong>[[iframe http://aelanna.com/Tools/deletion-time.html?timestamp=' + timestamp.getTime() + '&type=' + type + ' style="width: 400px; height: 50px;"]]</strong></blockquote>';
+	html += '<blockquote><strong>[[iframe https://fondationscp.github.io/outils-staff/chronometre-suppression.html?timestamp=' + timestamp.getTime() + '&type=' + type + ' style="width: 400px; height: 50px;"]]</strong></blockquote>';
 	html += '</div>';
 	html += '<div>';
-	html += '<iframe src="http://aelanna.com/Tools/deletion-time.html?timestamp=' + timestamp.getTime() + '&type=' + type + '" style="width: 400px; height: 50px;"></iframe>';
+	html += '<iframe src="https://fondationscp.github.io/outils-staff/chronometre-suppression.html?timestamp=' + timestamp.getTime() + '&type=' + type + '" style="width: 400px; height: 50px;"></iframe>';
 	html += '</div>';
 	$('#generated').html(html);
 }
@@ -108,13 +108,13 @@ function tick() {
 	var now = new Date();
 	var html = '';
 	if (timestamp.getTime() > now.getTime()) {
-		html += '<div style="color: red;">' + message1 + ':</div>';
-		html += '<div style="font-size: 12pt; font-weight: bold;">';
+		html += '<div style="color:red">' + message1 + ':</div>';
+		html += '<div style="font-size:12pt;font-weight:bold">';
 		html += formatTimeInterval(now.getTime(), timestamp.getTime());
 		html += '</div>'
 	} else {
-		html += '<div style="color: green;">' + message1 + ':</div>';
-		html += '<div style="font-size: 12pt; font-weight: bold;">';
+		html += '<div style="color:green">' + message1 + ':</div>';
+		html += '<div style="font-size:12pt;font-weight:bold">';
 		html += formatTimeInterval(timestamp.getTime(), now.getTime());
 		html += ' ago</div>'
 	}
@@ -129,18 +129,18 @@ function initGenerators() {
 	var type = 0;
 	switch (vars["type"]) {
 		case '1':
-			message1 = 'This ban will expire in';
-			message2 = 'This ban has expired as of';
+			message1 = "Le bannissement se terminera dans dans";
+			message2 = "Le bannissement s'est terminé depuis";
 			type = 1;
 		break;
 		case '0':
-			message1 = 'This page will be eligible for deletion in';
-			message2 = 'This page is eligible for deletion as of';
+			message1 = "Cette page sera supprimée dans";
+			message2 = "Cette page peut être supprimée depuis";
 			type = 2;
 		break;
 		default:
-			message1 = 'This timer expires in';
-			message2 = 'This timer has expired as of';
+			message1 = "Compte à rebours expiré dans";
+			message2 = "Compte à rebours expiré depuis";
 	}
 	if (vars["timestamp"]) {
 		//alert(vars["timestamp"]);
@@ -152,25 +152,25 @@ function initGenerators() {
 	}
 	html += '<div>';
 	html += 'Timer Type: ';
-	html += '<input type="radio" name="type" value="0" checked> Deletion Timer &mdash; ';
-	html += '<input type="radio" name="type" value="1"> Ban Timer &mdash; ';
-	html += '<input type="radio" name="type" value="2"> Generic/Other';
+	html += '<input type="radio" name="type" value="0" checked> Suppression &mdash; ';
+	html += '<input type="radio" name="type" value="1"> Bannissement &mdash; ';
+	html += '<input type="radio" name="type" value="2"> Générique/Autre';
 	html += '</div>';
 	html += '<div>';
-	html += 'Delete at: ';
+	html += 'Supprimer le : ';
 	html += '<select id="gen1Month" name="month">';
-	html += '<option value="0"' + (now.getMonth() == 0 ? ' selected' : '') + '>January</option>';
-	html += '<option value="1"' + (now.getMonth() == 1 ? ' selected' : '') + '>February</option>';
-	html += '<option value="2"' + (now.getMonth() == 2 ? ' selected' : '') + '>March</option>';
-	html += '<option value="3"' + (now.getMonth() == 3 ? ' selected' : '') + '>April</option>';
-	html += '<option value="4"' + (now.getMonth() == 4 ? ' selected' : '') + '>May</option>';
-	html += '<option value="5"' + (now.getMonth() == 5 ? ' selected' : '') + '>June</option>';
-	html += '<option value="6"' + (now.getMonth() == 6 ? ' selected' : '') + '>July</option>';
-	html += '<option value="7"' + (now.getMonth() == 7 ? ' selected' : '') + '>August</option>';
-	html += '<option value="8"' + (now.getMonth() == 8 ? ' selected' : '') + '>September</option>';
-	html += '<option value="9"' + (now.getMonth() == 9 ? ' selected' : '') + '>October</option>';
-	html += '<option value="10"' + (now.getMonth() == 10 ? ' selected' : '') + '>November</option>';
-	html += '<option value="11"' + (now.getMonth() == 11 ? ' selected' : '') + '>December</option>';
+	html += '<option value="0"' + (now.getMonth() == 0 ? ' selected' : '') + '>Janvier</option>';
+	html += '<option value="1"' + (now.getMonth() == 1 ? ' selected' : '') + '>Février</option>';
+	html += '<option value="2"' + (now.getMonth() == 2 ? ' selected' : '') + '>Mars</option>';
+	html += '<option value="3"' + (now.getMonth() == 3 ? ' selected' : '') + '>Avril</option>';
+	html += '<option value="4"' + (now.getMonth() == 4 ? ' selected' : '') + '>Mai</option>';
+	html += '<option value="5"' + (now.getMonth() == 5 ? ' selected' : '') + '>Juin</option>';
+	html += '<option value="6"' + (now.getMonth() == 6 ? ' selected' : '') + '>Juillet</option>';
+	html += '<option value="7"' + (now.getMonth() == 7 ? ' selected' : '') + '>Août</option>';
+	html += '<option value="8"' + (now.getMonth() == 8 ? ' selected' : '') + '>Septembre</option>';
+	html += '<option value="9"' + (now.getMonth() == 9 ? ' selected' : '') + '>Octobre</option>';
+	html += '<option value="10"' + (now.getMonth() == 10 ? ' selected' : '') + '>Novembre</option>';
+	html += '<option value="11"' + (now.getMonth() == 11 ? ' selected' : '') + '>Décembre</option>';
 	html += '</select>';
 	html += '<select id="gen1Day" name="day">';
 	for (i = 1; i < 32; i ++) {
@@ -193,19 +193,19 @@ function initGenerators() {
 		html += '<option value="' + i + '"' + (now.getMinutes() == i ? ' selected' : '') + '>' + (i < 10 ? '0' : '') + i + '</option>';
 	}
 	html += '</select>';
-	html += ' <input type="submit" value="Generate!" />';
+	html += ' <input type="submit" value="Générer !" />';
 	html += '</div>';
-	
+
 	$("#genForm1Contents").html(html);
 	html = '';
 	html += '<div>';
 	html += 'Timer Type: ';
-	html += '<input type="radio" name="type2" value="0" checked> Deletion Timer &mdash; ';
-	html += '<input type="radio" name="type2" value="1"> Ban Timer &mdash; ';
-	html += '<input type="radio" name="type2" value="2"> Generic/Other';
+	html += '<input type="radio" name="type2" value="0" checked> Suppression &mdash; ';
+	html += '<input type="radio" name="type2" value="1"> Bannissement &mdash; ';
+	html += '<input type="radio" name="type2" value="2"> Générique/Autre';
 	html += '</div>';
 	html += '<div>';
-	html += 'Delete after: ';
+	html += 'Supprimer après : ';
 	html += '<select id="gen2Day" name="day">';
 	for (i = 0; i < 31; i ++) {
 		html += '<option value="' + i + '">' + i + '</option>';
@@ -224,7 +224,7 @@ function initGenerators() {
 	}
 	html += '</select>';
 	html += ' minutes ';
-	html += '<input type="submit" value="Generate!" />';
+	html += '<input type="submit" value="Générer !" />';
 	$("#genForm2Contents").html(html);
 	$('#allcontent').show();
 }
