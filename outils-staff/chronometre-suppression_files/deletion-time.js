@@ -74,10 +74,10 @@ function generateDeletionLink1() {
 	var html = '';
 	html += '<div>Copiez ce code pour inclure le compte à rebours dans un message ou une page :</div>';
 	html += '<div>';
-	html += '<blockquote><strong>[[iframe https://fondationscp.github.io/outils-staff/chronometre-suppression.html?timestamp=' + timestamp.getTime() + '&type=' + type + ' style="width: 400px; height: 50px;"]]</strong></blockquote>';
+	html += '<blockquote><strong>[[iframe https://fondationscp.github.io/outils-staff/chronometre-suppression.html?timestamp=' + timestamp.getTime() + '&type=' + type + ' style="width: 400px; height: 78px;"]]</strong></blockquote>';
 	html += '</div>';
 	html += '<div>';
-	html += '<iframe src="https://fondationscp.github.io/outils-staff/chronometre-suppression.html?timestamp=' + timestamp.getTime() + '&type=' + type + '" style="width: 400px; height: 50px;"></iframe>';
+	html += '<iframe src="https://fondationscp.github.io/outils-staff/chronometre-suppression.html?timestamp=' + timestamp.getTime() + '&type=' + type + '" style="width: 400px; height: 78px;"></iframe>';
 	html += '</div>';
 	$('#generated').html(html);
 }
@@ -92,10 +92,10 @@ function generateDeletionLink2() {
 	var html = '';
 	html += '<div>Copiez ce code pour inclure le compte à rebours dans un message ou une page :</div>';
 	html += '<div>';
-	html += '<blockquote><strong>[[iframe https://fondationscp.github.io/outils-staff/chronometre-suppression.html?timestamp=' + timestamp.getTime() + '&type=' + type + ' style="width: 400px; height: 50px;"]]</strong></blockquote>';
+	html += '<blockquote><strong>[[iframe https://fondationscp.github.io/outils-staff/chronometre-suppression.html?timestamp=' + timestamp.getTime() + '&type=' + type + ' style="width: 400px; height: 78px;"]]</strong></blockquote>';
 	html += '</div>';
 	html += '<div>';
-	html += '<iframe src="https://fondationscp.github.io/outils-staff/chronometre-suppression.html?timestamp=' + timestamp.getTime() + '&type=' + type + '" style="width: 400px; height: 50px;"></iframe>';
+	html += '<iframe src="https://fondationscp.github.io/outils-staff/chronometre-suppression.html?timestamp=' + timestamp.getTime() + '&type=' + type + '" style="width: 400px; height: 78px;"></iframe>';
 	html += '</div>';
 	$('#generated').html(html);
 }
