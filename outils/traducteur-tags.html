@@ -1,0 +1,424 @@
+<head>
+  <!--
+      Outils de traduction de tags
+      Créé par 7happy7 ( http://www.wikidot.com/user:info/7happy7 )
+
+          Remerciements spéciaux :
+              C-take ( http://www.wikidot.com/user:info/c-take )
+                  pour sa méthode de redimensionnement d'iframe
+                  http://shitake-crude-production.wikidot.com/extension:ifarame-htmlblock
+                  (Édité par 7happy7)
+
+              Jochoi ( http://www.wikidot.com/user:info/jochoi )
+                  pour son point de relai à la base de données pour éviter les restrictions d'accès sur -CN
+                  http://zh.xjo.ch/tagtrans
+
+      Toutes les ressources sur cette page sont disponibles sous licence BY-SA 3.0
+      http://creativecommons.org/licenses/by-sa/3.0/
+
+      Adapté et traduit pour la Branche francophone de la Fondation SCP par Lekter ( http://www.wikidot.com/user:info/dr-lekter )
+  -->
+  <title>Traducteur automatique de tags</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="http://topia.wikidot.com/trans-tags/code/2">
+
+  <style media="screen">
+    @import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+    :root * {
+        scrollbar-color: rgba(50, 50, 50, 0.3) rgba(0, 0, 0, 0);
+        scrollbar-width: thin;
+    }
+
+    body {
+        color: #333;
+        font-family: sans-serif;
+        font-size: 0.75em;
+        margin: 0 8px;
+    }
+    ::-webkit-scrollbar {
+        border: solid 1px rgba(0, 0, 0, 0);
+        height: 9px;
+        width: 9px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: rgba(50, 50, 50, 0.3);
+    }
+    ::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0);
+    }
+    #int {
+        font-size: 0.8em;
+        font-style: italic;
+        user-select: none;
+    }
+    #int b {
+        display: block;
+    }
+    #int span {
+        display: inline-block;
+    }
+    #int span:after {
+        content: ",";
+        margin: 0 .25em 0 0;
+    }
+    #int span:last-of-type:after {
+        display: none;
+    }
+    #ta {
+        appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        border: none;
+        border-radius: 0;
+        box-shadow: 1px 1px 3px #aaa;
+        font-family: sans-serif;
+        font-size: 16px;
+        height: 150px;
+        margin: 0;
+        padding: 1em;
+        resize: none;
+        width: 100%;
+    }
+    #ta[disabled] {
+        background: rgb(235, 235, 228);
+        color: rgb(170, 170, 170);
+    }
+    #pred {
+        background: #fff;
+        box-shadow: 1px 1px 3px #aaa;
+        margin: 0 0 1em;
+        min-height: 9em;
+        padding: 0.5em 0;
+        text-align: center;
+    }
+    #pred:before {
+        content: "CANDIDAT(S) :";
+        color: #999;
+        display: block;
+        font-weight: bold;
+        padding: 1em 0;
+    }
+    #pred:after {
+        content: "10 maximum";
+        color: #aaa;
+        display: block;
+        font-size: 0.8em;
+        font-weight: bold;
+        padding: 1em 0;
+    }
+    #pred a {
+        background: #fff;
+        border: 1px solid #aaa;
+        border-radius: 0.5em;
+        color: #aaa;
+        cursor: pointer;
+        display: inline-block;
+        margin: 0.125em;
+        padding: 0.2em 0.5em;
+        transition: all 0.25s ease-in-out;
+    }
+    #pred a:not(:last-of-type):hover {
+        background: #fff0f0;
+        border-color: #fdd;
+        color: #b01;
+    }
+    #pred a:last-of-type {
+        border: none;
+        cursor: text;
+    }
+    #pred a:last-of-type:not(:first-of-type) {
+        display: none;
+    }
+    pre {
+        background: #fff;
+        box-shadow: 1px 1px 3px #aaa;
+        cursor: pointer;
+        font-family: sans-serif;
+        margin: 0 0 0.3em;
+        min-height: 45px;
+        overflow-x: scroll;
+        padding: 1.5em 0.5em 2.5em;
+    }
+    pre:before {
+        content: attr(data-lang);
+        color: #999;
+        display: block;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    pre span {
+        border-bottom: 2px dotted;
+        cursor: text;
+        position: relative;
+    }
+    pre span.fa-times-circle {
+        border-bottom: 2px dotted red;
+        color: red;
+    }
+    .fa:before {
+        color: red;
+        padding: 0 0.25em 0 0;
+    }
+    .fa.fa-check-circle:before {
+        color: lightgreen;
+    }
+    .fa.fa-exclamation-circle:before {
+        color: orange;
+    }
+    pre span:hover:after {
+        background: #fff;
+        border: 1px solid #aaa;
+        color: #aaa;
+        content: attr(data-x)"";
+        font-size: 0.9em;
+        left: var(--x);
+        padding: 0.25em 1em;
+        pointer-events: none;
+        position: absolute;
+        top: calc(0.5em + var(--y));
+        transition: all .05s ease-in-out;
+        z-index: 10;
+    }
+
+    #wrap pre:first-of-type {
+      background-color: #f3ffeb;
+      padding: 2.5em 0.5em 3em;
+    }
+    #wrap pre:first-of-type::before {
+      position: relative;
+      top: -1rem;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="int"></div>
+  <textarea id="ta" placeholder="Chargement..." disabled></textarea>
+  <div id="pred"><a>Pas de résultats.</a></div>
+  <div id="wrap"></div>
+  <script>
+    var ta = document.getElementById("ta");
+    var pred = document.getElementById("pred");
+    var int = document.getElementById("int");
+    var config = {
+        lang: [
+            "fr",
+            "ru",
+            "ko",
+            "cn",
+            "pl",
+            "es",
+            "jp",
+            "de",
+            "it",
+            "ua",
+            "ptbr",
+            "zhtr"
+        ],
+        caution: [
+            "Tags traitement du staff",//fr
+        ],
+        area: {},
+        temp: {},
+        prediction: {
+            list: [],
+            caret: {}
+        }
+    };
+    if(window !== window.parent) {//basé sur la méthode de redimensionnement d'iframe de C-take
+        var site = `http://${document.referrer.split("http://")[1].split("/")[0]}/`;
+        var _wrap = document.createElement("div");
+        document.body.appendChild(_wrap);
+        var _old= 0;
+        var url = location.href.replace(/^.*\//,'/');
+        (function() {
+            var _new = _wrap.getBoundingClientRect().top;
+            if(_new !== _old){
+                var iframe = document.createElement("iframe");
+                var _rand = String(Math.floor(Math.random() * 10000));
+                _wrap.innerHTML = '';
+                iframe.src = `${site}common--javascript/resize-iframe.html?${_rand}#${_new}${url}`;
+                iframe.style.display = "none";
+                _wrap.appendChild(iframe);
+                _old = _new;
+            }
+            setTimeout(arguments.callee, 50);
+       })();
+    }
+    var wrap = document.getElementById("wrap");
+    for(var lang of config.lang) {
+        var a = document.createElement("pre");
+        wrap.appendChild(a);
+        a.setAttribute("data-lang", lang);
+        a.onclick = (e) =>{
+            var r = document.createRange();
+            var s = window.getSelection();
+            s.removeAllRanges();
+            r.selectNodeContents(e.target);
+            s.addRange(r);
+        }
+        config.area[lang] = a;
+        config.temp[lang] = [];
+    }
+    var tagFunc_cb = (list) => {
+        var note = "Insérez les tags séparés par des espaces.";
+        config.list = list;
+        if(Object.keys(config.list[0]).indexOf("") > -1) {
+            note = "Le système de la base de données est en cours de mise à jour et les résultats pourraient ne pas être disponibles. Attendez quelques secondes.";
+        }
+        ta.removeAttribute("disabled");
+        ta.setAttribute("placeholder", note);
+        var _i = {};
+        for(var a of config.list) {
+            for(var k in a) {
+                if(k.match(/type_/) || !a[k]) {
+                    continue;
+                }else {
+                    _i[k] = _i[k] || 0;
+                    _i[k]++;
+                }
+            }
+        }
+        int.innerHTML = `<div><b>Langues supportées :</b>${config.lang.slice(1).map(v=>(`<span>-${v.toUpperCase()} (${_i[v]})</span>`)).join("")}</div>`;
+        ta.focus();
+        var cur = () => {
+            var v = ta.value;
+            var s_len = ta.selectionStart;
+            var c = {st: v.substr(0, s_len), ed: v.substr(s_len, v.length)};
+            var m_1 = c.st.match(/(?:^|\s)(\S*?)$/);
+            if(m_1) {
+                var bef = c.st.substr(0, m_1.index);
+                var x = c.st.replace(new RegExp("^" + bef), "");
+                var aft = "";
+                var m_2 = c.ed.match(/^\S*?(?:$|\s)/);
+                if(m_2) {
+                    var y = m_2[0];
+                    x += y;
+                    aft = c.ed.replace(new RegExp("^" + y), "");
+                }
+            }
+            config.prediction.caret = {bef: bef, x: x, aft: aft};
+            var val = x.replace(/^(\s?)(.*?)(\s?)$/, "$2");
+            var res = [];
+            if(val !== "") {
+                for(var a of config.list) {
+                    for(var k in a) {
+                        if(!k.match("type_") && a[k] && a[k].match(val) && res.indexOf(a[k]) == -1) {
+                            res.push(a[k]);
+                        }
+                    }
+                }
+            }
+            res.sort((a, b) => (a.length - b.length));
+            res = res.slice(0, 10);
+            pred.innerHTML = "";
+            for(var r of res) {
+                var a = document.createElement("a");
+                a.innerHTML = r;
+                pred.appendChild(a);
+                a.onclick = (e) => {
+                    var c = config.prediction.caret;
+                    c.x = c.x.replace(/^(\s?)(.*?)(\s?)$/, (m, w1, v, w2) => (w1 + e.target.innerHTML + w2))
+                    ta.value = c.bef + c.x + c.aft;
+                    ta.focus();
+                    var l = (c.bef + c.x).length;
+                    ta.setSelectionRange(l, l);
+                    set();
+                    pred.innerHTML = "<a>Pas de résultats.</a>";
+                }
+            }
+            var no = document.createElement("a");
+            no.innerHTML = "Pas de résultats.";
+            pred.appendChild(no);
+            config.prediction.list = res;
+            return config.prediction;
+        }
+        var set = () => {
+            for(var lang of config.lang) {
+                config.temp[lang] = [];
+            }
+            for(var s of document.querySelectorAll("pre span")) {
+                s.onmousemove = () => {}
+                s.ontouchstart = () => {}
+            }
+            var ts = ta.value.split(/\s/).filter((x, i, self) => (x && self.indexOf(x) === i));
+            var result = [];
+            ts.forEach((r)=>{
+                var x;
+                for(var lang of config.lang) {
+                    x = config.list.find(v=>v[lang]==r);
+                    if(x) {
+                        break;
+                    }
+                }
+                for(var lang of config.lang) {
+                    var res = (x && x[lang]) ? (() => {
+                        var type = x[`type_${lang}`] || "?";
+                        var cls = (config.caution.indexOf(type) > -1) ? "fa-exclamation-circle" : "fa-check-circle";
+                        return `<span class="fa ${cls}" data-x="${type}" ontouchstart>${x[lang]}</span>`;
+                    })() : `<span class="fa fa-times-circle" data-x="?" ontouchstart>${r}</span>`;
+                    config.temp[lang].push(res);
+                }
+            });
+            for(var lang of config.lang) {
+                config.area[lang].innerHTML = config.temp[lang].join(" ");
+            }
+            for(var s of document.querySelectorAll("pre span")) {
+                s.onmousemove = (e) => {
+                    var bounds = e.target.getBoundingClientRect();
+                    var x = e.clientX - bounds.left;
+                    var y = e.clientY - bounds.top;
+                    e.target.setAttribute("style", `--x: ${x}px; --y: ${y}px`);
+                }
+                s.ontouchstart = (e) => {
+                    for(var t of e.changedTouches) {
+                        var bounds = t.target.getBoundingClientRect();
+                        var x = t.clientX - bounds.left;
+                        var y = t.clientY - bounds.top;
+                        e.target.setAttribute("style", `--x: ${x}px; --y: ${y}px`);
+                    }
+                }
+            }
+        }
+        ta.onclick = () => {
+            cur();
+        }
+        ta.oninput = () => {
+            set();
+            cur();
+        }
+    }
+
+    var loadJSONP = (url, cbName) => {
+        return new Promise(function(_r, _e) {
+            window[cbName] = function(j) {
+                delete window[cbName];
+                _r(j);
+            }
+            var s = document.createElement("script");
+            s.src = url;
+            document.head.appendChild(s);
+            s.onerror = function(e) {
+                delete window[cbName];
+                _e(e);
+                s.remove();
+            }
+        });
+    }
+
+    loadJSONP("http://zh.xjo.ch/tagtrans", "tagFunc")
+    .then(r=>{
+        tagFunc_cb(r);
+    })
+    .catch(e=>{
+        loadJSONP("https://script.google.com/macros/s/AKfycbwhgAMxhS2VRCq7RLX3Geoy5dX4OkkytvUIlm2Xqc9KbyXr8vPM/exec?callback=tagFunc", "tagFunc")
+        .then(r=>{
+            tagFunc_cb(r);
+        })
+    });
+
+  </script>
+</body>
