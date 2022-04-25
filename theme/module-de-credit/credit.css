@@ -40,20 +40,25 @@
     width: 100%;
     height: 30px;
 }
-#u-credit-view .modalbox-standalone .modalbox:after,
-#u-credit-view .credit-back,
-#u-credit-otherwise .creditBottomRate {
+#u-credit-view .modalbox-standalone .modalbox:after  {
     display: none;
 }
-
+#u-credit-view .credit-back {
+    display:none;
+}
+#u-credit-otherwise .creditBottomRate {
+    display:none;
+}
 @media (max-width: 767px) {
     #u-credit-view {
         height: 100%;
         top: 0;
     }
-    .modalcontainer,
-    .modalbox {
-        min-width: 377px;
+    .modalcontainer{
+        min-width: 300px;
+    }
+    .modalbox{
+        min-width: 300px;
     }
 }
 #u-credit-view-button {
@@ -62,7 +67,7 @@
 }
 
 
-/* --- Grey area "behind" the Credit and Otherwise windows --- */
+/* --- This is the grey area "behind" the Credit- and Otherwise window --- */
 
 .fader{
     position: absolute;
@@ -84,7 +89,7 @@
     right: 0;
 }
 
-/* --- Container of the Credit and Otherwise windows, displayed upon pressing the credit button --- */
+/* --- Container of the Credit- and Otherwise window, displayed upon pressing the credit button --- */
 
 .modalcontainer{
     position: absolute;
@@ -100,10 +105,10 @@
 
 /* --- The actual Credit- and Otherwise window and all contents --- */
 
-.modalbox {
+.modalbox{
     position: relative;
     min-width: 400px;
-    min-height: 144px;
+    min-height: 200px;
     padding-bottom: 1em;
     background-color: #fff;
     border-radius: 5px;
@@ -309,19 +314,6 @@ height: 12px;
 .creditButton .fa-info:before {
     position: relative;
     top: 1px;
-	
-}
-  
-.creditButton .fa-info {
-    position: relative;
-    line-height: 16px;
-	
-}
-
-.affCreditsImage {
-	
-	position:absolute;height:100%;width:100%;top:0;left:0;
-	
 }
  
 /* --- Heritage rating module with Credit button --- */
@@ -546,8 +538,7 @@ display: inline-flex;
 .rate-box-with-credit-button {
     background: transparent !important;
     box-shadow: none;
-    border: 0;
-	line-height:initial;float:right;margin-bottom:1.25em;
+    border: 0
 }
 .page-rate-widget-box {
     background: #633 !important;
@@ -568,12 +559,11 @@ display: inline-flex;
 .rate-box-with-credit-button .page-rate-widget-box .rate-points {
     border: var(--ct_brd_rate-primary);
     border-right: 0;
-    top: 0;
-    padding-top: 0 !important
+    top: 0
 }
 
 .rate-box-with-credit-button .creditButton {
-    display: block;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 24px;
@@ -644,80 +634,6 @@ display: inline-flex;
     overflow-y: auto;
 }
     
-.modal-wrapper > li.folded > .pseudomodal-container {
-    opacity: 0;
-    pointer-events: none;
-    user-select: none;
-    visibility: hidden;
-}
-.modal-wrapper > li > .pseudomodal-container {
-    opacity: 1;
-    pointer-events: all;
-    user-select: auto;
-    visibility: visible;
-    transition: opacity 0.15s ease-out;
-    animation: 0.15s fademodal;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fademodal {
-    99% { visibility: hidden; }
-    100% { visibility: visible; }
-}
-
-
-.rate-box-with-credit-button .page-rate-widget-box .rate-points {
-    padding-top: 0 !important;
-    line-height: 0;
-}
-
-.rate-box-with-credit-button {
-    justify-content: center;
-}
-
-.modal-wrapper,
-.modal-wrapper > li .foldable-list-container {
-    list-style: none;
-    display: contents;
-}
-
-.modal-wrapper > li > .pseudomodal-container {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    z-index: 19;
-}
-
-.modal-wrapper > li > .pseudomodal-container > .foldable-list-container.close a {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    color: transparent;
-    z-index: -1;
-    background-color: rgba(0,0,0,0.35);
-    user-select: none;
-}
-
-#page-content .modal-wrapper > li > .pseudomodal-container > .pseudomodal {
-    display: block;
-    width: 85%;
-    max-width: 40rem;
-    z-index: 1;
-    background-color: #fefefe;
-}
-.modal-wrapper > li > .pseudomodal-container > .pseudomodal > .pseudomodal-content {
-    padding: 0.75rem 1.5rem;
-    height: 60%;
-    max-height: 25rem;
-    overflow-y: auto;
-}
-
 .modal-wrapper > li.folded > .pseudomodal-container {
     opacity: 0;
     pointer-events: none;
