@@ -143,8 +143,9 @@
  
 .modalbox .credit {
     margin: 2em;
-    word-wrap:break-word;
-    overflow-wrap:break-word;
+    padding-right: 0.25em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 .modalbox .credit:not(:first-child) {
     margin-top: 0;
@@ -586,6 +587,10 @@ display: inline-flex;
 }
 .creditButton a:hover {
     color: var(--ct_col_rate-link-hover) !important
+}
+/* [[toc]] fix */
+#toc-list div:first-of-type[style*="margin-left: 2em"] {
+    display: none;
 }
 
 
