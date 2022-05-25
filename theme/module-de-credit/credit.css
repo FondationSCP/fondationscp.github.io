@@ -298,8 +298,6 @@
 .creditButton a{
     width: 24px;
     margin-left: 0;
-    color: #fff6f0;
-    border-left: 1px solid #966;
     text-align: center;
     text-decoration: none;
     font-size: 11px;
@@ -309,7 +307,7 @@
 }
 
 .creditButton .fa {
-height: 12px;
+    height: 12px;
 }
  
 .creditButton .fa-info:before {
