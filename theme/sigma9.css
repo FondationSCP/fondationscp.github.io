@@ -2239,7 +2239,7 @@ table.page-files .options, a.action-area-close:hover {
 }
 .hovertip {
     background-color: var(--ct_bg_hovertip, #f3f3f3);
-    color: var(--ct_col_hovertip, #333)
+    color: var(--ct_col_hovertip, #333);
     border: var(--ct_brd_hovertip, solid 1px black) !important;
 }
 input.text {
