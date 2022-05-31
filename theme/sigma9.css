@@ -8,8 +8,8 @@
 
 @font-face {
     font-family: 'Sans-Normalcy';
-    src: url('https://fondationscp.github.io/theme/fonts/normalcy.woff') format('woff'),
-           url('https://fondationscp.github.io/theme/fonts/normalcy.woff2') format('woff2');
+    src: url('https://fondationscp.github.io/theme/fonts/sans-normalcy.woff') format('woff'),
+           url('https://fondationscp.github.io/theme/fonts/sans-normalcy.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
