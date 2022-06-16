@@ -657,3 +657,8 @@ display: inline-flex;
     99% { visibility: hidden; }
     100% { visibility: visible; }
 }
+
+/* Pas d'avatar dans le module */
+.modalbox .printuser.avatarhover a:first-of-type {
+    display: none;
+}
