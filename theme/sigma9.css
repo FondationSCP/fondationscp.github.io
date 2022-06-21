@@ -702,7 +702,7 @@ div#container-wrap {
 #interwiki .heading {
     border-bottom: var(--ct_brd_sidebar-elements, solid 1px #600);
     color: var(--ct_col_sidebar-elements, #600);
-    font-size: 8pt;
+    font-size: 0.8em;
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 5px;
