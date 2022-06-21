@@ -667,7 +667,7 @@ div#container-wrap {
     padding: 0;
     position: absolute;
     top: .5em;
-    width: var(--ct_dim_side-bar-width);
+    width: var(--ct_dim_side-bar-width, 14rem);
 }
 #interwiki .side-block {
 	margin: 5px;
@@ -918,7 +918,7 @@ div#container-wrap {
 }
 #main-content {
     margin: 0 2em 0 22em;
-    margin-left: calc(var(--ct_dim_side-bar-width) + 3em);
+    margin-left: calc(var(--ct_dim_side-bar-width, 14rem) + 3em);
     padding: 1em;
     position: relative;
 }
@@ -2223,7 +2223,7 @@ img, embed, video, object, iframe, table,
 /* ++++++++++++++++ 8.0 Interwiki-module ++++++++++++++++ */
 div.scpnet-interwiki-wrapper {
     margin-left: -5px;
-    width: 17em;
+    width: var(--ct_dim_side-bar-width, 14rem);
 }
 iframe.scpnet-interwiki-frame {
     border: none;
