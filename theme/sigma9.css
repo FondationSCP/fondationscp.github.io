@@ -6,6 +6,7 @@
 @import url("https://raw.githubusercontent.com/FondationSCP/module-de-credit/main/src/css/credit-min.css");
 @import url("https://grombald.github.io/Common-Theme/font/font-awesome.min.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 @font-face {
     font-family: 'Sans-Normalcy';
     src: url('https://fondationscp.github.io/theme/fonts/sans-normalcy.woff') format('woff'),
@@ -92,6 +93,7 @@ Legend:
     /* 1 Common */
     --ct_bg_body: #fff;
     --ct_col_body-txt: #333;
+    --ct_fnt_body: Noto Sans;
     --ct_col_h1-txt: #901;
     --ct_col_link: #b01;
     --ct_col_link-visited: #824;
@@ -146,6 +148,7 @@ Legend:
     --ct_bg_open-menu-button: url('https://grombald.github.io/Common-Theme/svg/open-menu-button.svg');
     
     /* 2 Sidebar */
+    --ct_dim_side-bar-width: 14rem;
     --ct_shd_sidebar-block: 0 2px 6px rgba(102 0 0 / 50%);
     --ct_col_sidebar-elements: #600;
     --ct_brd_sidebar-elements: 1px solid var(--ct_col_sidebar-elements);
@@ -269,7 +272,8 @@ Legend:
 body {
     background: var(--ct_bg_body, #fff);
     color: var(--ct_col_body-txt, #333);
-    font-size: 0.8em;
+    font-size: 15px;
+    font-family: var(--ct_fnt_body, Noto Sans), verdana, arial, helvetica, sans-serif;
 }
 #interwiki body {
 	background-color: transparent;
@@ -663,7 +667,7 @@ div#container-wrap {
     padding: 0;
     position: absolute;
     top: .5em;
-    width: 17em;
+    width: var(--ct_dim_side-bar-width);
 }
 #interwiki .side-block {
 	margin: 5px;
@@ -909,12 +913,12 @@ div#container-wrap {
     height: auto !important;
     height: 1500px;
     margin: 2em auto 0;
-    max-width: 1040px;
-    min-height:1300px;
+    min-height: 1300px;
     position: relative;
 }
 #main-content {
     margin: 0 2em 0 22em;
+    margin-left: calc(var(--ct_dim_side-bar-width) + 3em);
     padding: 1em;
     position: relative;
 }
@@ -1866,7 +1870,7 @@ img, embed, video, object, iframe, table,
 #edit-page-comments {
     width: 100%;
 }
- 
+
 
 /* ---------------- #7.1 Basic Query for mobile devices (Up to 767px) ---------------- */
 
