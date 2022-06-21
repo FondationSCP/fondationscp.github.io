@@ -596,7 +596,7 @@ div#container-wrap {
 /* Nested Topbar */
 #top-bar ul li ul li ul {
     border: var(--ct_brd_topbar-menu, solid 1px #666);
-    left: 173px;
+    left: 177px;
     top: 0;
     width: min-content;
 }
@@ -2227,14 +2227,16 @@ div.scpnet-interwiki-wrapper {
 iframe.scpnet-interwiki-frame {
     border: none;
     height: 355px;
-    width: 17em;
+    width: var(--ct_dim_side-bar-width, 14rem);
 }
+/* Plus utile ?
 @media (min-width: 768px) {
     .scpnet-interwiki-frame,
     .scpnet-interwiki-wrapper {
         width: 18em;
     }
 }
+*/
 
 /* ++++++++++++++++ 9.0 Off-page styling ++++++++++++++++ */
 table.page-files .options, a.action-area-close:hover {
