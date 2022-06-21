@@ -868,15 +868,14 @@ div#container-wrap {
 #side-bar .collapsible-block-link::before, 
 #side-bar .menu-item p::before,
 #side-bar .colmod-link-top a::before {
-        -webkit-background-size: 13px 13px;
-        -moz-background-size: 13px 13px;
-    background-size: 13px 13px;
+    background-size: 15px 15px;
     background-position: center center;
     background-repeat: no-repeat;
     color: transparent;
     display: inline-block;
     filter: drop-shadow(1px 1px 1px rgba(0 0 0 / .25));
     margin-left: -16px;
+    margin-right: 1px;
     /*left: 11px;
     position: absolute;*/
     text-align: center;
