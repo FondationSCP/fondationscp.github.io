@@ -104,7 +104,7 @@ Legend:
     --ct_bg_header-image: url('https://grombald.github.io/Common-Theme/img/body_bg.png');
     --ct_bg_header-image: url('https://grombald.github.io/Common-Theme/svg/body_bg.svg');
     --ct_bg_header-logo: url('https://grombald.github.io/Common-Theme/img/logo.png');
-    --ct_bg_header-logo: url('https://grombald.github.io/Common-Theme/svg/header-logo.svg');
+    --ct_bg_header-logo: url('http://fondationscp.wdfiles.com/local--files/component%3Atheme/scplgbt.png'); /* Logo habituel : https://grombald.github.io/Common-Theme/img/logo.png */
     --ct_fnt_header-txt: Sans-Normalcy, Arial, sans-serif;
     --ct_col_header-txt: #eee;
     --ct_col_slogan-txt: #f0f0c0;
