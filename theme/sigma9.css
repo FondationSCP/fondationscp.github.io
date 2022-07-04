@@ -502,7 +502,7 @@ div#container-wrap {
     border-left: var(--ct_brd_topbar-item, solid 1px rgba(64 64 64 / .1));
     border-right: var(--ct_brd_topbar-item, solid 1px rgba(64 64 64 / .1));
     text-decoration: none;
-	padding: 0.25em 1em;
+	padding: 0.1rem 0.8rem;
 }
 #top-bar .top-bar > ul > li > a,
 #top-bar .mobile-top-bar > ul > li > a {
@@ -2127,9 +2127,6 @@ img, embed, video, object, iframe, table,
         max-width: 100%;
     }
 
-    #top-bar ul li a {
-		padding: 0.1rem 0.8rem;
-	}
     #toc {
         display: block;
         float: none !important;
