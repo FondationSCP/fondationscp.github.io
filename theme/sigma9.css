@@ -561,7 +561,6 @@ div#container-wrap {
     display: none;
 }
 
-
 .mobile-top-bar {
     bottom: 0;
     display: none;
@@ -2012,8 +2011,7 @@ img, embed, video, object, iframe, table,
     #header h1, #header h2 {
         margin-left: 80px;
     }
-    #header,
-    .mobile-top-bar {
+    #header {
         max-width: 90%;
     }
     .top-bar {
@@ -2021,7 +2019,24 @@ img, embed, video, object, iframe, table,
     }
     .mobile-top-bar {
         display: block;
+        width: 100%;
     }
+    /* Alignement au centre des options de topbar
+    .mobile-top-bar {
+        display: block;
+        width: 100%;
+        display: flex;
+    }
+    #top-bar .mobile-top-bar > ul,
+    #top-bar .mobile-top-bar > ul > li {
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    #top-bar .mobile-top-bar > ul > li > * {
+        display: block;
+    }
+    */
     #search-top-box {
         top: 104px;
     }
@@ -2070,9 +2085,6 @@ img, embed, video, object, iframe, table,
     #header h1, #header h2 {
         margin-left: 66px;
     }
-    .mobile-top-bar {
-        padding: 0;
-    }
     #search-top-box-input {
         display: none;
     } 
@@ -2115,12 +2127,8 @@ img, embed, video, object, iframe, table,
         max-width: 100%;
     }
 
-    .mobile-top-bar {
-        width: 100%;
-    }
-
     #top-bar ul li a {
-		padding: .25em .5em;
+		padding: 0.1rem 0.8rem;
 	}
     #toc {
         display: block;
@@ -2142,7 +2150,7 @@ img, embed, video, object, iframe, table,
     #header h1, #header h2 {
         margin-left: 93px;
     }
-    #header, .mobile-top-bar {
+    #header {
         max-width: 90%;
     }
     .top-bar {
