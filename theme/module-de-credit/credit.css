@@ -107,12 +107,14 @@
 
 .modalbox{
     position: relative;
-    min-width: 400px;
+    min-width: calc(300px - 2rem);
+    max-width: 450px !important;
     min-height: 200px;
-    padding-bottom: 1em;
+    margin-inline: 1rem;
+    padding-bottom: 1rem;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0 2px 6px rgba(102, 0, 0, .5);
+    box-shadow: 0 2px 6px rgba(102, 0, 0, 50%);
 }
 
 .modalbox .modalbox-title {
