@@ -1,6 +1,54 @@
 //sass --watch charte-graphique.sass:charte-graphique.css
 @import url("../theme/sigma9-min.css")
 
+:root
+  /* Palette */
+  --success: #a3f19d
+  --info: #42b8f1
+  --link: #4b62e2
+  --warning: #f4e24c
+  --danger: #f52b2b
+  --success-pale: #befeb9
+  --info-pale: #d2ebf7
+  --link-pale: #ced6ff
+  --warning-pale: #f7eea0
+  --danger-pale: #f9dfdf
+
+/* PAGE ELEMENTS */
+
+.collapsible-block
+  margin-block: 1.25rem
+
 .collapsible-block-link
+  display: block
   width: 80%
-  margin: var(--)
+  margin-inline: auto
+  padding: 0.75rem 1rem
+  background-color: var(--success-pale)
+
+/* UTILITIES */
+
+.is-success
+  background-color: var(--success)
+  &-pale
+    background-color: var(--success-pale)
+
+.is-info
+  background-color: var(--info)
+  &-pale
+    background-color: var(--info-pale)
+
+.is-link
+  background-color: var(--link)
+  &-pale
+    background-color: var(--link-pale)
+
+.is-warning
+  background-color: var(--warning)
+  &-pale
+    background-color: var(--warning-pale)
+
+.is-danger
+  background-color: var(--danger)
+  &-pale
+    background-color: var(--danger-pale)
