@@ -18,13 +18,44 @@
 
 .collapsible-block
   margin-block: 1.25rem
+  &::before,
+  &::after
+    content: ""
+    position: absolute
+    top: 25%
+    width: 25px
+    height: 25px
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/3c/Black_triangle.svg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    transition: 200ms ease-in
+    &::before
+      left: 25%
+      transform: rotate(-90deg)
+      &::after
+        right: 25%
+        transform: rotate(90deg)
 
-.collapsible-block-link
-  display: block
-  width: 80%
-  margin-inline: auto
-  padding: 0.75rem 1rem
-  background-color: var(--success-pale)
+  &-link
+    position: relative
+    display: block
+    width: 80%
+    margin-inline: auto
+    padding: 0.75rem 1rem
+    background-color: var(--success-pale)
+    border-radius: 3px
+    text-align: center
+    font-size: var(--step-0)
+    transition: 200ms ease-in
+    &:hover
+      background-color: var(--success)
+      text-decoration: none
+
+  &-unfolded-link .collapsible-block-link
+    &::before,
+    &::after
+      transform: rotate(0deg)
 
 /* UTILITIES */
 

@@ -17,13 +17,44 @@
 .collapsible-block {
   margin-block: 1.25rem;
 }
-
+.collapsible-block::before, .collapsible-block::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  width: 25px;
+  height: 25px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/3c/Black_triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 200ms ease-in;
+}
+.collapsible-block::before::before, .collapsible-block::after::before {
+  left: 25%;
+  transform: rotate(-90deg);
+}
+.collapsible-block::before::before::after, .collapsible-block::after::before::after {
+  right: 25%;
+  transform: rotate(90deg);
+}
 .collapsible-block-link {
+  position: relative;
   display: block;
   width: 80%;
   margin-inline: auto;
   padding: 0.75rem 1rem;
   background-color: var(--success-pale);
+  border-radius: 3px;
+  text-align: center;
+  font-size: var(--step-0);
+  transition: 200ms ease-in;
+}
+.collapsible-block-link:hover {
+  background-color: var(--success);
+  text-decoration: none;
+}
+.collapsible-block-unfolded-link .collapsible-block-link::before, .collapsible-block-unfolded-link .collapsible-block-link::after {
+  transform: rotate(0deg);
 }
 
 /* UTILITIES */
@@ -60,6 +91,4 @@
 }
 .is-danger-pale {
   background-color: var(--danger-pale);
-}
-
-/*# sourceMappingURL=charte-graphique.css.map */
+}/*# sourceMappingURL=charte-graphique.css.map */
