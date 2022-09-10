@@ -2458,3 +2458,8 @@ sup, sub {
 .footnoteref, #page-content>sup {
     top: 0;
 }
+
+/* Double sélection pseudo */
+.avatarhover img.small {
+    user-select: none;
+}
