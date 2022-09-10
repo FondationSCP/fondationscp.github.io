@@ -2241,7 +2241,7 @@ img, embed, video, object, iframe, table,
     }
 }
 
-/* ++++++++++++++++ 8.0 Interwiki-module ++++++++++++++++ */
+/* ++++++++++++++++ 8.0 Interwiki module ++++++++++++++++ */
 div.scpnet-interwiki-wrapper {
     margin-left: -5px;
     width: var(--ct_dim_side-bar-width, 14rem);
@@ -2312,17 +2312,6 @@ div.buttons input:hover, input.button:hover, button:hover, a.button:hover, div.b
 /* Saut ligne auto pour collapsibles */
 .collapsible-block-link {
     line-break: anywhere;
-}
-
-/* Création de compte moins contre-intuitive */
-.login-status-create-account, .login-status-create-account+span  {
-    display: none;
-}
-.login-status-sign-in::after {
-    content: " comme utilisateur Wikidot"
-}
-.content.modal-body p:last-of-type::after {
-    content: " Si vous pensez que cette erreur n'est pas normale, vous pouvez venir nous voir sur Discord."
 }
 
 /* Votes en colonnes */
@@ -2408,14 +2397,9 @@ div.buttons input:hover, input.button:hover, button:hover, a.button:hover, div.b
     margin-left: 0.5px;
 }
 
-/* Notice d'info affichage pubs */
-script + div.page-tags:before {
-    color: #888;
-    content: "Connectez-vous à votre compte pour ne plus voir de publicités";
-    display: block;
-    font-size: 77%;
-    margin: 1rem 0;
-    text-align: center;
+/* Customisations du module user */
+#avatar-hover-container {
+    display: none;
 }
 
 /* Accessibilité largeur intermédiaire */
@@ -2440,6 +2424,28 @@ script + div.page-tags:before {
 .pastille.orange { color: orange }
 .pastille.rouge { color: red }
 .pastille.noir { color: black }
+
+/* MESSAGES */
+/* Création de compte moins contre-intuitive */
+.login-status-create-account, .login-status-create-account+span  {
+    display: none;
+}
+.login-status-sign-in::after {
+    content: " comme utilisateur Wikidot"
+}
+.content.modal-body p:last-of-type::after {
+    content: " Si vous pensez que cette erreur n'est pas normale, vous pouvez venir nous voir sur Discord."
+}
+/* Notice d'info affichage pubs */
+script + div.page-tags:before {
+    color: #888;
+    content: "Connectez-vous à votre compte pour ne plus voir de publicités";
+    display: block;
+    font-size: 77%;
+    margin: 1rem 0;
+    text-align: center;
+}
+
 
 /* ---------- FIXES  ---------- */
 
