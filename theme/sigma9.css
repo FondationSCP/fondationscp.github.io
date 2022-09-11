@@ -1282,7 +1282,6 @@ table.wiki-content-table th {
 /* ---------------- #4.6 Custom & utility classes ---------------- */
 
 .content-panel {
-    background-color: #999990;
     border: solid 1px #888880;
     border-radius: 10px;
     box-shadow: 3px 3px 6px #bbb;
@@ -1291,51 +1290,17 @@ table.wiki-content-table th {
         inset 0 10px rgba(255,255,255,.2),
         inset 0 10px 20px rgba(255,255,255,.25),
         inset 0 -15px 30px rgba(0,0,0,.1);
-    margin: 10px 0 15px;
+    margin: 1rem 0 1.5rem;
 }
 .content-panel.standalone {
     background: #fcfdfb;
 }
 .content-panel.series {
-    margin-bottom: 20px;
-    padding: 0 20px;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
 }
 .content-panel.centered {
     text-align: center;
-}
-.content-panel.left-column {
-    float: left;
-    width: 48%;
-}
-.content-panel.right-column {
-    float: right;
-    width: 48%;
-}
-.content-panel .panel-heading {
-    padding: 2px 10px;
-    color: #fff;
-    font-size: 90%;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0 0 0 / .35);
-}
-.content-panel .panel-heading > p,
-.content-panel .panel-footer > p {
-    margin: 0;
-}
-.content-panel .panel-body {
-    background: #fff9f0 url('https://grombald.github.io/Common-Theme/img/panel-bg-gradient-reverse.png') bottom repeat-x;
-    padding: 5px 10px;
-}
-.content-panel .panel-footer {
-    color: #fffff0;
-    font-size: 80%;
-    font-weight: bold;
-    padding: 1px 10px;
-    text-align: right;
-    text-shadow: 1px 1px 2px rgba(0 0 0 / .5);
-}
-.content-panel .panel-footer a {
-    color: #fff;
 }
 .content-panel .content-toc {
         -moz-box-shadow: inset 1px 2px 6px rgba(0 0 0 / .15);
@@ -1347,8 +1312,8 @@ table.wiki-content-table th {
         -moz-border-radius: 10px;
     border-radius: 10px;
     float: right;
-    margin: 20px 0 5px 5px;
-    padding: 0 20px;
+    margin: 2rem 0 0.5rem 0.5rem;
+    padding: 0 2rem;
     white-space: nowrap;
 }
 .unmargined > p {
