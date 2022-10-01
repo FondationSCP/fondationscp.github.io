@@ -706,7 +706,7 @@ div#container-wrap {
     background: var(--ct_bg_sidebar-yellow, #ffffe5);
 }
 #side-bar .side-area {
-    padding: 10px;
+    padding: 1rem;
 }
 #side-bar .heading,
 #interwiki .heading {
@@ -1468,7 +1468,7 @@ div.blockquote,
 
 /* Content warning for adult content */
 div#u-adult-warning {
-    background: #e4e4e4;
+    background-color: #e4e4e4;
     border: 3px solid #333;
     color: #333;
     font-weight: bold;
@@ -1497,7 +1497,7 @@ div#u-adult-warning > .error-block {
 
 /* Sexy-Box */
 div.sexy-box {
-    background: #eee;
+    background-color: #eee;
     border: 1px solid #ccc;
     margin: 7px 4px 12px;
     overflow: hidden;
@@ -1524,7 +1524,7 @@ div.sexy-box div.image-container img {
 
 /* tag style */
 .tags {
-    background: #666;
+    background-color: #666;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
     color: #fff;
@@ -1550,7 +1550,7 @@ div.sexy-box div.image-container img {
     width: 0;
 }
 .tags::after {
-    background: #fff;
+    background-color: #fff;
     box-shadow: -1px -1px 2px #333;
     border-radius: 2px;
     content: "";
@@ -1753,7 +1753,7 @@ li.folded > .colmod-content {
 .colmod-collapsiblealt > [class|="colmod-link"] a:active,
 .collapsiblealt > .colmod-block > ul > li > [class|="colmod-link"] a:hover,
 .collapsiblealt > .colmod-block > ul > li > [class|="colmod-link"] a:active {
-    background: #ddd;
+    background-color: #ddd;
     text-decoration: none;
 }
 
