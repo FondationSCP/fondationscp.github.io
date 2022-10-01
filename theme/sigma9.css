@@ -1282,6 +1282,8 @@ table.wiki-content-table th {
 /* ---------------- #4.6 Custom & utility classes ---------------- */
 
 .content-panel {
+    margin: 2rem auto;
+    padding: 0 2rem;
     border: solid 1px #888880;
     border-radius: 10px;
     box-shadow: 3px 3px 6px #bbb;
@@ -1290,14 +1292,7 @@ table.wiki-content-table th {
         inset 0 10px rgba(255,255,255,.2),
         inset 0 10px 20px rgba(255,255,255,.25),
         inset 0 -15px 30px rgba(0,0,0,.1);
-    margin: 1rem 0 1.5rem;
-}
-.content-panel.standalone {
-    background: #fcfdfb;
-}
-.content-panel.series {
-    margin-bottom: 2rem;
-    padding: 0 2rem;
+    background-color: #fcfdfb;
 }
 .content-panel.centered {
     text-align: center;
