@@ -449,7 +449,8 @@ div#container-wrap {
     right: 9px;
     text-align: right;
     top: 79px;
-    width: 250px;
+    width: -moz-fit-content;
+    width: fit-content;
 }
 #search-top-box-input {
     background-color: var(--ct_col_searchbox-gradient-1, #300);
@@ -464,6 +465,11 @@ div#container-wrap {
     border: solid 1px var(--ct_col_searchbox-highlight, solid 1px #fff);
     box-shadow: inset 1px 1px 3px rgba(0 0 0 / .8);
     color: var(--ct_col_searchbox-highlight, #fff);
+}
+#search-top-box-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #search-top-box-form input[type=submit] {
     background-color: #633;
