@@ -1208,12 +1208,22 @@ table.page-files tr.highlight td:not(:last-child) {
     line-height: normal;
 }
 
-/* Invert colors of code-boxes in tabs*/
+/* Lighten colors of quotes and codeboxes in tabs*/
 .yui-content blockquote,
 .yui-content .blockquote,
 .yui-content .code {
-    background: var(--ct_bg_body, #fff);
-    border: var(--ct_brd_blockquote, #999);
+    position: relative;
+    isolation: isolate;
+}
+.yui-content blockquote::after,
+.yui-content .blockquote::after,
+.yui-content .code::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255 255 255 / 25%);
+    background-color: rgba(255 255 255 / 33%);
+    z-index: -1;
 }
 
 /* Borderless tabs */
