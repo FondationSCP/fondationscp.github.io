@@ -579,7 +579,8 @@ div#container-wrap {
     width: 100% !important;
 }
 #top-bar ul li:last-of-type ul {
-    right: 0;
+    left: 10%;
+    top: 100%;
 }
 #top-bar .open-menu {
     display: none;
