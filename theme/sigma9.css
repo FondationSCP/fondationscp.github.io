@@ -612,7 +612,7 @@ div#container-wrap {
 /* Nested Topbar */
 #top-bar ul li ul li ul {
     border: var(--ct_brd_topbar-menu, solid 1px #666);
-    left: 177px;
+    left: 100%;
     top: 0;
     width: min-content;
 }
