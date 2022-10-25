@@ -578,10 +578,6 @@ div#container-wrap {
     min-width: 150px;
     width: 100% !important;
 }
-#top-bar ul li:last-of-type ul li ul {
-    left: 10%;
-    top: 100%;
-}
 #top-bar .open-menu {
     display: none;
 }
@@ -2171,6 +2167,14 @@ img, embed, video, object, iframe, table,
     }
     td.title {
         width: 30%;
+    }
+}
+
+/* ---------------- #7.7 Laptop Media Query ---------------- */
+@media only screen and (max-width: 1400px) {
+    #top-bar ul li:last-of-type ul li ul {
+        left: 10%;
+        top: 100%;
     }
 }
 
