@@ -2171,6 +2171,11 @@ img, embed, video, object, iframe, table,
 }
 
 /* ---------------- #7.7 Laptop Media Query ---------------- */
+@media only screen and (max-width: 1200px) {
+    #top-bar ul li:last-of-type ul {
+        right: 0;
+    }
+}
 @media only screen and (max-width: 1400px) {
     #top-bar ul li:last-of-type ul li ul {
         left: 10%;
