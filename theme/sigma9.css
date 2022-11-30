@@ -2265,13 +2265,18 @@ div.buttons input:hover, input.button:hover, button:hover, a.button:hover, div.b
     line-height: 1.125rem;
 }
 
+/* Police monospace pour code source */
+.page-source {
+    font-family: monospace;
+}
+
 /* Icônes de liens */
 #thread-container .post a::after {
     content: " ";
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
-    transition: 0.2s;
+    transition: 200ms;
 }
 #thread-container .post a:hover::after {
     transform: scale(1.1);
