@@ -1,0 +1,94 @@
+@import url('https://fondationscp.github.io/theme/sigma9.min.css');
+ 
+/* Common Theme INT-Edition - CC BY-SA 3.0 - by Dr_Grom. See http://o5command-int.wikidot.com/tech-team:common-theme for more info. */
+:root {
+    --ct_bg_header-image: url('https://grombald.github.io/Common-Theme/img/int/body_bg_int.png');
+    --ct_bg_header-image: url('https://grombald.github.io/Common-Theme/svg/body_bg_int.svg');
+    --ct_bg_header-logo: url('https://grombald.github.io/Common-Theme/img/int/scp-logo-int-small.png');
+    --ct_bg_header-logo: url('https://grombald.github.io/Common-Theme/svg/header-logo_int.svg');
+ 
+    --ct_col_searchbox-gradient-1: #0f1a25;
+    --ct_col_searchbox-gradient-2: #1e354c;
+    --ct_col_searchbox-gradient-3: #2b4a6c;
+    --ct_col_searchbox-gradient-4: #38628f;
+}
+ 
+/* Site name media query
+@media only screen and (max-width: 960px) {
+    --ct_cnt_alt-header-txt: "SCP International";
+    --ct_cnt_alt-slogan-txt: "";
+    --ct_fns_alt-header-txt: var(--step-2, clamp(2.27rem, calc(1.77rem + 2.47vw), 3.53rem));
+    --ct_fns_alt-slogan-txt: var(--step--1, clamp(0.88rem, calc(1.02rem + -0.20vw), 0.98rem));
+    --ct_fns_header-txt: 0;
+    --ct_fns_slogan-txt: 0;
+} */
+ 
+div#container-wrap {
+    background-image: url('https://grombald.github.io/Common-Theme/img/int/body_bg_int.png');
+    background-image: var(--ct_bg_header-image); 
+}
+#header {
+    background-image: url('https://grombald.github.io/Common-Theme/img/int/scp-logo-int-small.png');
+    background-image: var(--ct_bg_header-logo);
+}
+ 
+#search-top-box-input {
+    background-color: #0f1a25;
+    background-color: var(--ct_col_searchbox-gradient-1);
+}
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+    background-color: #1e354c;
+    background-color: var(--ct_col_searchbox-gradient-2);
+}
+#search-top-box-form input[type=submit] {
+    background-color: #1e354c;
+    background-color: var(--ct_col_searchbox-gradient-2);
+    background: -webkit-gradient(linear, left top, left bottom, from(#2b4a6c),color-stop(#1e354c),to(#0f1a25));
+    background: -webkit-linear-gradient(top, #2b4a6c,#1e354c,#0f1a25);
+    background: -moz-linear-gradient(top, #2b4a6c,#1e354c,#0f1a25);
+    background: -o-linear-gradient(top, #2b4a6c,#1e354c,#0f1a25);
+    background: linear-gradient(to bottom, #2b4a6c,#1e354c,#0f1a25);
+    background: linear-gradient(to bottom, var(--ct_col_searchbox-gradient-3),var(--ct_col_searchbox-gradient-2),var(--ct_col_searchbox-gradient-1));
+}
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    background: -webkit-gradient(linear, left top, left bottom, from(#38628f),color-stop(#2b4a6c),to(#1e354c));
+    background: -webkit-linear-gradient(top, #38628f,#2b4a6c,#1e354c);
+    background: -moz-linear-gradient(top, #38628f,#2b4a6c,#1e354c);
+    background: -o-linear-gradient(top, #38628f,#2b4a6c,#1e354c);
+    background: linear-gradient(to bottom, #38628f,#2b4a6c,#1e354c);
+    background: linear-gradient(to bottom, var(--ct_col_searchbox-gradient-4),var(--ct_col_searchbox-gradient-3),var(--ct_col_searchbox-gradient-2));
+}
+ 
+/* Licensebox */
+ 
+.licensebox .collapsible-block-link {
+    font-weight: bold;
+    opacity: .5;
+    color: inherit;
+    font-size: 0.85em;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+ 
+.licensebox .collapsible-block-link:hover,
+.licensebox .collapsible-block-link:active {
+    opacity: 1;
+}
+ 
+.licensebox .collapsible-block-folded, .licensebox .collapsible-block-unfolded-link{
+     margin-top: 2em;
+     text-align: center;
+}
+ 
+ .licensebox .collapsible-block-content {
+     text-align: center;
+}
+ 
+ .licensebox blockquote,
+ .licensebox div.blockquote {
+     text-align: left;
+}
+
