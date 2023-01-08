@@ -61,8 +61,11 @@ div#container-wrap {
     background: linear-gradient(to bottom, var(--ct_col_searchbox-gradient-4),var(--ct_col_searchbox-gradient-3),var(--ct_col_searchbox-gradient-2));
 }
  
-/* Licensebox */
- 
+/* Credit system */
+.page-rate-widget-box {
+  margin-block-end: 1rem;
+}
+
 .licensebox .collapsible-block-link {
     font-weight: bold;
     opacity: .5;
