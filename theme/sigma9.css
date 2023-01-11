@@ -342,7 +342,7 @@ hr {
     top: -0.2em;
     vertical-align: top;
 }
-div#container-wrap {
+#container-wrap {
     background: url('https://grombald.github.io/Common-Theme/img/body_bg.png') top left repeat-x;
     background-image: var(--ct_bg_header-image);
     -moz-background-size: 100px 400px;
@@ -1471,7 +1471,7 @@ blockquote,
 }
 
 /* Content warning for adult content */
-div#u-adult-warning {
+#u-adult-warning {
     background-color: #e4e4e4;
     border: 3px solid #333;
     color: #333;
@@ -1483,15 +1483,15 @@ div#u-adult-warning {
     width: -moz-fit-content;
     width: fit-content;
 }
-div#u-adult-warning > div#u-adult-header {
+#u-adult-warning > #u-adult-header {
     color: #901;
     font-size: 300%;
     text-shadow: 1px 2px 3px rgba(0 0 0 / .5);
 }
-div#u-adult-warning > div#u-adult-header p {
+#u-adult-warning > #u-adult-header p {
     margin: 0;
 }
-div#u-adult-warning > .error-block {
+#u-adult-warning > .error-block {
     border: unset;
     color: unset;
     margin: unset;
