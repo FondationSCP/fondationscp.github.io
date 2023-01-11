@@ -625,8 +625,6 @@ hr {
     display: inline-flex;
 }
 #top-bar li ul li img {
-        height: -webkit-max-content;
-        height: -moz-max-content;
     height: max-content;
     max-height: 16px;
     max-width: 16px;
@@ -1694,7 +1692,6 @@ blockquote,
     text-align: justify;
 }
 .hyphens {
-    -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
 }
@@ -1828,8 +1825,8 @@ table,
 /* ---------------- #7.1 Basic Query for mobile devices (Up to 767px) ---------------- */
 
 @media (max-width: 767px) {
-    span, a {
-            -ms-hyphens: auto;
+    span,
+    a {
             -webkit-hyphens: auto;
         hyphens: auto;
     }
