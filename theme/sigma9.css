@@ -2189,14 +2189,6 @@ iframe.scpnet-interwiki-frame {
     height: 355px;
     width: var(--ct_dim_side-bar-width, 14rem);
 }
-/* Plus utile ?
-@media (min-width: 768px) {
-    .scpnet-interwiki-frame,
-    .scpnet-interwiki-wrapper {
-        width: 18em;
-    }
-}
-*/
 
 /* ++++++++++++++++ 9.0 Off-page styling ++++++++++++++++ */
 table.page-files .options,
