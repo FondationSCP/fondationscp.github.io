@@ -23,7 +23,7 @@
     --ct_fns_slogan-txt: 0;
 } */
  
-div#container-wrap {
+#container-wrap {
     background-image: url('https://grombald.github.io/Common-Theme/img/int/body_bg_int.png');
     background-image: var(--ct_bg_header-image); 
 }
@@ -63,7 +63,7 @@ div#container-wrap {
  
 /* Credit system */
 .page-rate-widget-box {
-  margin-block-end: 1rem;
+    margin-block-end: 1rem;
 }
 
 .licensebox .collapsible-block-link {
@@ -82,16 +82,16 @@ div#container-wrap {
 }
  
 .licensebox .collapsible-block-folded, .licensebox .collapsible-block-unfolded-link{
-     margin-top: 2em;
-     text-align: center;
+    margin-top: 2em;
+    text-align: center;
 }
  
  .licensebox .collapsible-block-content {
-     text-align: center;
+    text-align: center;
 }
  
  .licensebox blockquote,
  .licensebox div.blockquote {
-     text-align: left;
+    text-align: left;
 }
 
