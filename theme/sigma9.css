@@ -2280,7 +2280,7 @@ a.button:focus,
     font-family: monospace;
 }
 
-/* Icônes de liens */
+/* Link icons - CURRENTLY INACTIVE
 #thread-container .post a::after {
     content: " ";
     background-repeat: no-repeat;
@@ -2353,6 +2353,7 @@ a.button:focus,
     height: 14px;
     margin-left: 0.5px;
 }
+*/
 
 /* Customisations du module user */
 #avatar-hover-container {
