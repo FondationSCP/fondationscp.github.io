@@ -1710,11 +1710,6 @@ div#u-adult-warning > .error-block {
     text-indent: 0;
 }
 
-.curved {
-    border-radius: 10px;
-    margin: 1em 3em;
-}
-
 /* ---------------- #4.7 Colmod ---------------- */
 .colmod-block > ul,
 .colmod-block > ul > li {
@@ -1965,8 +1960,7 @@ table,
 /* ---------------- #7.2 Note Media Query (Up to 580px device width) ---------------- */
 @media (max-width: 580px) {
     blockquote,
-    .blockquote,
-    .curved {
+    .blockquote {
         margin: .5em;
     }
     #header {
@@ -2024,8 +2018,7 @@ table,
         padding: 0;
     }
     blockquote,
-    .blockquote,
-    .curved {
+    .blockquote {
         margin: 1em 0;
     }
     #header {
