@@ -343,7 +343,6 @@ hr {
     vertical-align: top;
 }
 div#container-wrap {
-    /* This is the header background image */
     background: url('https://grombald.github.io/Common-Theme/img/body_bg.png') top left repeat-x;
     background-image: var(--ct_bg_header-image);
     -moz-background-size: 100px 400px;
@@ -353,7 +352,6 @@ div#container-wrap {
 /* ++++++++++++++++ #2.0 Header ++++++++++++++++ */
 
 #header {
-    /* This is the logo in the header */
     background: url('https://grombald.github.io/Common-Theme/img/logo.png') 10px 40px no-repeat;
     background-image: var(--ct_bg_header-logo);
     background-size: 100px 100px;
@@ -640,12 +638,10 @@ div#container-wrap {
     width: 160px !important;
 }
 
-/* Flèche sidebar même couleur que liens */
+/* Sidebar arrow // link color */
 .topbar_arrow, .c_topbar_arrow {
     color: var(--ct_col_topbar-link) !important;
 }
-
-/* Fond flèche sidebar même couleur que fond liens */
 .topbar_arrow, .c_topbar_arrow,
 .topbar_arrow:hover, .c_topbar_arrow:hover {
     background-color: transparent;
@@ -778,7 +774,7 @@ div#container-wrap {
     display: none;
 }
 
-/* Set social media icon size at once */
+/* Social media icons size */
 #side-bar .side-links {
     padding-top: 12px;
     text-align: center;
@@ -830,7 +826,6 @@ div#container-wrap {
 }
 
 /* SVG icons in the sidebar */
-
 #side-bar .collapsible-block-folded .collapsible-block-link::before,
 #side-bar .colmod-link-top a:first-child::before {
     content: "+";
@@ -907,7 +902,7 @@ div#container-wrap {
 
 /* ++++++++++++++++ #4.0 Content area ++++++++++++++++ */
 
-/* Above the content */
+/* Above content */
 #content-wrap {
     max-width: clamp(1070px, 60vw, 1200px);
     height: auto !important;
@@ -1964,22 +1959,6 @@ img, embed, video, object, iframe, table,
         display: block;
         width: 100%;
     }
-    /* Alignement au centre des options de topbar
-    .mobile-top-bar {
-        display: block;
-        width: 100%;
-        display: flex;
-    }
-    #top-bar .mobile-top-bar > ul,
-    #top-bar .mobile-top-bar > ul > li {
-        display: flex;
-        flex-grow: 1;
-        flex-shrink: 1;
-    }
-    #top-bar .mobile-top-bar > ul > li > * {
-        display: block;
-    }
-    */
     #search-top-box {
         top: 104px;
     }
