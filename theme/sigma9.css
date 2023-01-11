@@ -2396,7 +2396,8 @@ a.button:focus,
 
 /* MESSAGES */
 /* Création de compte moins contre-intuitive */
-.login-status-create-account, .login-status-create-account+span  {
+.login-status-create-account,
+.login-status-create-account+span  {
     display: none;
 }
 .login-status-sign-in::after {
@@ -2425,7 +2426,8 @@ sub {
 }
 
 /* Hauteur footnote */
-.footnoteref, #page-content > sup {
+.footnoteref,
+#page-content > sup {
     top: 0;
 }
 
