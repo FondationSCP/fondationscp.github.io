@@ -2419,7 +2419,8 @@ script + div.page-tags:before {
 /* ---------- FIXES  ---------- */
 
 /* Exposants & indices */
-sup, sub {
+sup,
+sub {
     line-height: 100%;
 }
 
