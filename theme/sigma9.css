@@ -1953,7 +1953,7 @@ img, embed, video, object, iframe, table,
         max-width: 90%;
     }
     .top-bar {
-        display:none;
+        display: none;
     }
     .mobile-top-bar {
         display: block;
