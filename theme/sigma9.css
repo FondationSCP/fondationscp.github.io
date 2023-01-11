@@ -873,8 +873,6 @@ div#container-wrap {
     filter: drop-shadow(1px 1px 1px rgba(0 0 0 / .25));
     margin-left: -16px;
     margin-right: 1px;
-    /*left: 11px;
-    position: absolute;*/
     text-align: center;
     width: 15px;
 }
@@ -1189,7 +1187,7 @@ table.page-files tr.highlight td:not(:last-child) {
     line-height: normal;
 }
 
-/* Lighten colors of quotes and codeboxes in tabs*/
+/* Lighten colors of quote and codeboxes in tabs*/
 .yui-content blockquote,
 .yui-content .blockquote,
 .yui-content .code {
@@ -1434,7 +1432,7 @@ table.wiki-content-table th {
 }
 
 
-/* Blockquotes and fake Blockquotes */
+/* Blockquotes and fake blockquotes */
 blockquote,
 .blockquote,
 .borderless-tabs .yui-content blockquote {
@@ -1799,8 +1797,8 @@ li.folded > .colmod-content {
 ::-webkit-scrollbar {
     border: solid 1px rgba(0, 0, 0, .1);
     border-radius: .5px;
-    height: 9px;/* horizontal scrollbars */
-    width: 9px;/* vertical scrollbars */
+    height: 9px;
+    width: 9px;
 }
 ::-webkit-scrollbar-track {
     background: rgba(0 0 0 / .1);
