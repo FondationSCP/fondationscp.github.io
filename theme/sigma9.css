@@ -2360,7 +2360,7 @@ sup, sub {
 }
 
 /* Hauteur footnote */
-.footnoteref, #page-content>sup {
+.footnoteref, #page-content > sup {
     top: 0;
 }
 
