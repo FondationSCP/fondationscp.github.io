@@ -471,7 +471,7 @@ div#container-wrap {
     cursor: pointer;
     font-size: 90%;
     font-weight: bold;
-    padding: 2px 5px;
+    padding: 0.125rem 0.25rem;
 }
 #search-top-box-form input[type=submit]:hover,
 #search-top-box-form input[type=submit]:focus {
