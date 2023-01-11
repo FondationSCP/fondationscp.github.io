@@ -447,10 +447,10 @@ div#container-wrap {
 #search-top-box {
     position: absolute;
     right: 9px;
-    text-align: right;
     top: 79px;
     width: -moz-fit-content;
     width: fit-content;
+    text-align: right;
 }
 #search-top-box-input {
     display: none;
@@ -485,16 +485,16 @@ div#container-wrap {
 
 /* ---------------- #2.3 Topbar ---------------- */
 #top-bar {
-    font-size: 90%;
-    height: 21px;
-    line-height: 18px;
-    margin: 0 auto;
-    max-width: 980px;
-    padding: 0;
     position: absolute;
     top: 140px;
-    width: 100%;
     z-index: 20;
+    width: 100%;
+    height: 21px;
+    max-width: 980px;
+    font-size: 90%;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 18px;
 }
 #top-bar a {
     background: transparent;
@@ -502,7 +502,6 @@ div#container-wrap {
 }
 #top-bar ul {
     float: right;
-    /* list-style-image: none; /*IE ONLY! IF list-style-image IS SET */
 }
 #top-bar li {
     margin: 0;
