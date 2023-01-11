@@ -599,7 +599,7 @@ div#container-wrap {
     top: 0;
     width: min-content;
 }
-#top-bar div.mobile-top-bar ul li ul li ul {
+#top-bar .mobile-top-bar ul li ul li ul {
     left: 50px;
     top: 19px;
 }
@@ -787,7 +787,7 @@ div#container-wrap {
 }
 
 /* Collapsible sidebar */
-#side-bar div.heading:first-child {
+#side-bar .heading:first-child {
     margin-top: 0;
 }
 #side-bar .collapsible-block {
@@ -1436,7 +1436,7 @@ table.wiki-content-table th {
 
 /* Blockquotes and fake Blockquotes */
 blockquote,
-div.blockquote,
+.blockquote,
 .borderless-tabs .yui-content blockquote {
     border: var(--ct_brd_blockquote, 1px dashed #999);
     background-color: var(--ct_col_blockquote-bg, #f4f4f4);
@@ -1502,14 +1502,14 @@ div#u-adult-warning > .error-block {
 }
 
 /* Sexy-Box */
-div.sexy-box {
+.sexy-box {
     background-color: #eee;
     border: 1px solid #ccc;
     margin: 7px 4px 12px;
     overflow: hidden;
     padding: 0 10px 12px;
 }
-div.sexy-box div.image-container img {
+.sexy-box .image-container img {
     border: 1px solid #999;
     margin: 5px;
     padding: 2px;
@@ -1710,7 +1710,7 @@ div.sexy-box div.image-container img {
     text-indent: 0;
 }
 
-div.curved {
+.curved {
     border-radius: 10px;
     margin: 1em 3em;
 }
@@ -1748,7 +1748,7 @@ li.folded > .colmod-content {
     }
 }
 
-[class|="colmod-link"] div.foldable-list-container {
+[class|="colmod-link"] .foldable-list-container {
     display: inline;
 }
 .colmod-collapsiblealt > [class|="colmod-link"],
@@ -1965,8 +1965,8 @@ table,
 /* ---------------- #7.2 Note Media Query (Up to 580px device width) ---------------- */
 @media (max-width: 580px) {
     blockquote,
-    div.blockquote,
-    div.curved {
+    .blockquote,
+    .curved {
         margin: .5em;
     }
     #header {
@@ -2000,7 +2000,7 @@ table,
     #page-content div table {
         clear: both;
     }
-    #page-content div.title {
+    #page-content .title {
         word-break: keep-all;
     }
     .content-panel.left-column,
@@ -2024,8 +2024,8 @@ table,
         padding: 0;
     }
     blockquote,
-    div.blockquote,
-    div.curved {
+    .blockquote,
+    .curved {
         margin: 1em 0;
     }
     #header {
@@ -2180,7 +2180,7 @@ table,
 }
 
 /* ++++++++++++++++ 8.0 Interwiki module ++++++++++++++++ */
-div.scpnet-interwiki-wrapper {
+.scpnet-interwiki-wrapper {
     margin-left: -5px;
     width: var(--ct_dim_side-bar-width, 14rem);
 }
@@ -2408,7 +2408,7 @@ a.button:focus,
     content: " Si vous pensez que cette erreur n'est pas normale, vous pouvez venir nous voir sur Discord."
 }
 /* Notice d'info affichage pubs */
-script + div.page-tags:before {
+script + .page-tags:before {
     color: #888;
     content: "Connectez-vous à votre compte pour ne plus voir de publicités";
     display: block;
