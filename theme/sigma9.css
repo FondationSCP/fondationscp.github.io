@@ -668,7 +668,8 @@ div#container-wrap {
 }
 #interwiki .side-block {
 	margin: 5px;
-}#side-bar .side-block,
+}
+#side-bar .side-block,
 #interwiki .side-block {
     background: var(--ct_bg_sidebar-default, #fff);
     border: var(--ct_brd_sidebar-elements, 1px solid #600);
@@ -1326,9 +1327,18 @@ table.wiki-content-table th {
 
 /* White-paper */
 
-.white-paper h1, .white-paper .h1, .white-paper h2, .white-paper .h2, .white-paper h3, .white-paper .h3, .white-paper h4, .white-paper .h4, .white-paper h5, .white-paper .h5, .white-paper h6, .white-paper .h6,
-.white-paper .wp_title, .white-paper .wp_sub-title, .white-paper .wp_section-title, .wp_sheet .toc-title,
-.white-paper .col-title .collapsible-block-link, .white-paper .col-title .foldable-list-container {
+.white-paper h1,
+.white-paper h2,
+.white-paper h3,
+.white-paper h4,
+.white-paper h5,
+.white-paper h6,
+.white-paper .wp_title,
+.white-paper .wp_sub-title,
+.white-paper .wp_section-title,
+.wp_sheet .toc-title,
+.white-paper .col-title .collapsible-block-link,
+.white-paper .col-title .foldable-list-container {
     font-family: var(--ct_fnt_white-paper-titles, 'Andale Mono', 'Courier New', Courier, monospace);
 }
 
@@ -1583,10 +1593,19 @@ div.sexy-box div.image-container img {
 }
 
 /* Utility and shortcut classes */
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
     font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
 }
-.h2, .h3, .h4, .h5, .h6 {
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
     letter-spacing: 1px;
     margin: .5em 0 .4em;
     padding: 0;
@@ -1797,8 +1816,14 @@ li.folded > .colmod-content {
 
 /* ++++++++++++++++ #7.0 Responsive Web Design ++++++++++++++++ */
 
-img, embed, video, object, iframe, table,
-#page-content div, #page-content div table {
+img,
+embed,
+video,
+object,
+iframe,
+table,
+#page-content div,
+#page-content div table {
     max-width: 100%;
 }
 
@@ -1904,7 +1929,8 @@ img, embed, video, object, iframe, table,
     .page-history tbody tr td:last-child {
         width: 35%;
     }
-    .modal-body .table, .modal-body .table ~ div {
+    .modal-body .table,
+    .modal-body .table ~ div {
         float: left;
     }
     .owindow {
@@ -1924,7 +1950,8 @@ img, embed, video, object, iframe, table,
     .yui-navset {
         z-index: 1;
     }
-    #navi-bar, #navi-bar-shadow {
+    #navi-bar,
+    #navi-bar-shadow {
         display: none;
     }
     td.name {
@@ -1946,7 +1973,8 @@ img, embed, video, object, iframe, table,
         background-position: .5em 4.5em;
         background-size: 66px 66px;
     }
-    #header h1, #header h2 {
+    #header h1,
+    #header h2 {
         margin-left: 80px;
     }
     #header {
@@ -1968,13 +1996,15 @@ img, embed, video, object, iframe, table,
     #main-content {
         margin: 0 2em 0 2em;
     }
-    #page-content div, #page-content div table {
+    #page-content div,
+    #page-content div table {
         clear: both;
     }
     #page-content div.title {
         word-break: keep-all;
     }
-    .content-panel.left-column, .content-panel.right-column  {
+    .content-panel.left-column,
+    .content-panel.right-column  {
         float: left;
         width: 99%;
     }
@@ -1988,7 +2018,8 @@ img, embed, video, object, iframe, table,
 
 /* ---------------- #7.3 Mobile Media Query (Up to 479px device width) ---------------- */
 @media (max-width: 479px) {
-    table.form td, table.form th {
+    table.form td,
+    table.form th {
         float: left;
         padding: 0;
     }
@@ -2001,7 +2032,8 @@ img, embed, video, object, iframe, table,
         background-position: 0 5.5em;
         background-size: 55px 55px;
     }
-    #header h1, #header h2 {
+    #header h1,
+    #header h2 {
         margin-left: 66px;
     }
     #main-content {
@@ -2033,16 +2065,15 @@ img, embed, video, object, iframe, table,
     #header {
         background-position: 2% 5.5em;
     }
-
-    #header h1, #header h2 {
+    #header h1,
+    #header h2 {
         margin-left: calc(66px + 5%);
     }
-
-    #header, #top-bar {
+    #header,
+    #top-bar {
         width: 100%;
         max-width: 100%;
     }
-
     #toc {
         display: block;
         float: none !important;
@@ -2060,7 +2091,8 @@ img, embed, video, object, iframe, table,
         background-position: 1em 4em;
         background-size: 77px 77px;
     }
-    #header h1, #header h2 {
+    #header h1,
+    #header h2 {
         margin-left: 93px;
     }
     #header {
@@ -2092,13 +2124,17 @@ img, embed, video, object, iframe, table,
         background-position: 1em 4em;
         background-size: 88px 88px;
     }
-    #header, #top-bar, #side-bar {
+    #header,
+    #top-bar,
+    #side-bar {
         max-width: 100%;
     }
-    #header h1, #header h2 {
+    #header h1,
+    #header h2 {
         margin-left: 106px;
     }
-    #top-bar ul li.sfhover ul li a, #top-bar ul li:hover ul li a {
+    #top-bar ul li.sfhover ul li a,
+    #top-bar ul li:hover ul li a {
         width: 150px;
     }
     .top-bar li {
@@ -2107,10 +2143,12 @@ img, embed, video, object, iframe, table,
     #main-content {
         margin: 0 4em 0 20em;
     }
-    #page-content div, #page-content div table {
+    #page-content div,
+    #page-content div table {
         clear: both;
     }
-    .content-panel.left-column, .content-panel.right-column  {
+    .content-panel.left-column,
+    .content-panel.right-column  {
         float: left;
         width: 99%;
     }
@@ -2161,7 +2199,8 @@ iframe.scpnet-interwiki-frame {
 */
 
 /* ++++++++++++++++ 9.0 Off-page styling ++++++++++++++++ */
-table.page-files .options, a.action-area-close:hover {
+table.page-files .options,
+a.action-area-close:hover {
     background-color: var(--ct_bg_body, #fff);
 }
 .hovertip {
@@ -2177,12 +2216,25 @@ input.text {
 input.text:focus {
     outline: var(--ct_brd_input-outline, 1px solid black);
 }
-div.buttons input, input.button, a.button, .owindow .button-bar a {
+div.buttons input,
+input.button,
+a.button,
+.owindow
+.button-bar a {
     background-color: var(--ct_bg_btn, #f4f4f4);
     color: var(--ct_col_btn, #000);
     border: var(--ct_brd_btn, 1px solid #aaa);
 }
-div.buttons input:hover, input.button:hover, button:hover, a.button:hover, div.buttons input:focus, input.button:focus, button:focus, a.button:focus, .owindow .button-bar a:hover, .owindow .button-bar a:focus {
+div.buttons input:hover,
+input.button:hover,
+button:hover,
+a.button:hover,
+div.buttons input:focus,
+input.button:focus,
+button:focus,
+a.button:focus,
+.owindow .button-bar a:hover,
+.owindow .button-bar a:focus {
     background-color: var(--ct_bg_btn-hover, #ddd);
     color: var(--ct_col_btn-hover);
 }
@@ -2323,12 +2375,24 @@ div.buttons input:hover, input.button:hover, button:hover, a.button:hover, div.b
      1px -1px 0 #000,
      -1px -1px 0 #000;
 }
-.pastille.bleu { color: blue }
-.pastille.vert { color: green }
-.pastille.jaune { color: yellow }
-.pastille.orange { color: orange }
-.pastille.rouge { color: red }
-.pastille.noir { color: black }
+.pastille.bleu {
+    color: blue
+}
+.pastille.vert {
+    color: green
+}
+.pastille.jaune {
+    color: yellow
+}
+.pastille.orange {
+    color: orange
+}
+.pastille.rouge {
+    color: red
+}
+.pastille.noir {
+    color: black
+}
 
 /* MESSAGES */
 /* Création de compte moins contre-intuitive */
