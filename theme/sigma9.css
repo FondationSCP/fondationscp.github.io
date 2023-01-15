@@ -251,7 +251,7 @@ Legend:
     --ct_bg_owindow-header: #f5f5f5;
     --ct_col_owindow-header: var(--ct_col_body-txt);
 
-    /* SVG URLs (stored here not to clutter the rest when line wrap is on) */
+    /* SVG URLs */
     --ct_bg_topbar-home-hover: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cg%20transform%3D%22matrix(3.7795%200%200%203.7795%20-1.4376e-8%20-1114)%22%3E%0A%3Cpath%20d%3D%22m0.39178%20296.54%201.328-1.2608%201.328%201.2608h-0.40197v1.1204h-0.52917v-0.79375h-0.79375v0.79375h-0.52917v-1.1204z%22%20fill%3D%22%23b01%22%20fill-opacity%3D%22.8%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E");
     --ct_bg_topbar-home: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22m1.4807%206.7654%205.0192-4.7652%205.0192%204.7652h-1.5192v4.2346h-2v-3h-3v3h-2v-4.2346z%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.8%22%20stroke-width%3D%223.7795%22%2F%3E%0A%3C%2Fsvg%3E");
     --ct_bg_sidebar-item-default: url("data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%225%22%20y%3D%225%22%20width%3D%223%22%20height%3D%223%22%20fill%3D%22%23b01%22%20fill-opacity%3D%22.8%22%20stroke-width%3D%223.8%22%20style%3D%22paint-order%3Astroke%20markers%20fill%22%2F%3E%0A%3C%2Fsvg%3E%0A");
