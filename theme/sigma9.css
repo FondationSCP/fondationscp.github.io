@@ -77,7 +77,12 @@ Legend:
 */
 
 :root {
-    /* 0 Fluid typescales
+    /* 0.1 Core variables */
+    --accent-1: #b01;
+    --accent-1-darker: #824;
+    --accent-1-lighter: #d61;
+
+    /* 0.2 Fluid typescales
     @link https://utopia.fyi/type/calculator?c=320,21,1.333,1140,20,1.414,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
     --step--2: clamp(0.63rem, calc(0.78rem + -0.22vw), 0.74rem);
     --step--1: clamp(0.88rem, calc(1.02rem + -0.20vw), 0.98rem);
@@ -93,9 +98,9 @@ Legend:
     --ct_col_body-txt: #333;
     --ct_fnt_body: Noto Sans;
     --ct_col_h1-txt: #901;
-    --ct_col_link: #b01;
-    --ct_col_link-visited: #824;
-    --ct_col_link-newpage: #d61;
+    --ct_col_link: var(--accent-1, #b01);
+    --ct_col_link-visited: var(--accent-1-darker, #824);
+    --ct_col_link-newpage: var(--accent-1-lighter, #d61);
     --ct_col_hr: #aaa;
 
     /* 2 Header */
