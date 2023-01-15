@@ -88,28 +88,6 @@ Legend:
     --step-4: clamp(4.14rem, calc(3.81rem + 1.66vw), 5.00rem);
     --step-5: clamp(5.52rem, calc(4.92rem + 3.01vw), 7.07rem);
 
-    /* 0.2 Fluid spaces
-    https://utopia.fyi/space/calculator?c=320,21,1.333,1140,20,1.414,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
-    --space-3xs: clamp(0.31rem, calc(0.31rem + 0.00vw), 0.31rem);
-    --space-2xs: clamp(0.69rem, calc(0.71rem + -0.12vw), 0.63rem);
-    --space-xs: clamp(1.00rem, calc(1.02rem + -0.12vw), 0.94rem);
-    --space-s: clamp(1.31rem, calc(1.34rem + -0.12vw), 1.25rem);
-    --space-m: clamp(2.00rem, calc(2.05rem + -0.24vw), 1.88rem);
-    --space-l: clamp(2.63rem, calc(2.67rem + -0.24vw), 2.50rem);
-    --space-xl: clamp(3.94rem, calc(4.01rem + -0.37vw), 3.75rem);
-    --space-2xl: clamp(5.25rem, calc(5.35rem + -0.49vw), 5.00rem);
-    --space-3xl: clamp(7.88rem, calc(8.02rem + -0.73vw), 7.50rem);
-
-    /* One-up pairs */
-    --space-3xs-2xs: clamp(0.31rem, calc(0.19rem + 0.61vw), 0.63rem);
-    --space-2xs-xs: clamp(0.69rem, calc(0.59rem + 0.49vw), 0.94rem);
-    --space-xs-s: clamp(1.00rem, calc(0.90rem + 0.49vw), 1.25rem);
-    --space-s-m: clamp(1.31rem, calc(1.09rem + 1.10vw), 1.88rem);
-    --space-m-l: clamp(2.00rem, calc(1.80rem + 0.98vw), 2.50rem);
-    --space-l-xl: clamp(2.63rem, calc(2.19rem + 2.20vw), 3.75rem);
-    --space-xl-2xl: clamp(3.94rem, calc(3.52rem + 2.07vw), 5.00rem);
-    --space-2xl-3xl: clamp(5.25rem, calc(4.37rem + 4.39vw), 7.50rem);
-
     /* 1 Common */
     --ct_bg_body: #fff;
     --ct_col_body-txt: #333;
