@@ -1,8 +1,8 @@
 @import url('https://fondationscp.github.io/theme/sigma9.min.css');
 
 :root {
-  --ct_bg_header-image: url(https://fondationscp.github.io/theme/int/images/body_bg.png);
-  --ct_bg_header-logo: url(https://fondationscp.github.io/theme/int/images/logo.png);
+  --ct_bg_header-image: url(https://fondationscp.github.io/theme/int/images/body_bg-sb.png);
+  --ct_bg_header-logo: url(https://fondationscp.github.io/theme/int/images/logo-sb.png);
   --ct_col_searchbox-gradient-1: #063830;
   --ct_col_searchbox-gradient-2: #126657;
   --ct_col_searchbox-gradient-3: #228977;
@@ -10,11 +10,11 @@
 }
 
 #container-wrap {
-  background-image: var(--ct_bg_header-image, url(https://fondationscp.github.io/theme/int/images/body_bg.png))
+  background-image: var(--ct_bg_header-image, url(https://fondationscp.github.io/theme/int/images/body_bg-sb.png))
 }
 
 #header {
-  background-image: var(--ct_bg_header-logo, url(https://fondationscp.github.io/theme/int/images/logo.png))
+  background-image: var(--ct_bg_header-logo, url(https://fondationscp.github.io/theme/int/images/logo-sb.png))
 }
 
 #search-top-box-form input[type=submit] {
