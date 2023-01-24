@@ -1,6 +1,7 @@
 @import url('https://fondationscp.github.io/theme/sigma9.min.css');
  
-/* Common Theme INT-Edition - CC BY-SA 3.0 - by Dr_Grom. See http://o5command-int.wikidot.com/tech-team:common-theme for more info. */
+/* Common Theme INT Edition - CC BY-SA 3.0 - by Dr_Grom */
+
 :root {
     --ct_bg_header-image: url('https://grombald.github.io/Common-Theme/img/int/body_bg_int.png');
     --ct_bg_header-image: url('https://grombald.github.io/Common-Theme/svg/body_bg_int.svg');
@@ -12,17 +13,7 @@
     --ct_col_searchbox-gradient-3: #2b4a6c;
     --ct_col_searchbox-gradient-4: #38628f;
 }
- 
-/* Site name media query
-@media only screen and (max-width: 960px) {
-    --ct_cnt_alt-header-txt: "SCP International";
-    --ct_cnt_alt-slogan-txt: "";
-    --ct_fns_alt-header-txt: var(--step-2, clamp(2.27rem, calc(1.77rem + 2.47vw), 3.53rem));
-    --ct_fns_alt-slogan-txt: var(--step--1, clamp(0.88rem, calc(1.02rem + -0.20vw), 0.98rem));
-    --ct_fns_header-txt: 0;
-    --ct_fns_slogan-txt: 0;
-} */
- 
+  
 #container-wrap {
     background-image: url('https://grombald.github.io/Common-Theme/img/int/body_bg_int.png');
     background-image: var(--ct_bg_header-image); 
