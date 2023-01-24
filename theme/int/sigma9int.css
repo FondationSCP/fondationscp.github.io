@@ -77,12 +77,11 @@
     text-align: center;
 }
  
- .licensebox .collapsible-block-content {
+.licensebox .collapsible-block-content {
     text-align: center;
 }
  
- .licensebox blockquote,
- .licensebox div.blockquote {
+.licensebox blockquote,
+.licensebox div.blockquote {
     text-align: left;
 }
-
