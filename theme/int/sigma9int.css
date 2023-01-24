@@ -5,7 +5,6 @@
 :root {
     --ct_bg_header-image: url("https://fondationscp.github.io/theme/int/images/body_bg.svg");
     --ct_bg_header-logo: url("https://fondationscp.github.io/theme/int/images/logo.svg");
- 
     --ct_col_searchbox-gradient-1: #0f1a25;
     --ct_col_searchbox-gradient-2: #1e354c;
     --ct_col_searchbox-gradient-3: #2b4a6c;
@@ -39,8 +38,6 @@
     opacity: .5;
     color: inherit;
     font-size: 0.85em;
-    -webkit-transition: opacity .5s ease-in-out;
-    -moz-transition: opacity .5s ease-in-out;
     transition: opacity .5s ease-in-out;
 }
  
