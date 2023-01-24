@@ -1,0 +1,27 @@
+:root {
+  --ct_bg_header-image: url(https://fondationscp.github.io/theme/int/images/body_bg.png);
+  --ct_bg_header-logo: url(https://fondationscp.github.io/theme/int/images/logo.png);
+  --ct_col_searchbox-gradient-1: #063830;
+  --ct_col_searchbox-gradient-2: #126657;
+  --ct_col_searchbox-gradient-3: #228977;
+  --ct_col_searchbox-gradient-4: #2B9885
+}
+
+#container-wrap {
+  background-image: var(--ct_bg_header-image, url(https://fondationscp.github.io/theme/int/images/body_bg.png))
+}
+
+#header {
+  background-image: var(--ct_bg_header-logo, url(https://fondationscp.github.io/theme/int/images/logo.png))
+}
+
+#search-top-box-form input[type=submit] {
+  background-color: var(--ct_col_searchbox-gradient-2, #126657);
+  background: linear-gradient(to bottom, var(--ct_col_searchbox-gradient-3, #228977), var(--ct_col_searchbox-gradient-2, #126657), var(--ct_col_searchbox-gradient-1, #126657))
+}
+
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+  background-color: var(--ct_col_searchbox-gradient-3, #228977);
+  background: linear-gradient(to bottom, var(--ct_col_searchbox-gradient-4, #2B9885), var(--ct_col_searchbox-gradient-3, #228977), var(--ct_col_searchbox-gradient-2, #126657))
+}
