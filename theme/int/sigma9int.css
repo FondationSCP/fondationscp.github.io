@@ -20,12 +20,12 @@
  
 #search-top-box-form input[type=submit] {
     background-color: var(--ct_col_searchbox-gradient-2, #1e354c);
-    background: linear-gradient(to bottom, var(--ct_col_searchbox-gradient-3, #2b4a6c),var(--ct_col_searchbox-gradient-2, #1e354c),var(--ct_col_searchbox-gradient-1, #0f1a25));
+    background-image: linear-gradient(to bottom, var(--ct_col_searchbox-gradient-3, #2b4a6c),var(--ct_col_searchbox-gradient-2, #1e354c),var(--ct_col_searchbox-gradient-1, #0f1a25));
 }
 #search-top-box-form input[type=submit]:hover,
 #search-top-box-form input[type=submit]:focus {
     background-color: var(--ct_col_searchbox-gradient-3, #2b4a6c);
-    background: linear-gradient(to bottom, var(--ct_col_searchbox-gradient-4, #38628f),var(--ct_col_searchbox-gradient-3, #2b4a6c),var(--ct_col_searchbox-gradient-2, #1e354c));
+    background-image: linear-gradient(to bottom, var(--ct_col_searchbox-gradient-4, #38628f),var(--ct_col_searchbox-gradient-3, #2b4a6c),var(--ct_col_searchbox-gradient-2, #1e354c));
 }
  
 /* Credit system */
