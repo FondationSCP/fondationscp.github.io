@@ -59,3 +59,14 @@
 .licensebox div.blockquote {
     text-align: left;
 }
+
+/* Translating hardcoded text */
+.login-status-sign-in::after {
+    content: " as a Wikidot user"
+}
+.content.modal-body p:last-of-type::after {
+    content: " If you believe this error is not normal, you can come and ask for help on our official Discord server."
+}
+script + .page-tags:before {
+    content: "Login to your account to hide ads";
+}
