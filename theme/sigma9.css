@@ -2366,12 +2366,12 @@ a.button:focus,
 }
 /* Notice d'info affichage pubs */
 script + .page-tags:before {
-    color: #888;
     content: "Connectez-vous à votre compte pour ne plus voir de publicités";
     display: block;
-    font-size: 77%;
     margin: 1rem 0;
     text-align: center;
+    font-size: 77%;
+    color: #888;
 }
 
 
