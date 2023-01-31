@@ -1902,3 +1902,9 @@ div.inner.shelf div.book::after {
   min-width: min-content;
   text-transform: capitalize;
 }
+
+/* FR UI text compatibility fixes */
+div[id*="page-options-bottom"]:not(.page-rate-widget-box):not(#search-top-box-form) > a.btn:first-of-type,
+div[id*="page-options-bottom"]:not(.page-rate-widget-box):not(#search-top-box-form) > a.btn:nth-of-type(8) {
+  flex-basis: 7rem;
+}
