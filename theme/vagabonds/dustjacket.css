@@ -1153,6 +1153,10 @@ table.wiki-content-table th:last-of-type {
   font-weight: bold;
 }
 
+.footnotes-footer {
+  z-index: -1;
+}
+
 .wlnavbar {
   --text-shadow: rgba(var(--black-monochrome), 0.35);
   --box-shadow: rgb(var(--gray-monochrome));
