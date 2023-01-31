@@ -1154,7 +1154,7 @@ table.wiki-content-table th:last-of-type {
 }
 
 .footnotes-footer {
-  z-index: -1;
+  clear: both;
 }
 
 .wlnavbar {
