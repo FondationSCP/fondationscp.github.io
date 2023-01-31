@@ -1745,6 +1745,26 @@ li.folded > .colmod-content {
     top: -7px;
 }
 
+/* ---------------- #5.0 Support for Asian languages ---------------- */
+/* Ruby by Nanimono Demonai */
+ruby,
+.ruby {
+    display: inline-table;
+    height: 1em;
+    white-space: nowrap;
+    line-height: 1;
+    vertical-align: text-bottom;
+    text-align: center;
+}
+rt,
+.rt {
+    display: table-header-group;
+    font-size: 0.6em;
+    white-space: nowrap;
+    line-height: 1.1;
+    text-align: center;
+}
+
 /* ++++++++++++++++ #6.0 Advanced settings ++++++++++++++++ */
 
 @-webkit-viewport {
