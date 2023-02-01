@@ -125,7 +125,6 @@
 }
 
 @supports (font-variation-settings: inherit) {
-
   *,
   *::before,
   *::after {
