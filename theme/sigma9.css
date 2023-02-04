@@ -282,7 +282,11 @@ h1 {
     margin: 0.7em 0 0.6em;
     padding: 0;
 }
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     letter-spacing: 1px;
     margin: 0.5em 0 0.4em;
     padding: 0;
