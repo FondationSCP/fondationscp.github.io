@@ -726,7 +726,7 @@ hr {
     text-align: left;
 }
 #side-bar .collapsible-block-unfolded-link .collapsible-block-link {
-    font-size: 8pt;
+    font-size: 14px;
     margin-top: 0.6rem;
     margin-bottom: 0.6rem;
     text-align: left;
@@ -762,7 +762,7 @@ hr {
 #side-bar .collapsible-block-link,
 #side-bar .collapsible-block-unfolded-link .collapsible-block-link {
     color: var(--ct_col_sidebar-elements, #600);
-    font-size: 9pt;
+    font-size: 14px;
 }
 #side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover,
 #side-bar .collapsible-block-link:hover {
@@ -777,7 +777,7 @@ hr {
 }
 #side-bar .colmod-link-top a {
     color: var(--ct_col_sidebar-elements, #600);
-    font-size: 9pt;
+    font-size: 14px;
     font-weight: bold;
     padding-left: 0.9rem;
 }
