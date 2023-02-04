@@ -1824,7 +1824,7 @@ table,
 @media (max-width: 767px) {
     span,
     a {
-            -webkit-hyphens: auto;
+        -webkit-hyphens: auto;
         hyphens: auto;
     }
     #main-content {
