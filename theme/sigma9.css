@@ -557,22 +557,6 @@ hr {
     z-index: 0;
 }
 
-/* Homebutton in Topbar */
-#top-bar ul li a.homebutton {
-    background: url('https://grombald.github.io/Common-Theme/img/home_fff.png') center 5px no-repeat;
-    background-image: var(--ct_bg_topbar-home);
-    background-size: 13px 13px;
-    color: transparent;
-    padding: 0.6rem 0.5rem;
-}
-#top-bar ul li a.homebutton:hover {
-    background: url('https://grombald.github.io/Common-Theme/img/home.png') center 5px no-repeat, #eee;
-    background-color: var(--ct_bg_topbar-item-highlight);
-    background-image: var(--ct_bg_topbar-home-hover);
-    background-size: 13px 13px;
-    color: transparent;
-}
-
 /* Nested Topbar */
 #top-bar ul li ul li ul {
     border: var(--ct_brd_topbar-menu, solid 1px #666);
