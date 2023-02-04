@@ -419,7 +419,7 @@ hr {
     color: var(--ct_col_account-submenu-link-hover);
 }
 .printuser img.small {
-    margin-right: 1px;
+    margin-right: 0.06rem;
 }
 
 /* ---------------- #2.2 Search box ---------------- */
@@ -563,7 +563,7 @@ hr {
     background-image: var(--ct_bg_topbar-home);
     background-size: 13px 13px;
     color: transparent;
-    padding: 10px 8px;
+    padding: 0.6rem 0.5rem;
 }
 #top-bar ul li a.homebutton:hover {
     background: url('https://grombald.github.io/Common-Theme/img/home.png') center 5px no-repeat, #eee;
@@ -646,7 +646,7 @@ hr {
     width: var(--ct_dim_side-bar-width, 14rem);
 }
 #interwiki .side-block {
-	margin: 5px;
+	margin: 0.3rem;
 }
 #side-bar .side-block,
 #interwiki .side-block {
@@ -681,9 +681,9 @@ hr {
     color: var(--ct_col_sidebar-elements, #600);
     font-size: 0.8em;
     font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding-left: 15px;
+    margin-top: 0.6rem;
+    margin-bottom: 0.3rem;
+    padding-left: 0.9rem;
 }
 #side-bar p,
 #interwiki p {
@@ -691,16 +691,16 @@ hr {
 }
 #side-bar .menu-item,
 #interwiki .menu-item {
-    margin: 2px 0;
-    padding-left: 15px;
+    margin: 0.13rem 0;
+    padding-left: 0.9rem;
 }
 #side-bar .menu-item img,
 #interwiki .menu-item img {
     bottom: -2px;
     border: 0;
     height: 13px;
-    margin-left: -15px;
-    margin-right: 2px;
+    margin-left: -0.9rem;
+    margin-right: 0.13rem;
     position: relative;
     width: 13px;
 }
@@ -709,7 +709,7 @@ hr {
     font-weight: bold;
 }
 #side-bar .menu-item a img {
-    padding: 0 7px;
+    padding: 0 0.5rem;
 }
 #side-bar .menu-item.inactive img {
     opacity: 25%;
@@ -730,10 +730,10 @@ hr {
 }
 #side-bar ul {
     list-style-type: none;
-    padding: 0 5px 0;
+    padding: 0 0.5rem 0;
 }
 #side-bar .collapsible-block-link {
-    margin-left: 15px;
+    margin-left: 0.9rem;
     font-weight: bold;
     text-align: left;
 }
@@ -743,8 +743,8 @@ hr {
 }
 #side-bar .collapsible-block-unfolded-link .collapsible-block-link {
     font-size: 8pt;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
     text-align: left;
 }
 #side-bar .collapsible-block-folded {
@@ -756,12 +756,12 @@ hr {
 
 /* Social media icons size */
 #side-bar .side-links {
-    padding-top: 12px;
+    padding-top: 0.8rem;
     text-align: center;
 }
 #side-bar .side-links img {
     height: var(--ct_dim_sidebar-link-images, 30px);
-    padding: 0 1px;
+    padding: 0 0.06rem;
     width: var(--ct_dim_sidebar-link-images, 30px);
 }
 
@@ -770,7 +770,7 @@ hr {
     margin-top: 0;
 }
 #side-bar .collapsible-block {
-    margin-top: 10px;
+    margin-top: 0.6rem;
 }
 #side-bar .collapsible-block:first-child {
     margin: 0;
@@ -788,14 +788,14 @@ hr {
 
 /* Colmod in the sidebar */
 #side-bar .colmod-block ul {
-    margin-top: 10px;
+    margin-top: 0.6rem;
     padding: 0;
 }
 #side-bar .colmod-link-top a {
     color: var(--ct_col_sidebar-elements, #600);
     font-size: 9pt;
     font-weight: bold;
-    padding-left: 15px;
+    padding-left: 0.9rem;
 }
 #side-bar .colmod-link-top a:hover {
     color: var(--ct_col_link, #b01);
@@ -850,8 +850,8 @@ hr {
     color: transparent;
     display: inline-block;
     filter: drop-shadow(1px 1px 1px rgba(0 0 0 / 25%));
-    margin-left: -16px;
-    margin-right: 1px;
+    margin-left: -1rem;
+    margin-right: 0.06rem;
     text-align: center;
     width: 15px;
 }
@@ -862,8 +862,8 @@ hr {
     clear: both;
     color: var(--ct_col_footer-txt, #bbb);
     font-size: 77%;
-    margin-top: 15px;
-    padding: 3px 10px;
+    margin-top: 0.9rem;
+    padding: 0.19rem 0.6rem;
 }
 #footer .options {
     display: block;
@@ -929,7 +929,7 @@ hr {
 }
 
 .page-history tr td:nth-child(2) input {
-    margin: 2px;
+    margin: 0.13rem;
 }
 
 .page-source {
@@ -984,8 +984,8 @@ table.page-files tr.highlight td:not(:last-child) {
 .page-rate-widget-box .ratedown a {
     background: transparent;
     color: var(--ct_col_rate-primary, #633);
-    margin: 0 1px;
-    padding: 0 4px;
+    margin: 0 0.06rem;
+    padding: 0 0.3rem;
 }
 .page-rate-widget-box .rateup a:hover,
 .page-rate-widget-box .ratedown a:hover {
@@ -1045,7 +1045,7 @@ table.page-files tr.highlight td:not(:last-child) {
     border: var(--ct_brd_rate-primary, 1px solid #633);
     border-radius: var(--ct_dim_rate-border-radius, 5px);
     box-shadow: 1px 1px 3px rgba(0 0 0 / 50%);
-    margin-left: 5px;
+    margin-left: 0.3rem;
     font-size: 0.8em;
 }
 .creditButton a {
@@ -1124,12 +1124,12 @@ table.page-files tr.highlight td:not(:last-child) {
     font-size: 80%;
     font-weight: bold;
     text-align: center;
-    padding: 2px 0;
+    padding: 0.13rem 0;
     width: 300px;
 }
 .scp-image-block .scp-image-caption > p {
     margin: 0;
-    padding: 0 10px;
+    padding: 0 0.6rem;
 }
 
 /* ---------------- #4.3 Tabview (YUI-Tabs) ---------------- */
@@ -1384,7 +1384,7 @@ table.wiki-content-table th {
     border: var(--ct_brd_white-paper-toc, solid 1px #ccc);
     border-radius: 10px;
     box-shadow: inset 1px 2px 4px rgba(0 0 0 / 15%);
-    margin: 4px 0 5px 20px;
+    margin: 0.3rem 0 0.3rem 1.3rem;
     white-space: nowrap;
 }
 .wp_sheet .toc-title {
@@ -1482,14 +1482,14 @@ blockquote,
 .sexy-box {
     background-color: #eee;
     border: 1px solid #ccc;
-    margin: 7px 4px 12px;
+    margin: 0.5rem 0.3rem 0.8rem;
     overflow: hidden;
-    padding: 0 10px 12px;
+    padding: 0 0.6rem 0.8rem;
 }
 .sexy-box .image-container img {
     border: 1px solid #999;
-    margin: 5px;
-    padding: 2px;
+    margin: 0.3rem;
+    padding: 0.13rem;
 }
 
 /* Keycap */
@@ -1501,7 +1501,7 @@ blockquote,
     border-radius: 3px;
     font-family: inherit;
     font-size: 0.85em;
-    padding: 1px 3px;
+    padding: 0.06rem 0.19rem;
     white-space: nowrap;
 }
 
@@ -1515,8 +1515,8 @@ blockquote,
     font-size: 11px;
     height: 13px;
     line-height: 13px;
-    margin: 0 0 0 5px;
-    padding: 3px 5px 3px 0;
+    margin: 0 0 0 0.3rem;
+    padding: 0.19rem 0.3rem 0.19rem 0;
     text-decoration: none;
 }
 .tags::before {
@@ -1527,7 +1527,7 @@ blockquote,
     float: left;
     height: 0;
     left: -10px;
-    padding: 0 1px 3px 1px;
+    padding: 0 0.06rem 0.19rem 0.06rem;
     position: relative;
     top: -3px;
     width: 0;
@@ -2170,7 +2170,7 @@ table,
 
 /* ++++++++++++++++ 8.0 Interwiki module ++++++++++++++++ */
 .scpnet-interwiki-wrapper {
-    margin-left: -5px;
+    margin-left: -0.3rem;
     width: var(--ct_dim_side-bar-width, 14rem);
 }
 iframe.scpnet-interwiki-frame {
@@ -2301,7 +2301,7 @@ a.button:focus,
     background-size: 15px;
     width: 14px;
     height: 14px;
-    margin-left: 1px;
+    margin-left: 0.06rem;
 }
 #thread-container .post a[href^="http://commandemento5.wikidot.com"]::after {
     background-image: url(http://fondationscp.wdfiles.com/local--files/component%3Atheme/o5.svg);
