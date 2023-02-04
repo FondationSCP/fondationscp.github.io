@@ -376,20 +376,20 @@ hr {
     padding: 0;
 }
 #header h2 span {
-    color: var(--ct_col_slogan-txt, #f0f0c0);
     display: block;
-    font-size: var(--ct_fns_slogan-txt, clamp(0.88rem, calc(1.02rem + -0.20vw), 0.98rem));
-    font-weight: bold;
-    line-height: 0;
     margin: 0;
     max-height: 0;
     padding: 19px 0;
+    line-height: 0;
+    color: var(--ct_col_slogan-txt, #f0f0c0);
+    font-size: var(--ct_fns_slogan-txt, clamp(0.88rem, calc(1.02rem + -0.20vw), 0.98rem));
+    font-weight: bold;
     text-shadow: var(--ct_shd_slogan-txt, 1px 1px 1px rgba(0 0 0 / .8));
 }
 #header h2 span::before {
     content: var(--ct_cnt_alt-slogan-txt);
-    color: var(--ct_col_alt-slogan-txt);
     font-size: var(--ct_fns_alt-slogan-txt);
+    color: var(--ct_col_alt-slogan-txt);
 }
 
 /* ---------------- #2.1 Account menu ---------------- */
