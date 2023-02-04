@@ -67,7 +67,7 @@
   --sidebar-width-on-desktop: calc((var(--base-font-size) * (14 / 15)) * 19);
 
   /* FR Credit module compatibility */
-  --ct_col_rate-primary : linear-gradient(to top, rgba(var(--swatch-menubg-dark-color), 1) 0, rgba(var(--swatch-menubg-medium-color), 1) 100%);
+  --ct_col_rate-primary: linear-gradient(to top, rgba(var(--swatch-menubg-dark-color), 1) 0, rgba(var(--swatch-menubg-medium-color), 1) 100%);
 }
 
 #header {
