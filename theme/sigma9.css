@@ -108,7 +108,7 @@ Legend:
     --ct_col_header-txt: #eee;
     --ct_col_slogan-txt: #f0f0c0;
     --ct_shd_header-txt: 3px 3px 5px #000;
-    --ct_shd_slogan-txt: 1px 1px 1px rgba(0 0 0 / .8);
+    --ct_shd_slogan-txt: 1px 1px 1px rgba(0 0 0 / 80%);
     --ct_fns_header-txt: var(--step-2, clamp(2.27rem, calc(1.77rem + 2.47vw), 3.53rem));
     --ct_fns_slogan-txt: var(--step--1, clamp(0.88rem, calc(1.02rem + -0.20vw), 0.98rem));
 
@@ -138,7 +138,7 @@ Legend:
     --ct_bg_topbar-item-highlight: #fff;
     --ct_brd_topbar-menu: solid 1px #666;
     --ct_brd_topbar-menu-hover: solid 1px #ddd;
-    --ct_brd_topbar-item: solid 1px rgba(64 64 64 / .1);
+    --ct_brd_topbar-item: solid 1px rgba(64 64 64 / 10%);
     --ct_brd_topbar-item-hover: solid 1px rgba(64 64 64 / 1);
     --ct_bg_topbar-home: url('https://grombald.github.io/Common-Theme/img/home_fff.png');
     --ct_bg_topbar-home: url('https://grombald.github.io/Common-Theme/svg/home_fff.svg');
@@ -227,7 +227,7 @@ Legend:
     --ct_brd_m_sidebar: 1px solid #dedede;
     --ct_brd_m_sidebar-right: 1px solid #936b6b;
     --ct_col_m_sidebar-button-bg: #fff;
-    --ct_brd_m_sidebar-button: .2em solid #888;
+    --ct_brd_m_sidebar-button: 0.2em solid #888;
     --ct_shd_m_sidebar-button: 0 0 20px 3px rgb(153 153 153);
 
     /* 9 Off-page styling */
@@ -279,12 +279,12 @@ body {
 h1 {
     color: var(--ct_col_h1-txt, #901);
     font-weight: bold;
-    margin: .7em 0 .6em;
+    margin: 0.7em 0 0.6em;
     padding: 0;
 }
 h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
-    margin: .5em 0 .4em;
+    margin: 0.5em 0 0.4em;
     padding: 0;
 }
 a {
@@ -353,7 +353,7 @@ hr {
     font-family: Sans-Normalcy, Arial, sans-serif;
     font-family: var(--ct_fnt_header-txt, Sans-Normalcy, Arial, sans-serif);
     font-size: var(--ct_fns_header-txt, clamp(2.27rem, calc(1.77rem + 2.47vw), 3.53rem));
-    letter-spacing: .9px;
+    letter-spacing: 0.9px;
     line-height: 0;
     margin: 0;
     max-height: 0;
@@ -384,7 +384,7 @@ hr {
     color: var(--ct_col_slogan-txt, #f0f0c0);
     font-size: var(--ct_fns_slogan-txt, clamp(0.88rem, calc(1.02rem + -0.20vw), 0.98rem));
     font-weight: bold;
-    text-shadow: var(--ct_shd_slogan-txt, 1px 1px 1px rgba(0 0 0 / .8));
+    text-shadow: var(--ct_shd_slogan-txt, 1px 1px 1px rgba(0 0 0 / 80%));
 }
 #header h2 span::before {
     content: var(--ct_cnt_alt-slogan-txt);
@@ -405,7 +405,7 @@ hr {
 #account-options {
     background-color: var(--ct_col_account-submenu-bg);
     border: var(--ct_brd_account-submenu);
-    box-shadow: 0 2px 6px rgba(0 0 0 / .5);
+    box-shadow: 0 2px 6px rgba(0 0 0 / 50%);
 }
 #account-options li a {
     background: transparent;
@@ -441,7 +441,7 @@ hr {
     background: linear-gradient(to bottom, var(--ct_col_searchbox-gradient-3, #966),var(--ct_col_searchbox-gradient-2, #633),var(--ct_col_searchbox-gradient-1, #300));
     border: var(--ct_brd_searchbox-border, solid 1px #999);
     border-radius: var(--ct_dim_searchbox-border-radius, 5px);
-    box-shadow: 0 1px 3px rgba(0 0 0 / .5);
+    box-shadow: 0 1px 3px rgba(0 0 0 / 50%);
     color: var(--ct_col_searchbox-txt, #ccc);
     cursor: pointer;
     font-size: 90%;
@@ -453,9 +453,9 @@ hr {
     background-color: var(--ct_col_searchbox-gradient-3, #966);
     background: linear-gradient(to bottom, var(--ct_col_searchbox-gradient-4, #c99),var(--ct_col_searchbox-gradient-3, #966),var(--ct_col_searchbox-gradient-2, #633));
     border: var(--ct_brd_searchbox-highlight, solid 1px #fff);
-    box-shadow: 0 1px 3px rgba(0 0 0 / .8);
+    box-shadow: 0 1px 3px rgba(0 0 0 / 80%);
     color: var(--ct_col_searchbox-highlight, #fff);
-    text-shadow: 0 0 1px rgba(255 255 255 / .25)
+    text-shadow: 0 0 1px rgba(255 255 255 / 25%)
 }
 
 /* ---------------- #2.3 Topbar ---------------- */
@@ -486,8 +486,8 @@ hr {
     position: relative;
 }
 #top-bar ul li a {
-    border-left: var(--ct_brd_topbar-item, solid 1px rgba(64 64 64 / .1));
-    border-right: var(--ct_brd_topbar-item, solid 1px rgba(64 64 64 / .1));
+    border-left: var(--ct_brd_topbar-item, solid 1px rgba(64 64 64 / 10%));
+    border-right: var(--ct_brd_topbar-item, solid 1px rgba(64 64 64 / 10%));
     text-decoration: none;
 	padding: 0.1rem 0.8rem;
 }
@@ -499,7 +499,7 @@ hr {
     border: var(--ct_brd_topbar-menu, solid 1px #666);
     border-top: 0;
     border-width: 0 1px 1px 1px;
-    box-shadow: 0 2px 6px rgba(0 0 0 / .5);
+    box-shadow: 0 2px 6px rgba(0 0 0 / 50%);
     width: auto;
 }
 #top-bar ul li ul a,
@@ -638,7 +638,7 @@ hr {
     left: 2em;
     padding: 0;
     position: absolute;
-    top: .5em;
+    top: 0.5em;
     width: var(--ct_dim_side-bar-width, 14rem);
 }
 #interwiki .side-block {
@@ -649,7 +649,7 @@ hr {
     background: var(--ct_bg_sidebar-default, #fff);
     border: var(--ct_brd_sidebar-elements, 1px solid #600);
     border-radius: var(--ct_dim_sidebar-border-radius, 10px);
-    box-shadow: var(--ct_shd_sidebar-block, 0 2px 6px rgba(102 0 0 / .5));
+    box-shadow: var(--ct_shd_sidebar-block, 0 2px 6px rgba(102 0 0 / 50%));
     margin-bottom: 1.125rem;
     padding: 0.7rem;
 }
@@ -708,7 +708,7 @@ hr {
     padding: 0 7px;
 }
 #side-bar .menu-item.inactive img {
-    opacity: .25;
+    opacity: 25%;
 }
 #side-bar .menu-item.inactive a,
 .scpnet-interwiki-wrapper .menu-item.inactive a {
@@ -845,7 +845,7 @@ hr {
     background-repeat: no-repeat;
     color: transparent;
     display: inline-block;
-    filter: drop-shadow(1px 1px 1px rgba(0 0 0 / .25));
+    filter: drop-shadow(1px 1px 1px rgba(0 0 0 / 25%));
     margin-left: -16px;
     margin-right: 1px;
     text-align: center;
@@ -898,8 +898,8 @@ hr {
     border-color: var(--ct_col_page-title-border, #bbb);
     color: var(--ct_col_page-title, #901);
     font-weight: normal;
-    margin: 0 0 .6em;
-    padding: 0 0 .25em;
+    margin: 0 0 0.6em;
+    padding: 0 0 0.25em;
 }
 #breadcrumbs {
     font-weight: normal;
@@ -1058,7 +1058,7 @@ table.page-files tr.highlight td:not(:last-child) {
     background: var(--ct_col_rate-primary, #633);
     border: solid 1px var(--ct_col_rate-border-heritage, #ccc066);
     border-radius: var(--ct_dim_rate-heritage-border-radius, 8px);
-    box-shadow: 0 1px 3px rgba(0 0 0 / .25);
+    box-shadow: 0 1px 3px rgba(0 0 0 / 25%);
     display: inline-block;
     margin-right: 2em;
     margin-bottom: 10px;
@@ -1089,7 +1089,7 @@ table.page-files tr.highlight td:not(:last-child) {
 /* ---------------- #4.2 Standard image block ---------------- */
 .scp-image-block {
     border: var(--ct_brd_image-block, solid 1px #666);
-    box-shadow: 0 1px 6px rgba(0 0 0 / .25);
+    box-shadow: 0 1px 6px rgba(0 0 0 / 25%);
     width: 300px;
 }
 .scp-image-block img {
@@ -1185,17 +1185,17 @@ table.page-files tr.highlight td:not(:last-child) {
     background: transparent;
     border: 0;
     border-top: solid 3px var(--ct_col_tab-menu-border, #444);
-    padding: .25em 0;
+    padding: 0.25em 0;
 }
 .borderless-tabs .yui-navset .yui-navset-top .yui-content {
-    padding: .25em 0;
+    padding: 0.25em 0;
 }
 .borderless-tabs .yui-navset .yui-nav,
 .borderless-tabs .yui-navset .yui-navset-top .yui-nav {
     border: 0;
 }
 .borderless-tabs .yui-content li {
-    margin: .4em 0;
+    margin: 0.4em 0;
 }
 .borderless-tabs .yui-content .code {
     background: var(--ct_col_code-bg, #f7f7f7);
@@ -1206,18 +1206,18 @@ table.page-files tr.highlight td:not(:last-child) {
 
 .forum-thread-box .description-block {
     border-radius: 10px;
-    box-shadow: 0 1px 5px rgba(0 0 0 / .15),
-        inset 0 1px 0 rgba(255 255 255 / .8),
-        inset 0 10px 5px rgba(255 255 255 / .25),
-        inset 0 -15px 30px rgba(0 0 0 / .1);
-    padding: .5em 1em;
+    box-shadow: 0 1px 5px rgba(0 0 0 / 15%),
+        inset 0 1px 0 rgba(255 255 255 / 80%),
+        inset 0 10px 5px rgba(255 255 255 / 25%),
+        inset 0 -15px 30px rgba(0 0 0 / 10%);
+    padding: 0.5em 1em;
 }
 .thread-container .post .head {
     background-color: #eee;
     background: linear-gradient(to right, #eee, #eeecec);
     border-radius: 5px 5px 0 0;
-    box-shadow: inset 2px 3px 6px rgba(0 0 0 / .15);
-    padding: .5em 1em;
+    box-shadow: inset 2px 3px 6px rgba(0 0 0 / 15%);
+    padding: 0.5em 1em;
 }
 
 .signature {
@@ -1259,7 +1259,7 @@ table.wiki-content-table th {
     text-align: center;
 }
 .content-panel .content-toc {
-    box-shadow: inset 1px 2px 6px rgba(0 0 0 / .15);
+    box-shadow: inset 1px 2px 6px rgba(0 0 0 / 15%);
     background-color: #fff;
     border: solid 1px #ccc;
     border-radius: 10px;
@@ -1319,7 +1319,7 @@ table.wiki-content-table th {
     background-color: var(--ct_bg_white-paper-sheet, #fff);
     border: var(--ct_brd_white-paper-sheet, solid 1px #888880);
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0 0 0 / .35);
+    box-shadow: 0 2px 6px rgba(0 0 0 / 35%);
     margin: 10px 0 20px;
     padding: 0 20px;
 }
@@ -1345,8 +1345,8 @@ table.wiki-content-table th {
     font-size: 350%;
     font-weight: 700;
     line-height: 100%;
-    margin: 0 0 .75em;
-    padding: .5em 0 .6em;
+    margin: 0 0 0.75em;
+    padding: 0.5em 0 0.6em;
     text-align: center;
 }
 .white-paper .wp_sub-title {
@@ -1365,7 +1365,7 @@ table.wiki-content-table th {
 }
 .white-paper .collapsible-block {
     margin-bottom: 1.5em;
-    padding-top: .5em;
+    padding-top: 0.5em;
 }
 .white-paper .col-title .collapsible-block-link,
 .white-paper .col-title .foldable-list-container {
@@ -1379,7 +1379,7 @@ table.wiki-content-table th {
     background-color: var(--ct_bg_white-paper-sheet, #fff);
     border: var(--ct_brd_white-paper-toc, solid 1px #ccc);
     border-radius: 10px;
-    box-shadow: inset 1px 2px 4px rgba(0 0 0 / .15);
+    box-shadow: inset 1px 2px 4px rgba(0 0 0 / 15%);
     margin: 4px 0 5px 20px;
     white-space: nowrap;
 }
@@ -1432,12 +1432,12 @@ blockquote,
 
 /* Licensebox */
 .licensebox .collapsible-block-link {
-    margin-left: .25em;
-    padding: .25em;
+    margin-left: 0.25em;
+    padding: 0.25em;
     font-weight: bold;
-    opacity: .5;
+    opacity: 50%;
     color: inherit;
-    transition: opacity .5s ease-in-out;
+    transition: opacity 500ms ease-in-out;
 }
 
 .licensebox .collapsible-block-link:hover,
@@ -1452,7 +1452,7 @@ blockquote,
     color: #333;
     font-weight: bold;
     margin: 0 auto 2rem;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     text-align: center;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -1461,7 +1461,7 @@ blockquote,
 #u-adult-warning > #u-adult-header {
     color: #901;
     font-size: 300%;
-    text-shadow: 1px 2px 3px rgba(0 0 0 / .5);
+    text-shadow: 1px 2px 3px rgba(0 0 0 / 50%);
 }
 #u-adult-warning > #u-adult-header p {
     margin: 0;
@@ -1496,7 +1496,7 @@ blockquote,
     border-color: #ddd #bbb #bbb #ddd;
     border-radius: 3px;
     font-family: inherit;
-    font-size: .85em;
+    font-size: 0.85em;
     padding: 1px 3px;
     white-space: nowrap;
 }
@@ -1580,14 +1580,14 @@ blockquote,
 .h5,
 .h6 {
     letter-spacing: 1px;
-    margin: .5em 0 .4em;
+    margin: 0.5em 0 0.4em;
     padding: 0;
 }
 .h1 {
     color: var(--ct_col_h1-txt, #901);
     font-size: 190%;
     font-weight: bold;
-    margin: .7em 0 .6em;
+    margin: 0.7em 0 0.6em;
     padding: 0;
 }
 .h2 {
@@ -1638,8 +1638,8 @@ blockquote,
     border-bottom: solid 1px #bbb;
     color: #901;
     font-weight: normal;
-    margin: 0 0 .6em;
-    padding: 0 0 .25em;
+    margin: 0 0 0.6em;
+    padding: 0 0 0.25em;
     font-size: 200%;
 }
 .meta-title p {
@@ -1651,7 +1651,7 @@ blockquote,
 .toc {
     background-color: #F7F7F7;
     border: 1px dashed gray;
-    padding: .5em 2em;
+    padding: 0.5em 2em;
     text-align: left;
     white-space: nowrap;
 }
@@ -1659,10 +1659,10 @@ blockquote,
     margin: 0;
 }
 .toc-title {
-    margin: .2em 0;
+    margin: 0.2em 0;
 }
 .toc-list {
-    margin: .5em 0;
+    margin: 0.5em 0;
 }
 
 .justify {
@@ -1699,7 +1699,7 @@ li.unfolded > .colmod-link-top a:first-child {
     display: none;
 }
 .colmod-content {
-    animation: colmod-fade-in .2s ease-in-out;
+    animation: colmod-fade-in 200ms ease-in-out;
     animation-timing-function: cubic-bezier(0.3649610494,0,.6350389506,1);
 }
 li.folded > .colmod-content {
@@ -1728,7 +1728,7 @@ li.folded > .colmod-content {
     background-color: #f4f4f4;
     border: 1px solid #aaa;
     color: #000;
-    padding: 0.1em .5em;
+    padding: 0.1em 0.5em;
     text-decoration: none;
 }
 .colmod-collapsiblealt > [class|="colmod-link"] a:hover,
@@ -1789,16 +1789,16 @@ rt,
 }
 
 ::-webkit-scrollbar {
-    border: solid 1px rgba(0, 0, 0, .1);
-    border-radius: .5px;
+    border: solid 1px rgba(0 0 0 / 10%);
+    border-radius: 0.5px;
     height: 9px;
     width: 9px;
 }
 ::-webkit-scrollbar-track {
-    background: rgba(0 0 0 / .1);
+    background: rgba(0 0 0 / 10%);
 }
 ::-webkit-scrollbar-thumb {
-    background: rgba(50 50 50 / .3);
+    background: rgba(50 50 50 / 30%);
 }
 
 /* ++++++++++++++++ #7.0 Responsive Web Design ++++++++++++++++ */
@@ -1831,7 +1831,7 @@ table,
         margin: 0 5%;
         max-width: 90%;
         padding: 0;
-        transition: .5s ease-in-out .1s;
+        transition: 500ms ease-in-out 100s;
     }
     #side-bar {
         background-color: var(--ct_col_m_sidebar-bg, #b88686);
@@ -1843,13 +1843,13 @@ table,
         overflow-y: inherit;
         padding: 0;
         position: fixed;
-        transition: left .5s ease-in-out .1s;
+        transition: left 500ms ease-in-out 100ms;
         top: 0;
         width: 17em;
         z-index: 10;
     }
     #side-bar::after {
-        background-color: rgba(0 0 0 / .2);
+        background-color: rgba(0 0 0 / 20%);
         content: "";
         height: 100%;
         position: absolute;
@@ -1868,7 +1868,7 @@ table,
         left: 0;
     }
     #side-bar:target .close-menu {
-        background: rgba(0 0 0 / .3) 1px 1px repeat;
+        background: rgba(0 0 0 / 30%) 1px 1px repeat;
         display: block;
         height: 100%;
         left: 0;
@@ -1894,18 +1894,18 @@ table,
     #top-bar .open-menu a {
         background-color: var(--ct_col_m_sidebar-button-bg, #fff);
         background-image: var(--ct_bg_open-menu-button, url('https://grombald.github.io/Common-Theme/img/open-menu-button.png'));
-        border: var(--ct_brd_m_sidebar-button, .2em solid #888);
+        border: var(--ct_brd_m_sidebar-button, 0.2em solid #888);
         border-radius: 3em;
         color: transparent;
         display:block;
         font-family: Tahoma, sans-serif;
         font-size: 30px;
         height: 30px;
-        left: .5em;
-        line-height: .85em;
+        left: 0.5em;
+        line-height: 0.85em;
         position: fixed;
         text-align: center;
-        top: .5em;
+        top: 0.5em;
         width: 30px;
         z-index: 15;
     }
@@ -1953,10 +1953,10 @@ table,
 @media (max-width: 580px) {
     blockquote,
     .blockquote {
-        margin: .5em;
+        margin: 0.5em;
     }
     #header {
-        background-position: .5em 4.5em;
+        background-position: 0.5em 4.5em;
         background-size: 66px 66px;
     }
     #header h1,
@@ -1998,7 +1998,7 @@ table,
         padding: 0 5px;
     }
     .license-area {
-        font-size: .85em;
+        font-size: 0.85em;
     }
 }
 
@@ -2025,7 +2025,7 @@ table,
         margin: 0 1em 0 1em;
     }
     #page-content {
-        font-size: .9em;
+        font-size: 0.9em;
     }
     .changes-list-item .revision-no {
         display: none;
@@ -2040,7 +2040,7 @@ table,
         max-width: 90%;
     }
     .license-area {
-        font-size: .8em;
+        font-size: 0.8em;
     }
 }
 
@@ -2099,7 +2099,7 @@ table,
         padding: 0 6px;
     }
     .license-area {
-        font-size: .9em;
+        font-size: 0.9em;
     }
 }
 
@@ -2141,7 +2141,7 @@ table,
         padding: 0 7px;
     }
     .license-area {
-        font-size: .95em;
+        font-size: 0.95em;
     }
     td.name {
         width: 40%;
@@ -2245,7 +2245,7 @@ a.button:focus,
 
 /* Votes en colonnes */
 #who-rated-page-area h2 {
-    margin: .5em 0 0.75em;
+    margin: 0.5em 0 0.75em;
 }
 #who-rated-page-area div {
     columns: 12rem auto;
