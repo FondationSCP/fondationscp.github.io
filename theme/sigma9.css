@@ -1982,12 +1982,6 @@ table,
         float: left;
         width: 99%;
     }
-    .page-options-bottom a {
-        padding: 0 5px;
-    }
-    .license-area {
-        font-size: 0.85em;
-    }
 }
 
 /* ---------------- #7.3 Mobile Media Query (Up to 479px device width) ---------------- */
@@ -2021,14 +2015,8 @@ table,
     #recent-posts-category {
         width: 100%;
     }
-    .page-options-bottom a {
-        padding: 0 4px;
-    }
     #edit-page-title {
         max-width: 90%;
-    }
-    .license-area {
-        font-size: 0.8em;
     }
 }
 
@@ -2083,12 +2071,6 @@ table,
     #main-content {
         margin: 0 3em 0 2em;
     }
-    .page-options-bottom a {
-        padding: 0 6px;
-    }
-    .license-area {
-        font-size: 0.9em;
-    }
 }
 
 /* ---------------- #7.6 Tablet Media Query (768px - 979px device width) ---------------- */
@@ -2124,12 +2106,6 @@ table,
     .content-panel.right-column  {
         float: left;
         width: 99%;
-    }
-    .page-options-bottom a {
-        padding: 0 7px;
-    }
-    .license-area {
-        font-size: 0.95em;
     }
     td.name {
         width: 40%;
