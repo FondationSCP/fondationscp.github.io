@@ -523,7 +523,7 @@
     }
 }
 
-/* Pas d'avatar dans le module */
+/* No avatar in the module */
 .modalbox .printuser.avatarhover a:first-of-type {
     display: none;
 }
