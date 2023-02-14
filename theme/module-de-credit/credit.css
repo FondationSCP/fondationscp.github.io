@@ -136,21 +136,6 @@
     border-radius: 5px 5px 0 0;
 }
  
-.modalbox .modalbox-title.heritage h2 {
-    display: flex;
-    align-items: center;
-}
- 
-.modalbox .modalbox-title.heritage h2::before {
-    content: "";
-    background: url('http://scp-jp.wdfiles.com/local--files/heritage-collection-jp/heritage-emblem.png') no-repeat;
-    background-size: 40px, 40px;
-    display: inline-flex;
-    width: 40px;
-    height: 40px;
-    margin-right: 0.3em;
-}
- 
 .modalbox .credit {
     margin: 2em;
     padding-right: 0.25em;
@@ -177,16 +162,6 @@
     display: none;
     justify-content: center;
 }
-.dendo .heritage-rating-module {
-    float:right;
-    display: -webkit-inline-flex;
-    display: inline-flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    vertical-align: top;
-    margin: 0;
-    padding: 1px 0 1px 5px;
-}
 .modalbox > .dendo {
     padding-bottom: 0.5em;
 }
@@ -205,23 +180,6 @@
     width: 100%;
     left: 0;
     bottom: 1em;
-}
- 
-.modalbox.heritage {
-    background: linear-gradient(to bottom, #fff6f0, #fff);
-    border: #633 solid 7px;
-    box-shadow: 2px 2px 6px rgba(204, 192, 102, .8), -2px -2px 6px rgba(204, 192, 102, .8);
-}
- 
-#u-credit-otherwise .modalbox.heritage {
-    background: linear-gradient(to bottom, #fff6f0, #fff);
-    box-shadow: 2px 2px 6px rgba(204, 192, 102, .8), -2px -2px 6px rgba(204, 192, 102, .8);
-}
- 
-.modalbox.heritage .modalbox-title {
-    background: linear-gradient(to bottom, #633, #966);
-    color: #fff;
-    border-radius: 0;
 }
  
 .credit-back .back a {
@@ -248,24 +206,6 @@
 .creditRate .page-rate-widget-box {
     display: inline-flex;
     align-items: center;
-}
- 
-.creditRate .heritage-rating-module {
-    float: right;
-    display: -webkit-inline-flex;
-    display: inline-flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    vertical-align: top;
-    margin: 0;
-    border-radius: 7px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
-    padding: 0 1px 0 5px;
-    align-items: center;
-}
- 
-.creditRate .heritage-rating-module .page-rate-widget-box{
-    margin:0;
 }
  
 .creditRate .audio-img-block {
@@ -324,68 +264,7 @@
     position: relative;
     top: 1px;
 }
- 
-/* --- Heritage rating module with Credit button --- */
-.heritage-rating-module ~ .creditButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #633;
-    border: solid 1px #ccc066;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
-    padding: 0 5px 0 0;
-    margin-left: 5px;
-}
- 
-.heritage-rating-module ~ .creditButton a{
-    margin-left: 0;
-    margin-right: -5px;
-}
-.heritage-rating-module ~ .creditButton a:hover {
-    color: #966;
-}
- 
-.heritage-rating-module .heritage-emblem {
-    width: 20px;
-    height: 20px;
-    top: 0;
-    margin-right: 0;
-}
- 
-.heritage-rating-module .heritage-emblem a {
-    width: 20px;
-    height: 20px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
- 
-.heritage-rating-module .heritage-emblem img {
-    width: 20px;
-    height: 20px;
-}
-
-/*
-.heritage-rating-module .page-rate-widget-box span {
-    box-sizing: content-box;
-}
-*/
-
-.heritage-rating-module .page-rate-widget-box .rateup,
-.heritage-rating-module .page-rate-widget-box .ratedown {
-    border-top: solid 1px #fff6f0;
-    border-bottom: solid 1px #fff6f0;
-}
-
-.heritage-rating-module .page-rate-widget-box .rate-points {
-    padding-left: 8px;
-}
-
-.heritage-rating-module .page-rate-widget-box .cancel a {
-    padding: 3px 5px;
-}
-    
+     
 /* --- Standalone Credit-Button --- */
 
 .creditButtonStandalone a{
@@ -513,11 +392,6 @@ display: inline-flex;
  
 #page-content div.creditRate, #page-content div.creditRate div {
     max-width: none;
-}
- 
-.modalbox .heritage-rating-module .page-rate-widget-box .rateup,
-.modalbox .heritage-rating-module .page-rate-widget-box .ratedown {
-    box-sizing: border-box;
 }
  
 @media (max-width: 479px) {
