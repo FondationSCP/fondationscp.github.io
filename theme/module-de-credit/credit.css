@@ -70,7 +70,7 @@
 }
 
 
-/* --- This is the grey area "behind" the Credit- and Otherwise window --- */
+/* --- Grey background for the modal windows --- */
 .fader {
     position: absolute;
     background-color: rgba(0 0 0 / 50%);
@@ -85,7 +85,7 @@
     inset: 0;
 }
 
-/* --- Container of the Credit- and Otherwise window, displayed upon pressing the credit button --- */
+/* --- Container of the modal, displayed upon pressing the credit button --- */
 .modalcontainer {
     position: absolute;
     inset: 0;
@@ -95,7 +95,7 @@
 }
 
 
-/* --- The actual Credit- and Otherwise window and all contents --- */
+/* --- The actual modal and contents --- */
 .modalbox {
     position: relative;
     min-width: calc(300px - 2rem);
@@ -166,7 +166,7 @@
     content: "Back";
 }
 
-/* +++ Credit button +++ */
+/* CREDIT BUTTON */
 /* --- Primary container with rating module and credit button --- */
 .creditRate {
     display: -webkit-inline-flex;
@@ -422,7 +422,7 @@
 }
 
 
-/* display:contents Method */
+/* display: contents method */
     
 .modal-wrapper,
 .modal-wrapper > li .foldable-list-container {
