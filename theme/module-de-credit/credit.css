@@ -1,7 +1,7 @@
 #u-credit-view, #u-credit-otherwise {
     width: 100%;
     height: 100%;
-    top: 0px;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -16,20 +16,28 @@
 #u-credit-view:target, #u-credit-otherwise:target {
     opacity: 1;
     display: block;
-    animation-duration: 0.5s;
+    animation-duration: 500ms;
     animation-name: fade-in;
-      -moz-animation-duration: 0.5s;
+      -moz-animation-duration: 500ms;
       -moz-animation-name: fade-in;
-      -webkit-animation-duration: 0.5s;
+      -webkit-animation-duration: 500ms;
       -webkit-animation-name: fade-in;
 }
 @-webkit-keyframes fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 @keyframes fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 #u-credit-otherwise .modalbox {
     background-color: #fff;
@@ -40,14 +48,14 @@
     width: 100%;
     height: 30px;
 }
-#u-credit-view .modalbox-standalone .modalbox:after  {
+#u-credit-view .modalbox-standalone .modalbox:after {
     display: none;
 }
 #u-credit-view .credit-back {
-    display:none;
+    display: none;
 }
 #u-credit-otherwise .creditBottomRate {
-    display:none;
+    display: none;
 }
 @media (max-width: 767px) {
     #u-credit-view {
@@ -69,7 +77,7 @@
 
 /* --- This is the grey area "behind" the Credit- and Otherwise window --- */
 
-.fader{
+.fader {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
@@ -79,7 +87,7 @@
     left: 0;
     right: 0;
 }
-.fader iframe{
+.fader iframe {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -105,7 +113,7 @@
 
 /* --- The actual Credit- and Otherwise window and all contents --- */
 
-.modalbox{
+.modalbox {
     position: relative;
     min-width: calc(300px - 2rem);
     max-width: 450px !important;
@@ -169,7 +177,7 @@
     display: none;
     justify-content: center;
 }
-.dendo .heritage-rating-module{
+.dendo .heritage-rating-module {
     float:right;
     display: -webkit-inline-flex;
     display: inline-flex;
@@ -177,7 +185,7 @@
     flex-direction: row;
     vertical-align: top;
     margin: 0;
-    padding: 1px 0px 1px 5px;
+    padding: 1px 0 1px 5px;
 }
 .modalbox > .dendo {
     padding-bottom: 0.5em;
@@ -294,10 +302,10 @@
     height: 16px;
 }
 
-.creditButton{
+.creditButton {
     font-size: 0.8em;
 }
-.creditButton a{
+.creditButton a {
     width: 24px;
     margin-left: 0;
     text-align: center;
@@ -548,7 +556,7 @@ display: inline-flex;
 }
 
 .rate-box-with-credit-button .page-rate-widget-box .cancel {
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 0 5px 5px 0;
     border: var(--ct_brd_rate-primary);
     border-left: 0
 }
@@ -656,8 +664,12 @@ display: inline-flex;
 }
 
 @keyframes fademodal {
-    99% { visibility: hidden; }
-    100% { visibility: visible; }
+    99% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
 }
 
 /* Pas d'avatar dans le module */
