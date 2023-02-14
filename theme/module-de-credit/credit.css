@@ -59,10 +59,8 @@
         height: 100%;
         top: 0;
     }
-    .modalcontainer{
-        min-width: 300px;
-    }
-    .modalbox{
+    .modalcontainer,
+    .modalbox {
         min-width: 300px;
     }
 }
@@ -255,7 +253,7 @@
      
 /* --- Standalone Credit-Button --- */
 
-.creditButtonStandalone a{
+.creditButtonStandalone a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -357,7 +355,7 @@
 }
  
 .page-rate-widget-box .rateup a, .page-rate-widget-box .ratedown a {
-display: inline-flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     font-size: 0;
@@ -371,7 +369,6 @@ display: inline-flex;
 .page-rate-widget-box .rateup a::before {
     content: '\f067';
     font-size: 10px;
- 
 }
 .page-rate-widget-box .ratedown a::before {
     content: '\f068';
@@ -394,9 +391,6 @@ display: inline-flex;
 #action-area .page-rate-widget-box .cancel a {
     padding: 2px 5px;
 }
-
-
-
 
 
 /* ------------------------- FR SPECIFICS ------------------------- */
@@ -470,7 +464,6 @@ display: inline-flex;
     list-style: none;
     display: contents;
 }
-    
 .modal-wrapper > li > .pseudomodal-container {
     display: flex;
     position: fixed;
@@ -482,7 +475,6 @@ display: inline-flex;
     justify-content: center;
     z-index: 19;
 }
-    
 .modal-wrapper > li > .pseudomodal-container > .foldable-list-container.close a {
     position: absolute;
     display: block;
@@ -493,7 +485,6 @@ display: inline-flex;
     background-color: rgba(0 0 0 / 0.35);
     user-select: none;
 }
-    
 #page-content .modal-wrapper > li > .pseudomodal-container > .pseudomodal {
     display: block;
     width: 85%;
@@ -507,7 +498,6 @@ display: inline-flex;
     max-height: 25rem;
     overflow-y: auto;
 }
-    
 .modal-wrapper > li.folded > .pseudomodal-container {
     opacity: 0;
     pointer-events: none;
