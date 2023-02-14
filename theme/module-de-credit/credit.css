@@ -380,7 +380,7 @@
 }
  
 @media (max-width: 479px) {
-    .creditBottomRate .Dendo {
+    .creditBottomRate .dendo {
        position: absolute;
        top: 0;
        left: 2em;
