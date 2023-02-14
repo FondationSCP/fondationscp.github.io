@@ -1,5 +1,11 @@
 # fondationscp.github.io
 
+Site utilisé par la Fondation SCP francophone pour l'hébergement de ressources et fichiers de fonctionnement internes du site principalement.
+
+## Contact
+
+En cas de questions, se référer à la [page de contact du staff SCP](http://fondationscp.fr/contact), section "Technique".
+
 ## Crédits
 
 * [Générateur de compte à rebours](https://fondationscp.github.io/outils/chronometre-suppression.html) par Aelanna
