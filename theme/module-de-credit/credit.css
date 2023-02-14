@@ -71,7 +71,6 @@
 
 
 /* --- This is the grey area "behind" the Credit- and Otherwise window --- */
-
 .fader {
     position: absolute;
     background-color: rgba(0 0 0 / 50%);
@@ -87,8 +86,7 @@
 }
 
 /* --- Container of the Credit- and Otherwise window, displayed upon pressing the credit button --- */
-
-.modalcontainer{
+.modalcontainer {
     position: absolute;
     inset: 0;
     width: 400px;
@@ -98,7 +96,6 @@
 
 
 /* --- The actual Credit- and Otherwise window and all contents --- */
-
 .modalbox {
     position: relative;
     min-width: calc(300px - 2rem);
@@ -110,7 +107,6 @@
     border-radius: 5px;
     box-shadow: 0 2px 6px rgba(102 0 0 / 50%);
 }
-
 .modalbox .modalbox-title {
     display: flex;
     justify-content: center;
@@ -121,7 +117,6 @@
     margin-bottom: 14px;
     border-radius: 5px 5px 0 0;
 }
- 
 .modalbox .credit {
     margin: 2em;
     padding-right: 0.25em;
@@ -143,7 +138,6 @@
     min-height: 150px;
     max-height: 300px;
 }
-
 .dendo {
     display: none;
     justify-content: center;
@@ -151,14 +145,12 @@
 .modalbox > .dendo {
     padding-bottom: 0.5em;
 }
- 
 .modalbox .modalbox-ratemodule {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0.5em 0;
 }
- 
 .creditBottomRate,
 .modalbox > .dendo,
 .modalbox-ratemodule {
@@ -167,7 +159,6 @@
     left: 0;
     bottom: 1em;
 }
- 
 .credit-back .back a {
     display: none;
 }
@@ -177,7 +168,6 @@
 
 /* +++ Credit button +++ */
 /* --- Primary container with rating module and credit button --- */
-
 .creditRate {
     display: -webkit-inline-flex;
     display: inline-flex;
@@ -188,23 +178,18 @@
     margin-bottom: 10px;
     margin-right: 2em;
 }
- 
 .creditRate .page-rate-widget-box {
     display: inline-flex;
     align-items: center;
 }
- 
 .creditRate .audio-img-block {
     top: 0;
 }
-
 .creditRate .rateBox {
     display: inline-flex;
 }
 
-
 /* --- Container to provide a mutual background and border around the rating module and credit button --- */
-
 .rate-box-with-credit-button {
     background-color: #633 !important;
     border-radius: 5px;
@@ -227,7 +212,6 @@
     width: 24px;
     height: 16px;
 }
-
 .creditButton {
     font-size: 0.8em;
 }
@@ -241,11 +225,9 @@
 .creditButton a:hover {
     color: #c99;
 }
-
 .creditButton .fa {
     height: 12px;
 }
- 
 .creditButton .fa-info::before {
     position: relative;
     top: 1px;
@@ -281,14 +263,12 @@
 .rate-box-with-credit-button .page-rate-widget-box {
     box-shadow: none;
 }
-
 .rate-box-with-credit-button .page-rate-widget-box .rate-points {
     background-color: transparent !important;
     border: none;
     position: relative;
     top: -1px;
 }
- 
 .rate-box-with-credit-button .page-rate-widget-box .cancel {
     border-top: solid 1px #633;
     border-bottom: solid 1px #633;
@@ -297,44 +277,36 @@
     background-color: transparent;
     border-radius: 0;
 }
-
 .rate-box-with-credit-button .page-rate-widget-box span {
     align-items: center;
 }
-
 .rate-box-with-credit-button .page-rate-widget-box .cancel a {
     padding: 3px 5px;
 }
-
 .modalbox .page-rate-widget-box {
     margin-right: 0;
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
-
 .rate-box-with-credit-button .page-rate-widget-box {
     margin: 0;
 }
- 
 .page-rate-widget-box span {
     display: inline-flex;
     justify-content: center;
     height: 18px;
     box-sizing: border-box;
 }
- 
 .page-rate-widget-box .rate-points {
     font-family: verdana, 'Arial Rounded MT Bold', arial, helvetica, sans-serif;
     font-weight: bolder;
     font-size: 11px;
     padding-top: 1px !important;
 }
- 
 .page-rate-widget-box .cancel {
     padding: 0 2px 0 3px;
 }
- 
 .page-rate-widget-box .cancel a {
     font-family: 'FontAwesome';
     font-weight: 400;
@@ -343,17 +315,14 @@
     padding: 2px 5px;
     height: 12px;
 }
- 
 .page-rate-widget-box .cancel a:hover {
     color: #c99;
     text-decoration: none;
 }
-
 .page-rate-widget-box .cancel a::before {
     content: '\f00d';
     font-size: 11px;
 }
- 
 .page-rate-widget-box .rateup a, .page-rate-widget-box .ratedown a {
     display: inline-flex;
     justify-content: center;
@@ -365,7 +334,6 @@
     height: 16px;
     box-sizing: border-box;
 }
- 
 .page-rate-widget-box .rateup a::before {
     content: '\f067';
     font-size: 10px;
@@ -374,7 +342,6 @@
     content: '\f068';
     font-size: 10px;
 }
- 
 #page-content div.creditRate, #page-content div.creditRate div {
     max-width: none;
 }
@@ -409,7 +376,6 @@
     background: var(--ct_col_rate-primary) !important;
     box-shadow: 1px 1px 3px rgba(0 0 0 / 50%) !important
 }
-
 .rate-box-with-credit-button .page-rate-widget-box .cancel {
     border-radius: 0 5px 5px 0;
     border: var(--ct_brd_rate-primary);
@@ -425,7 +391,6 @@
     border-right: 0;
     top: 0
 }
-
 .rate-box-with-credit-button .creditButton {
     display: inline-flex;
     justify-content: center;
