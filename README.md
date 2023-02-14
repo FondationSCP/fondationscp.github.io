@@ -1,6 +1,6 @@
 # fondationscp.github.io
 
-Site utilisé par la Fondation SCP francophone pour l'hébergement de ressources et fichiers de fonctionnement internes du site principalement.
+Site utilisé par la Fondation SCP francophone pour l'hébergement de ressources et fichiers de fonctionnement internes du site.
 
 ## Contact
 
