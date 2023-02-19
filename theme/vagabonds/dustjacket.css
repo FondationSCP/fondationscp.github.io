@@ -64,7 +64,7 @@
   --header-height-on-mobile: 7.5rem;
   --topbar-height-on-desktop: 1.625rem;
   --body-width-on-desktop: 61.250rem;
-  --sidebar-width-on-desktop: calc((var(--base-font-size) * (14 / 15)) * 19);
+  --sidebar-width-on-desktop: calc(var(--base-font-size) * (266/ 15));
 
   /* FR Credit module compatibility */
   --ct_col_rate-primary: linear-gradient(to top, rgba(var(--swatch-menubg-dark-color), 1) 0, rgba(var(--swatch-menubg-medium-color), 1) 100%);
