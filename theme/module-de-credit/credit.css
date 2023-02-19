@@ -44,7 +44,7 @@
     min-width: 300px;
   }
 }
-/* --- Grey background for the modal windows --- */
+/* Grey background for the modal window */
 .fader {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -55,7 +55,7 @@
   inset: 0;
 }
 
-/* --- Container of the modal, displayed upon pressing the credit button --- */
+/* Container of the modal, displayed upon pressing the credit button */
 .modalcontainer {
   position: absolute;
   inset: 0;
@@ -64,7 +64,7 @@
   margin: auto;
 }
 
-/* --- The actual modal and contents --- */
+/* The actual modal and contents */
 .modalbox {
   position: relative;
   min-width: calc(300px - 2rem);
@@ -76,6 +76,7 @@
   background-color: var(--ct_bg_body, #fff);
   border-radius: 5px;
   box-shadow: 0 2px 6px rgba(102, 0, 0, 0.5);
+  /* Rate module inside of the modal */
 }
 .modalbox .modalbox-title {
   display: flex;
@@ -193,7 +194,7 @@
   top: 1px;
 }
 
-/* --- Standalone Credit-Button --- */
+/* Standalone Credit-Button */
 .creditButtonStandalone a {
   display: inline-flex;
   justify-content: center;
@@ -229,6 +230,7 @@
   background-color: var(--ct_col_rate-primary, #633);
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   margin: 0;
+  /* Let general bg define color */
 }
 .rate-box-with-credit-button .page-rate-widget-box .rate-points {
   background-color: transparent !important;
