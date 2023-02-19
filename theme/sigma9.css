@@ -947,9 +947,9 @@ table.page-files tr.highlight td:not(:last-child) {
     text-decoration: none;
 }
 .page-rate-widget-box {
-    border-radius: var(--ct_dim_rate-border-radius, 5px);
-    box-shadow: 1px 1px 3px rgba(0 0 0 / 50%);
     display: inline-block;
+    background: var(--ct_col_rate-primary, #633) !important;
+    border-radius: var(--ct_dim_rate-border-radius, 5px);
 }
 .page-rate-widget-box .rate-points {
     background: var(--ct_col_rate-primary, #633) !important;
@@ -997,10 +997,6 @@ table.page-files tr.highlight td:not(:last-child) {
     background: transparent !important;
     box-shadow: none;
     border: none;
-}
-.page-rate-widget-box {
-    background: var(--ct_col_rate-primary, #633) !important;
-    box-shadow: 1px 1px 3px rgba(0 0 0 / 50%) !important;
 }
 
 .rate-box-with-credit-button .page-rate-widget-box .cancel {
