@@ -71,8 +71,6 @@
   max-width: 450px;
   min-height: 200px;
   margin-inline: 1rem;
-  -webkit-padding-after: 1rem;
-          padding-block-end: 1rem;
   background-color: var(--ct_bg_body, #fff);
   border-radius: 5px;
   box-shadow: 0 2px 6px rgba(102, 0, 0, 0.5);
@@ -88,17 +86,10 @@
   border-radius: 5px 5px 0 0;
 }
 .modalbox .credit {
-  margin: 2em;
+  margin: 1.25em 1.75em 0;
   padding-right: 0.25em;
   word-wrap: break-word;
   overflow-wrap: break-word;
-}
-.modalbox .credit:not(:first-child) {
-  margin-top: 0;
-  margin-bottom: 0.5em;
-}
-.modalbox .credit:not(:last-child) {
-  margin-bottom: 0;
 }
 .modalbox .credit + .credit {
   margin-bottom: 0.5em;
