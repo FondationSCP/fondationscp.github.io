@@ -347,8 +347,7 @@
           user-select: auto;
   visibility: visible;
   transition: opacity 150ms ease-out;
-  animation: 150ms fademodal;
-  animation-fill-mode: forwards;
+  animation: 150ms fademodal forwards;
 }
 .modal-wrapper > li > .pseudomodal-container > .foldable-list-container.close a {
   position: absolute;
