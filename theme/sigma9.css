@@ -1793,8 +1793,8 @@ video,
 object,
 iframe,
 table,
-#page-content div,
-#page-content div table {
+:where(#page-content div,
+#page-content div table) {
     max-width: 100%;
 }
 
