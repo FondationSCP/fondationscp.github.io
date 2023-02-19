@@ -1371,12 +1371,12 @@ table.wiki-content-table th:last-of-type {
   --wght: 500;
 }
 
-.rate-box-with-credit-button .creditButton {
+#page-content .rate-box-with-credit-button .creditButton {
   background: var(--ct_col_rate-primary);
   height: calc(100% - 2px);
 }
-.rate-box-with-credit-button .creditButton:hover,
-.rate-box-with-credit-button .creditButton:focus {
+#page-content .rate-box-with-credit-button .creditButton:hover,
+#page-content .rate-box-with-credit-button .creditButton:focus {
   background: linear-gradient(to top, rgba(var(--swatch-menubg-medium-color), 1) 0, rgba(var(--swatch-menubg-light-color), 1) 100%);
 }
 
