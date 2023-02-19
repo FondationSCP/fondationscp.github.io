@@ -1,3 +1,15 @@
+// Variables
+$ratebox-bg: var(--ct_col_rate-primary, #633)
+$ratebox-border: var(--ct_brd_rate-primary, 1px solid #633)
+$ratebox-brdrad: var(--ct_dim_rate-border-radius, 5px)
+$ratebox-shadow: 1px 1px 3px rgba(0 0 0 / 50%)
+
+$modalbox-brdrad: 5px
+
+:root
+  --ct_col_rate-link-hover: #c99
+
+
 #u-credit-view
   &, #u-credit-otherwise
     width: 100%
@@ -59,12 +71,12 @@
 .modalbox
   position: relative
   min-width: calc(300px - 2rem)
-  max-width: 450px !important
+  max-width: 450px
   min-height: 200px
   margin-inline: 1rem
-  padding-bottom: 1rem
-  background-color: #fff
-  border-radius: 5px
+  padding-block-end: 1rem
+  background-color: var(--ct_bg_body, #fff)
+  border-radius: $modalbox-brdrad
   box-shadow: 0 2px 6px rgba(102 0 0 / 50%)
 
   .modalbox-title
@@ -75,7 +87,13 @@
     min-height: 50px
     background: #ccc
     margin-bottom: 14px
-    border-radius: 5px 5px 0 0
+    border-radius: $modalbox-brdrad $modalbox-brdrad 0 0
+
+  .page-rate-widget-box
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    margin-right: 0
 
   .credit
     margin: 2em
@@ -146,19 +164,6 @@
   .rateBox
     display: inline-flex
 
-/* Container to provide a common background and border around the rating module and credit button */
-.rate-box-with-credit-button
-  background-color: transparent !important
-  border-radius: 5px
-  min-width: 150px
-  height: 18px
-  display: inline-flex
-  flex-direction: row
-  justify-content: center
-  align-items: center
-  border: none
-
-
 /* General settings for the Credit button */
 .creditButton
   display: inline-flex
@@ -193,40 +198,44 @@
   align-items: center
   width: 24px
   height: 16px
-  background-color: #633
-  border: 1px solid #633
-  border-radius: 5px
-  box-shadow: 1px 1px 3px rgba(0 0 0 / 50%)
-  color: #fff6f0
+  background-color: $ratebox-bg
+  box-shadow: $ratebox-shadow
+  border: $ratebox-border
+  border-radius: $ratebox-brdrad
+  color: var(--ct_col_rate-secondary, #fff6f0)
 
   &:hover
-    color: #c99
+    color: var(--ct_col_rate-link-hover, #c99)
     text-decoration: none
 
   
 /* --- The actual rating module --- */
 
-/* Fix for the regular rating module */
-.page-rate-widget-box
-  height: 18px
-  display: inline-flex
-
-
 .rate-box-with-credit-button
+  display: inline-flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  min-width: 150px
+  height: 18px
+  background-color: transparent
+  border: none
+  border-radius: $ratebox-brdrad
 
   .page-rate-widget-box
-    box-shadow: none
+    display: inline-flex
+    height: 18px
+    background-color: $ratebox-bg
+    box-shadow: $ratebox-shadow
     margin: 0
 
     .rate-points
-      background-color: transparent !important
+      background-color: transparent !important // Let general bg define color
       border: none
-      position: relative
-      top: -1px
 
     .cancel
-      border-top: solid 1px #633
-      border-bottom: solid 1px #633
+      border-top: $ratebox-border
+      border-bottom: $ratebox-border
       border-left: none
       border-right: none
       background-color: transparent
@@ -238,13 +247,6 @@
     span
       align-items: center
 
-
-.modalbox .page-rate-widget-box
-  margin-right: 0
-  display: inline-flex
-  justify-content: center
-  align-items: center
-
 .page-rate-widget-box
 
   span
@@ -254,10 +256,9 @@
     box-sizing: border-box
 
   .rate-points
-    font-family: verdana, 'Arial Rounded MT Bold', arial, helvetica, sans-serif
     font-weight: bolder
-    font-size: 11px
-    padding-top: 1px !important
+    font-size: 0.825rem
+    padding-block: 1px
 
   .cancel
     padding: 0 2px 0 3px
@@ -309,53 +310,45 @@
 
 /* ------------------------- FR SPECIFICS ------------------------- */
 
-:root
-  --ct_col_rate-link-hover: #c99
+.rate-box-with-credit-button
+  .page-rate-widget-box
 
-.page-rate-widget-box
-  background: #633 !important
-  background: var(--ct_col_rate-primary) !important
-  box-shadow: 1px 1px 3px rgba(0 0 0 / 50%) !important
+    .rate-points
+      border: var(--ct_brd_rate-primary)
+      border-right: 0
 
-.rate-box-with-credit-button .page-rate-widget-box .cancel
-  border-radius: 0 5px 5px 0
-  border: var(--ct_brd_rate-primary)
-  border-left: 0
+    .cancel
+      border: var(--ct_brd_rate-primary)
+      border-left: 0
+      border-radius: 0 $ratebox-brdrad $ratebox-brdrad 0
 
-.rate-box-with-credit-button .page-rate-widget-box .cancel a:hover
-  color: var(--ct_col_rate-link-hover)
-  padding-top: 0
-  padding-bottom: 0
+      a:hover
+        color: var(--ct_col_rate-link-hover, #c99)
+        padding-top: 0
+        padding-bottom: 0
 
-.rate-box-with-credit-button .page-rate-widget-box .rate-points
-  border: var(--ct_brd_rate-primary)
-  border-right: 0
-  top: 0
 
-.rate-box-with-credit-button .creditButton
-  display: inline-flex
-  justify-content: center
-  align-items: center
-  width: 24px
-  height: 16px
-  background-color: #633 !important
-  background-color: var(--ct_col_rate-primary) !important
-  border: 1px solid #633
-  border: var(--ct_brd_rate-primary)
-  border-radius: 5px
-  border-radius: var(--ct_dim_rate-border-radius)
-  box-shadow: 1px 1px 3px rgba(0 0 0 / 50%)
-  margin-left: 5px
-  font-size: 0.8em
+  .creditButton
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    width: 24px
+    height: 16px
+    background-color: $ratebox-bg
+    box-shadow: $ratebox-shadow
+    border: $ratebox-border
+    border-radius: $ratebox-brdrad
+    margin-left: 5px
+    font-size: 0.8em
 
-.creditButton a
-  width: 24px
-  margin-left: 0
-  border-left: none
-  font-size: 11px
+    a
+      width: 24px
+      margin-left: 0
+      border-left: none
+      font-size: 11px
 
-.creditButton a:hover
-  color: var(--ct_col_rate-link-hover) !important
+      &:hover
+        color: var(--ct_col_rate-link-hover, #c99)
 
 /* [[toc]] fix */
 #toc-list div:first-of-type[style*="margin-left: 2em"]
@@ -400,24 +393,24 @@
       background-color: rgba(0 0 0 / 35%)
       user-select: none
 
-    > .pseudomodal > .pseudomodal-content
-      padding: 0.75rem 1.5rem
-      height: 60%
-      max-height: 25rem
-      overflow-y: auto
+    > .pseudomodal
+      display: block
+      width: 85%
+      max-width: 40rem
+      z-index: 1
+      background-color: #fefefe
+
+      > .pseudomodal-content
+        padding: 0.75rem 1.5rem
+        height: 60%
+        max-height: 25rem
+        overflow-y: auto
 
   > li.folded > .pseudomodal-container
     opacity: 0
     pointer-events: none
     user-select: none
     visibility: hidden
-
-#page-content .modal-wrapper > li > .pseudomodal-container > .pseudomodal
-  display: block
-  width: 85%
-  max-width: 40rem
-  z-index: 1
-  background-color: #fefefe
 
 @keyframes fademodal
   99%
