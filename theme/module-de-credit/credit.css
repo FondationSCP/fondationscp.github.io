@@ -86,10 +86,13 @@
   border-radius: 5px 5px 0 0;
 }
 .modalbox .credit {
-  margin: 1.25em 1.75em 0;
+  margin: 1.5rem 2rem 1.75rem;
   padding-right: 0.25em;
   word-wrap: break-word;
   overflow-wrap: break-word;
+}
+.modalbox .credit p {
+  margin: 0;
 }
 .modalbox .credit + .credit {
   margin-bottom: 0.5em;
