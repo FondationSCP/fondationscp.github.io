@@ -1305,6 +1305,8 @@ table.wiki-content-table th {
 .content-panel .panel-heading {
     inset: 0 0 auto 0;
     padding: 0.25rem 1rem;
+    display: flex;
+    align-items: center;
     font-size: 90%;
     border-top-left-radius: var(--featured-radius);
     border-top-right-radius: var(--featured-radius);
