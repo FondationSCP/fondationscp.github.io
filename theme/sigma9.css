@@ -1322,6 +1322,11 @@ table.wiki-content-table th {
     color: #fffff0 !important;
 }
 
+.content-panel .panel-footer > p,
+.content-panel .panel-heading > p {
+    margin: 0;
+}
+
 /* White-paper */
 
 .white-paper h1,
