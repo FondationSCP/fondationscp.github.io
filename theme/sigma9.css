@@ -1227,17 +1227,14 @@ table.wiki-content-table th {
 /* ---------------- #4.6 Custom & utility classes ---------------- */
 
 .content-panel {
+    --featured-radius: 8px;
+    --content-panel-accent: #274463;
     margin: 2rem auto;
-    padding: 0 2rem;
+    padding: 0.5rem 1.25rem;
     border: solid 1px #888880;
     border-radius: 10px;
-    box-shadow: 3px 3px 6px #bbb;
-    box-shadow: 0 2px 6px rgba(0,0,0,.5),
-        inset 0 1px rgba(255,255,255,.3),
-        inset 0 10px rgba(255,255,255,.2),
-        inset 0 10px 20px rgba(255,255,255,.25),
-        inset 0 -15px 30px rgba(0,0,0,.1);
     background-color: #fcfdfb;
+    box-shadow: 1px 1px 3px rgba(0 0 0 / 25%);
 }
 .content-panel.centered {
     text-align: center;
@@ -1283,17 +1280,15 @@ table.wiki-content-table th {
 }
 
 /* INT display box */
-.content-panel {
-    --featured-radius: 8px;
-    --content-panel-accent: #274463;
-    position: relative;
-    padding: 2rem 1.25rem 0.5rem;
-    box-shadow: 1px 1px 3px rgba(0 0 0 / 25%);
-}
 .content-panel .panel-body {
     border-radius: var(--featured-radius);
 }
-
+.content-panel:has(.panel-heading, .panel-footer) {
+    position: relative;
+}
+.content-panel:has(.panel-heading) {
+    padding-block-start: 2rem;
+}
 .content-panel .panel-heading,
 .content-panel .panel-footer {
     position: absolute;
