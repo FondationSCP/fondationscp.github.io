@@ -1265,20 +1265,6 @@ table.wiki-content-table th {
     padding: 0;
 }
 
-/* Cadre */
-
-.cadre {
-    width: 95%;
-    margin: 1rem auto;
-    padding: 0.5rem 1rem;
-    border: 1px solid rgba(0 0 0 / 70%);
-    border-radius: 8px;
-    box-shadow: 1px 1px 2px rgba(0 0 0 / 40%);
-}
-.yui-content .cadre {
-    width: auto;
-}
-
 /* INT display box */
 .content-panel .panel-body {
     border-radius: var(--featured-radius);
@@ -1324,8 +1310,21 @@ table.wiki-content-table th {
     margin: 0;
 }
 
-/* White-paper */
+/* Cadre */
+.cadre {
+    width: 95%;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(0 0 0 / 70%);
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px rgba(0 0 0 / 40%);
+}
+.yui-content .cadre {
+    width: auto;
+}
 
+
+/* White-paper */
 .white-paper h1,
 .white-paper h2,
 .white-paper h3,
@@ -1431,7 +1430,6 @@ table.wiki-content-table th {
 .infobulle.fleches a::after {
     content: " «";
 }
-
 
 /* Blockquotes and fake blockquotes */
 blockquote,
