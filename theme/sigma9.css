@@ -27,38 +27,7 @@
     - Search icon SVG by Fabián Alexis under CC BY-SA 3.0 https://commons.wikimedia.org/wiki/File:Antu_edit-find-mail.svg
 */
 
-/* ++++++++++++++++ #0 Contents ++++++++++++++++
-#0 Variables
-#1 Common Settings
-#2.0 Header
-    #2.1 Account menu
-    #2.2 Search box
-    #2.3 Topbar
-    #2.4 Sidebar
-#3.0 Footer
-#4.0 Content area
-    #4.1 Rating module
-    #4.2 Standard image block
-    #4.3 Tabview (YUI-Tabs)
-    #4.4 Forum
-    #4.5 Other page elements
-    #4.6 Custom & utility classes
-    #4.7 Colmod
-    #4.8 Assorted fixes
-#5.0 Extended support for asian writing systems
-#6.0 Advanced settings
-#7.0 Responsive Web Design
-    #7.1 Basic Query for mobile devices (Up to 767px device width)
-    #7.2 Note Media Query (Up to 580px device width)
-    #7.3 Mobile Media Query (Up to 479px device width)
-    #7.4 Very narrow Media Query (Up to 385px device width)
-    #7.5 Mini Tablet Media Query (581px - 767px device width)
-    #7.6 Tablet Media Query (768px - 979px device width)
-#8.0 Interwiki-module
-#9.0 Off-page styling
-*/
-
-/* ++++++++++++++++ #0 Variables ++++++++++++++++
+/* ++++++++++++++++ Variables ++++++++++++++++
 
 Legend:
     _bg_ = Background [color or URL]
@@ -73,12 +42,12 @@ Legend:
 */
 
 :root {
-    /* 0.1 Core variables */
+    /* Core variables */
     --accent-1: #b01;
     --accent-1-darker: #824;
     --accent-1-lighter: #d61;
 
-    /* 0.2 Fluid typescales
+    /* Fluid typescales
     @link https://utopia.fyi/type/calculator?c=320,21,1.333,1140,20,1.414,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
     --step--2: clamp(0.63rem, calc(0.78rem + -0.22vw), 0.74rem);
     --step--1: clamp(0.88rem, calc(1.02rem + -0.20vw), 0.98rem);
@@ -89,7 +58,7 @@ Legend:
     --step-4: clamp(4.14rem, calc(3.81rem + 1.66vw), 5.00rem);
     --step-5: clamp(5.52rem, calc(4.92rem + 3.01vw), 7.07rem);
 
-    /* 1 Common */
+    /* Common */
     --ct_bg_body: #fff;
     --ct_col_body-txt: #333;
     --ct_fnt_body: Noto Sans;
@@ -99,7 +68,7 @@ Legend:
     --ct_col_link-newpage: var(--accent-1-lighter, #d61);
     --ct_col_hr: #aaa;
 
-    /* 2 Header */
+    /* Header */
     --ct_bg_header-image: url('https://grombald.github.io/Common-Theme/img/body_bg.png');
     --ct_bg_header-image: url('https://grombald.github.io/Common-Theme/svg/body_bg.svg');
     --ct_bg_header-logo: url('https://grombald.github.io/Common-Theme/img/logo.png');
@@ -112,7 +81,7 @@ Legend:
     --ct_fns_header-txt: var(--step-2, clamp(2.27rem, calc(1.77rem + 2.47vw), 3.53rem));
     --ct_fns_slogan-txt: var(--step--1, clamp(0.88rem, calc(1.02rem + -0.20vw), 0.98rem));
 
-    /* 2 Account menu */
+    /* Account menu */
     --ct_col_account-menu-txt: #aaa;
     --ct_col_account-menu-link: #ddd;
     --ct_col_account-submenu-bg: #fff;
@@ -120,7 +89,7 @@ Legend:
     --ct_col_account-submenu-link-hover: #000;
     --ct_brd_account-submenu: 1px solid #888;
 
-    /* 2 Search box */
+    /* Search box */
     --ct_col_searchbox-txt: #ccc;
     --ct_brd_searchbox-border: solid 1px #999;
     --ct_col_searchbox-highlight: #fff;
@@ -131,7 +100,7 @@ Legend:
     --ct_col_searchbox-gradient-4: #c99;
     --ct_dim_searchbox-border-radius: 5px;
 
-    /* 2 Topbar */
+    /* Topbar */
     --ct_col_topbar-txt: #fff;
     --ct_col_topbar-link: #a01;
     --ct_bg_topbar-item: #eee;
@@ -146,7 +115,7 @@ Legend:
     --ct_bg_topbar-home-hover: url('https://grombald.github.io/Common-Theme/svg/home.svg');
     --ct_bg_open-menu-button: url('https://grombald.github.io/Common-Theme/svg/open-menu-button.svg');
 
-    /* 2 Sidebar */
+    /* Sidebar */
     --ct_dim_side-bar-width: 14rem;
     --ct_shd_sidebar-block: 0 2px 6px rgba(102 0 0 / 50%);
     --ct_col_sidebar-elements: #600;
@@ -170,16 +139,16 @@ Legend:
     --ct_bg_sidebar-collapse: url("https://grombald.github.io/Common-Theme/svg/collapse.svg");
     --ct_bg_sidebar-expand: url("https://grombald.github.io/Common-Theme/svg/expand.svg");
 
-    /* 3 Footer */
+    /* Footer */
     --ct_bg_footer: #444;
     --ct_col_footer-txt: #bbb;
     --ct_col_footer-link: #fff;
 
-    /* 4 Content area */
+    /* Content area */
     --ct_col_page-title: var(--ct_col_h1-txt);
     --ct_col_page-title-border: #bbb;
 
-    /* 4 Rating module */
+    /* Rating module */
     --ct_col_rate-primary: #633;
     --ct_brd_rate-primary: solid 1px var(--ct_col_rate-primary, #633);
     --ct_col_rate-secondary: #fff6f0;
@@ -190,11 +159,11 @@ Legend:
     --ct_dim_rate-cancel-border-radius: calc(var(--ct_dim_rate-border-radius) - 2px);
     --ct_dim_rate-heritage-border-radius: calc(var(--ct_dim_rate-border-radius) + 3px);
 
-    /* 4 Standard image block */
+    /* Standard image block */
     --ct_brd_image-block: solid 1px #666;
     --ct_col_image-block-contrast: #eee;
 
-    /* 4 Tabview (YUI-Tabs) */
+    /* Tabview (YUI-Tabs) */
     --ct_col_tab-bg: #f5f5f5;
     --ct_col_tab-menu-bg-selected-txt: #fff;
     --ct_col_tab-menu-border: #444;
@@ -205,7 +174,7 @@ Legend:
     --ct_brd_tab_content: 1px solid #808080;
     --ct_col_tab_content-border-top: #243356;
 
-    /* 4 Other page elements */
+    /* Other page elements */
     --ct_col_toc-bg: #f7f7f7;
     --ct_brd_toc: 1px dashed #808080;
     --ct_col_blockquote-bg: #f4f4f4;
@@ -222,7 +191,7 @@ Legend:
     --ct_brd_white-paper-toc: solid 1px #ccc;
     --ct_dim_text-indent: 2em;
 
-    /* 7 Responsive Web Design */
+    /* Responsive Web Design */
     --ct_col_m_sidebar-bg: #b88686;
     --ct_brd_m_sidebar: 1px solid #dedede;
     --ct_brd_m_sidebar-right: 1px solid #936b6b;
@@ -230,7 +199,7 @@ Legend:
     --ct_brd_m_sidebar-button: 0.2em solid #888;
     --ct_shd_m_sidebar-button: 0 0 20px 3px rgb(153 153 153);
 
-    /* 9 Off-page styling */
+    /* Off-page styling */
     --ct_bg_hovertip: #f3f3f3;
     --ct_col_hovertip: var(--ct_col_body-txt, #333);
     --ct_brd_hovertip: solid 1px black;
@@ -265,7 +234,7 @@ Legend:
 }
 
 
-/* ++++++++++++++++ #1 Common Settings ++++++++++++++++*/
+/* ++++++++++++++++ Common Settings ++++++++++++++++*/
 
 body {
     background: var(--ct_bg_body, #fff);
@@ -330,7 +299,7 @@ hr {
     background-size: 100px 400px;
 }
 
-/* ++++++++++++++++ #2.0 Header ++++++++++++++++ */
+/* ++++++++++++++++ Header ++++++++++++++++ */
 
 #header {
     background: url('https://grombald.github.io/Common-Theme/img/logo.png') 10px 40px no-repeat;
@@ -396,7 +365,7 @@ hr {
     color: var(--ct_col_alt-slogan-txt);
 }
 
-/* ---------------- #2.1 Account menu ---------------- */
+/* ---------------- Account menu ---------------- */
 #login-status {
     color: var(--ct_col_account-menu-txt, #aaa);
     font-size: 90%;
@@ -422,7 +391,7 @@ hr {
     margin-right: 0.06rem;
 }
 
-/* ---------------- #2.2 Search box ---------------- */
+/* ---------------- Search box ---------------- */
 #search-top-box {
     position: absolute;
     right: 9px;
@@ -462,7 +431,7 @@ hr {
     text-shadow: 0 0 1px rgba(255 255 255 / 25%)
 }
 
-/* ---------------- #2.3 Topbar ---------------- */
+/* ---------------- Topbar ---------------- */
 #top-bar {
     position: absolute;
     top: 140px;
@@ -617,7 +586,7 @@ hr {
   }
 }
 
-/* ---------------- #2.4 Sidebar ---------------- */
+/* ---------------- Sidebar ---------------- */
 #side-bar {
     display: block;
     clear: none;
@@ -840,7 +809,7 @@ hr {
     width: 15px;
 }
 
-/* ++++++++++++++++ #3.0 Footer ++++++++++++++++ */
+/* ++++++++++++++++ Footer ++++++++++++++++ */
 #footer {
     background: var(--ct_bg_footer, #444);
     clear: both;
@@ -862,7 +831,7 @@ hr {
     color: var(--ct_col_footer-link, #fff);
 }
 
-/* ++++++++++++++++ #4.0 Content area ++++++++++++++++ */
+/* ++++++++++++++++ Content area ++++++++++++++++ */
 
 /* Above content */
 #content-wrap {
@@ -938,7 +907,7 @@ table.page-files tr.highlight td:not(:last-child) {
     display: none;
 }
 
-/* ---------------- #4.1 Rating module ---------------- */
+/* ---------------- Rating module ---------------- */
 .rate-box-with-credit-button {
     display: flex;
     margin-right: 2em;
@@ -1070,7 +1039,7 @@ table.page-files tr.highlight td:not(:last-child) {
     width: 20px;
 }
 
-/* ---------------- #4.2 Standard image block ---------------- */
+/* ---------------- Standard image block ---------------- */
 .scp-image-block {
     border: var(--ct_brd_image-block, solid 1px #666);
     box-shadow: 0 1px 6px rgba(0 0 0 / 25%);
@@ -1112,7 +1081,7 @@ table.page-files tr.highlight td:not(:last-child) {
     padding: 0 0.6rem;
 }
 
-/* ---------------- #4.3 Tabview (YUI-Tabs) ---------------- */
+/* ---------------- Tabview (YUI-Tabs) ---------------- */
 .yui-navset .yui-content{
     background: var(--ct_col_tab-bg, #f5f5f5);
 }
@@ -1186,7 +1155,7 @@ table.page-files tr.highlight td:not(:last-child) {
     border-color: var(--ct_col_code-border, #ddd);
 }
 
-/* ---------------- #4.4 Forum ---------------- */
+/* ---------------- Forum ---------------- */
 
 .forum-thread-box .description-block {
     border-radius: 10px;
@@ -1208,7 +1177,7 @@ table.page-files tr.highlight td:not(:last-child) {
     display: none !important;
 }
 
-/* ---------------- #4.5 Other page elements ---------------- */
+/* ---------------- Other page elements ---------------- */
 
 #toc {
     border: var(--ct_brd_toc, 1px dashed #808080);
@@ -1224,7 +1193,7 @@ table.wiki-content-table th {
     border: var(--ct_brd_table-header, 1px solid #888);
 }
 
-/* ---------------- #4.6 Custom & utility classes ---------------- */
+/* ---------------- Custom & utility classes ---------------- */
 
 .content-panel {
     --featured-radius: 8px;
@@ -1763,13 +1732,13 @@ li.folded > .colmod-content {
     text-decoration: none;
 }
 
-/* ---------------- #4.8 Assorted fixes ---------------- */
+/* ---------------- Assorted fixes ---------------- */
 
 .preview-message {
     top: -7px;
 }
 
-/* ---------------- #5.0 Support for Asian languages ---------------- */
+/* ---------------- Support for Asian languages ---------------- */
 /* Ruby by Nanimono Demonai */
 ruby,
 .ruby {
@@ -1789,7 +1758,7 @@ rt,
     text-align: center;
 }
 
-/* ++++++++++++++++ #6.0 Advanced settings ++++++++++++++++ */
+/* ++++++++++++++++ Advanced settings ++++++++++++++++ */
 
 @-webkit-viewport {
     width: device-width;
@@ -1825,7 +1794,7 @@ rt,
     background: rgba(50 50 50 / 30%);
 }
 
-/* ++++++++++++++++ #7.0 Responsive Web Design ++++++++++++++++ */
+/* ++++++++++++++++ Responsive Web Design ++++++++++++++++ */
 
 img,
 embed,
@@ -1843,7 +1812,7 @@ table,
 }
 
 
-/* ---------------- #7.1 Basic Query for mobile devices (Up to 767px) ---------------- */
+/* ---------------- Basic Query for mobile devices (Up to 767px) ---------------- */
 
 @media (max-width: 767px) {
     span,
@@ -1973,7 +1942,7 @@ table,
     }
 }
 
-/* ---------------- #7.2 Note Media Query (Up to 580px device width) ---------------- */
+/* ---------------- Note Media Query (Up to 580px device width) ---------------- */
 @media (max-width: 580px) {
     blockquote,
     .blockquote {
@@ -2020,7 +1989,7 @@ table,
     }
 }
 
-/* ---------------- #7.3 Mobile Media Query (Up to 479px device width) ---------------- */
+/* ---------------- Mobile Media Query (Up to 479px device width) ---------------- */
 @media (max-width: 479px) {
     table.form td,
     table.form th {
@@ -2056,7 +2025,7 @@ table,
     }
 }
 
-/* ---------------- #7.4 Very narrow Media Query (Up to 385px device width) ---------------- */
+/* ---------------- Very narrow Media Query (Up to 385px device width) ---------------- */
 
 @media (max-width: 385px) {
     #header {
@@ -2082,7 +2051,7 @@ table,
     }
 }
 
-/* ---------------- #7.5 Mini Tablet Media Query (581px - 767px device width) ---------------- */
+/* ---------------- Mini Tablet Media Query (581px - 767px device width) ---------------- */
 @media (min-width: 581px) and (max-width: 767px) {
     #header {
         background-position: 1em 4em;
@@ -2109,7 +2078,7 @@ table,
     }
 }
 
-/* ---------------- #7.6 Tablet Media Query (768px - 979px device width) ---------------- */
+/* ---------------- Tablet Media Query (768px - 979px device width) ---------------- */
 @media (min-width: 768px) and (max-width: 979px) {
     #header {
         background-position: 1em 4em;
@@ -2151,7 +2120,7 @@ table,
     }
 }
 
-/* ---------------- #7.7 Laptop Media Query ---------------- */
+/* ---------------- Laptop Media Query ---------------- */
 @media only screen and (max-width: 1200px) {
     #top-bar ul li:last-of-type ul {
         right: 0;
@@ -2164,7 +2133,7 @@ table,
     }
 }
 
-/* ++++++++++++++++ 8.0 Interwiki module ++++++++++++++++ */
+/* ++++++++++++++++ Interwiki module ++++++++++++++++ */
 .scpnet-interwiki-wrapper {
     margin-left: -0.3rem;
     width: var(--ct_dim_side-bar-width, 14rem);
@@ -2175,7 +2144,7 @@ iframe.scpnet-interwiki-frame {
     width: var(--ct_dim_side-bar-width, 14rem);
 }
 
-/* ++++++++++++++++ 9.0 Off-page styling ++++++++++++++++ */
+/* ++++++++++++++++ Off-page styling ++++++++++++++++ */
 table.page-files .options,
 a.action-area-close:hover {
     background-color: var(--ct_bg_body, #fff);
