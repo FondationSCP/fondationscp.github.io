@@ -1245,6 +1245,9 @@ table.wiki-content-table th {
     .content-panel:has(.panel-heading) {
         padding-block-start: 2rem;
     }
+    .content-panel:has(.panel-footer) {
+        padding-block-end: 2rem;
+    }
 }
 @supports not selector(:has(a, b)) {
     .content-panel {
