@@ -1252,6 +1252,7 @@ table.wiki-content-table th {
 @supports not selector(:has(a, b)) {
     .content-panel {
         position: relative;
+        padding-block-end: 2rem;
     }
     .content-panel .panel-heading + * {
         margin-block-start: 2rem;
