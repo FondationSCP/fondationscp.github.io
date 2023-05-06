@@ -1238,14 +1238,24 @@ table.wiki-content-table th {
 }
 
 /* INT display box */
+@supports selector(:has(a, b)) {
+    .content-panel:has(.panel-heading, .panel-footer) {
+        position: relative;
+    }
+    .content-panel:has(.panel-heading) {
+        padding-block-start: 2rem;
+    }
+}
+@supports not selector(:has(a, b)) {
+    .content-panel {
+        position: relative;
+    }
+    .content-panel .panel-heading + * {
+        margin-block-start: 2rem;
+    }
+}
 .content-panel .panel-body {
     border-radius: var(--featured-radius);
-}
-.content-panel:has(.panel-heading, .panel-footer) {
-    position: relative;
-}
-.content-panel:has(.panel-heading) {
-    padding-block-start: 2rem;
 }
 .content-panel .panel-heading,
 .content-panel .panel-footer {
