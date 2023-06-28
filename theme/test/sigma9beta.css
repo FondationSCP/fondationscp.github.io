@@ -1,5 +1,13 @@
 @import url('https://fondationscp.github.io/theme/sigma9.min.css');
 
+:root {
+  --ct_ly_topbar-h: 21px;
+  --ct_ly_header-no-topbar-height: calc(var(--ct_ly_header-height) - var(--ct_ly_topbar-h));
+  /*
+  --ct_ly_header-height: 140px;
+  */
+}
+
 #header h1 a {
   --ct_header-lh: 2.25rem;
   margin: 0;

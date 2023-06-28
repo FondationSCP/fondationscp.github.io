@@ -1,1 +1,1 @@
-@import url(https://fondationscp.github.io/theme/sigma9.min.css);#header h1 a{--ct_header-lh:2.25rem;margin:0;padding-top:calc(12px + 1rem);max-height:calc(var(--ct_header-lh) * 2);line-height:var(--ct_header-lh);overflow-y:hidden}
+@import url(https://fondationscp.github.io/theme/sigma9.min.css);:root{--ct_ly_topbar-h:21px;--ct_ly_header-no-topbar-height:calc(var(--ct_ly_header-height) - var(--ct_ly_topbar-h))}#header h1 a{--ct_header-lh:2.25rem;margin:0;padding-top:calc(12px + 1rem);max-height:calc(var(--ct_header-lh) * 2);line-height:var(--ct_header-lh);overflow-y:hidden}
