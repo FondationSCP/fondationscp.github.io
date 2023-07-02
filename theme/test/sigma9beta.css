@@ -1,25 +1,66 @@
 @import url('https://fondationscp.github.io/theme/sigma9.min.css');
 
 :root {
-  --ct_ly_topbar-h: 21px;
-  --ct_ly_header-no-topbar-height: calc(var(--ct_ly_header-height) - var(--ct_ly_topbar-h));
-  /*
-  --ct_ly_header-height: 140px;
-  */
+    --ct_ly_topbar-h: 21px;
+    --ct_ly_header_no-topbar-height: calc(var(--ct_ly_header-height) - var(--ct_ly_topbar-h));
+    --ct_ly_header-h1_left-margin: 120px;
+
+    /*
+    --ct_ly_header-height: 140px;
+    */
+}
+
+#header h1 {
+    margin-left: var(--ct_header-h1_left-margin);
+    max-width: calc(95vw - var(--ct_header-h1_left-margin));
 }
 
 #header h1 a {
-  --ct_header-lh: 2.25rem;
-  margin: 0;
-  padding-top: calc(12px + 1rem);
-  max-height: calc(var(--ct_header-lh) * 2);
-  line-height: var(--ct_header-lh);
-  overflow-y: hidden;
+    --ct_header-lh: 2.25rem;
+    margin: 0;
+    padding-top: calc(12px + 1rem);
+    max-height: calc(var(--ct_header-lh) * 2);
+    line-height: var(--ct_header-lh);
+    overflow-y: hidden;
 
-  /* To be deleted
-  line-height: 0;
-  margin: 0;
-  max-height: 0;
-  padding: 80px 0 25px;
-  */
+    /* To be deleted
+    line-height: 0;
+    margin: 0;
+    max-height: 0;
+    padding: 80px 0 25px;
+    */
+}
+
+@media (max-width: 385px) {
+    :root {
+        --ct_ly_header-h1_left-margin: calc(66px + 5%);
+    }
+    /* To be deleted
+    #header h1,
+    #header h2 {
+        margin-left: calc(66px + 5%);
+    }
+    */
+}
+@media (min-width: 581px) and (max-width: 767px) {
+    :root {
+        --ct_ly_header-h1_left-margin: 93px;
+    }
+    /* To be deleted
+    #header h1,
+    #header h2 {
+        margin-left: 93px;
+    }
+    */
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    :root {
+        --ct_ly_header-h1_left-margin: 106px;
+    }
+    /* To be deleted
+    #header h1,
+    #header h2 {
+        margin-left: 106px;
+    }
+    */
 }
