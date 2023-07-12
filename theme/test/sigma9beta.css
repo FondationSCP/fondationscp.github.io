@@ -11,8 +11,8 @@
 }
 
 #header h1 {
-    margin-left: var(--ct_header-h1_left-margin);
-    max-width: calc(95vw - var(--ct_header-h1_left-margin));
+    margin-left: var(--ct_ly_header-h1_left-margin);
+    max-width: calc(95vw - var(--ct_ly_header-h1_left-margin));
 }
 
 #header h1 a {
