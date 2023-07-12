@@ -64,3 +64,10 @@
     }
     */
 }
+
+/* Tables fix */
+table.wiki-content-table th {
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+}
