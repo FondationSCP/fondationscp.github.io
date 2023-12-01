@@ -1045,7 +1045,7 @@ table.wiki-content-table th:last-of-type {
 }
 
 #toc .title {
-  color: rgb(var(--bright-accent));
+  color: rgba(0,0,0,0);
 }
 
 .oldblock {
