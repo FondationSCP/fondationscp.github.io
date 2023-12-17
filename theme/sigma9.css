@@ -72,9 +72,9 @@ Legend:
     --ct_ly_header-height: 140px;
 
     /* Header */
-    --ct_bg_header-image: url('https://grombald.github.io/Common-Theme/img/body_bg.png');
-    --ct_bg_header-image: url('https://grombald.github.io/Common-Theme/svg/body_bg.svg');
-    --ct_bg_header-logo: url('https://fondationscp.github.io/theme/images/logo.png');
+    --ct_bg_header-image: url('https://fondationscp.github.io/theme/images/body_bg.png');
+    --ct_bg_header-image: url('https://fondationscp.github.io/theme/images/body_bg.svg');
+    --ct_bg_header-logo: url('https://fondationscp.github.io/theme/images/header-logo.svg');
     --ct_fnt_header-txt: Sans-Normalcy, Arial, sans-serif;
     --ct_col_header-txt: #eee;
     --ct_col_slogan-txt: #f0f0c0;
@@ -295,7 +295,7 @@ hr {
     vertical-align: top;
 }
 #container-wrap {
-    background: url('https://grombald.github.io/Common-Theme/img/body_bg.png') top left repeat-x;
+    background: url('https://fondationscp.github.io/theme/images/body_bg.png') top left repeat-x;
     background-image: var(--ct_bg_header-image);
     -moz-background-size: 100px 400px;
     background-size: 100px 400px;
@@ -304,7 +304,7 @@ hr {
 /* ++++++++++++++++ Header ++++++++++++++++ */
 
 #header {
-    background: url('https://grombald.github.io/Common-Theme/img/logo.png') 10px 40px no-repeat;
+    background: url('https://fondationscp.github.io/theme/images/header-logo.svg') 10px 40px no-repeat;
     background-image: var(--ct_bg_header-logo);
     background-size: 100px 100px;
     height: var(--ct_ly_header-height);
