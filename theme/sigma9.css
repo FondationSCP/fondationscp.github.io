@@ -3,6 +3,7 @@
 @import url("https://fondationscp.github.io/theme/module-de-credit/credit-min.css");
 @import url("https://grombald.github.io/Common-Theme/font/font-awesome.min.css");
 @import url('https://api.fonts.coollabs.io/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://api.fonts.coollabs.io/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @font-face {
     font-family: 'Sans-Normalcy';
     src: url('https://fondationscp.github.io/theme/fonts/sans-normalcy.woff') format('woff'),
@@ -1582,7 +1583,7 @@ blockquote,
 .h4,
 .h5,
 .h6 {
-    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+    font-family: "Overpass", system-ui, Arial;
 }
 .h2,
 .h3,
