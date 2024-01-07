@@ -243,7 +243,7 @@ body {
     background: var(--ct_bg_body, #fff);
     color: var(--ct_col_body-txt, #333);
     font-size: 15px;
-    font-family: var(--ct_fnt_body, Noto Sans), verdana, arial, helvetica, sans-serif;
+    font-family: var(--ct_fnt_body, Noto Sans), sans-serif;
 }
 #interwiki body {
 	background-color: transparent;
@@ -327,8 +327,8 @@ hr {
     display: block;
     background: transparent;
     color: var(--ct_col_header-txt, #eee);
-    font-family: Sans-Normalcy, Arial, sans-serif;
-    font-family: var(--ct_fnt_header-txt, Sans-Normalcy, Arial, sans-serif);
+    font-family: Sans-Normalcy, sans-serif;
+    font-family: var(--ct_fnt_header-txt, Sans-Normalcy, sans-serif);
     font-size: var(--ct_fns_header-txt, clamp(2.27rem, calc(1.77rem + 2.47vw), 3.53rem));
     letter-spacing: 0.9px;
     line-height: 0;
