@@ -2,7 +2,7 @@
 
 @import url("https://fondationscp.github.io/theme/module-de-credit/credit-min.css");
 @import url("https://grombald.github.io/Common-Theme/font/font-awesome.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://api.fonts.coollabs.io/css2?family=Noto+Sans:wght@400;700&display=swap');
 @font-face {
     font-family: 'Sans-Normalcy';
     src: url('https://fondationscp.github.io/theme/fonts/sans-normalcy.woff') format('woff'),
