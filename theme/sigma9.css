@@ -248,17 +248,25 @@ body {
 #interwiki body {
 	background-color: transparent;
 }
-h1 {
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-family: "Overpass", system-ui, Arial;
+}
+h1, .h1 {
     color: var(--ct_col_h1-txt, #901);
     font-weight: bold;
     margin: 0.7em 0 0.6em;
     padding: 0;
 }
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
     letter-spacing: 1px;
     margin: 0.5em 0 0.4em;
     padding: 0;
@@ -1577,50 +1585,6 @@ blockquote,
 }
 
 /* Utility and shortcut classes */
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-    font-family: "Overpass", system-ui, Arial;
-}
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-    letter-spacing: 1px;
-    margin: 0.5em 0 0.4em;
-    padding: 0;
-}
-.h1 {
-    color: var(--ct_col_h1-txt, #901);
-    font-size: 190%;
-    font-weight: bold;
-    margin: 0.7em 0 0.6em;
-    padding: 0;
-}
-.h2 {
-    font-weight: normal;
-    font-size: 150%;
-}
-.h3 {
-    font-weight: bold;
-    font-size: 130%;
-}
-.h4 {
-    font-weight: bold;
-    font-size: 120%;
-}
-.h5 {
-    font-weight: bold;
-    font-size: 100%;
-}
-.h6 {
-    font-weight: bold;
-    font-size: 90%;
-}
 .b {
     font-weight: bold;
 }
