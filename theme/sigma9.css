@@ -248,13 +248,18 @@ body {
 #interwiki body {
 	background-color: transparent;
 }
+:where(#page-content) p {
+    text-wrap: pretty;
+}
+:where(#page-content) :is(
 h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4,
 h5, .h5,
-h6, .h6 {
+h6, .h6) {
     font-family: "Overpass", system-ui, Arial;
+    text-wrap: balance;
 }
 h1, .h1 {
     color: var(--ct_col_h1-txt, #901);
