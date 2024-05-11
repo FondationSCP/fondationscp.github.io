@@ -2340,6 +2340,15 @@ script + .page-tags:before {
 .edit-help-34 > a:nth-of-type(2) {
     display: none;
 }
+/* Info text for Ublock hiding the file upload options */
+#file-action-area:has(#file-upload-box-ajax[style*="display: none"]) p:nth-of-type(2)::after {
+    content: "Si les options de téléversement ne s'affichent pas ci-dessous, merci de désactiver temporairement votre bloqueur de publicités.";
+    display: block;
+    margin: 1rem;
+    padding: 0.25rem 1rem;
+    background-color: var(--accent-1);
+    color: var(--ct_bg_edit-info-text);
+}
 
 /* ---------- FIXES  ---------- */
 
