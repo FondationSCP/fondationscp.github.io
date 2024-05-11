@@ -2336,7 +2336,10 @@ script + .page-tags:before {
     font-size: 77%;
     color: #888;
 }
-
+/* Lien d'info inutile de Wikidot */
+.edit-help-34 > a:nth-of-type(2) {
+    display: none;
+}
 
 /* ---------- FIXES  ---------- */
 
