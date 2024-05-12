@@ -82,6 +82,3 @@
 script + .page-tags:before {
     content: "Login to your account to hide ads";
 }
-#file-action-area:has(#file-upload-box-ajax[style*="display: none"]) p:nth-of-type(2)::after {
-    content: "If you cannot see the file upload options below, please temporarily disable your adblocker.";
-}
