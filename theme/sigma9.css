@@ -1426,8 +1426,8 @@ blockquote,
 .borderless-tabs .yui-content blockquote {
     border: var(--ct_brd_blockquote, 1px dashed #999);
     background-color: var(--ct_col_blockquote-bg, #f4f4f4);
-    padding: 0 1em;
-    margin: 1em 3em;
+    padding: 1rem 1.5rem;
+    margin: 1rem 3rem;
 }
 
 /* Code blocks */
