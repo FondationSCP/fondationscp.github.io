@@ -1429,6 +1429,12 @@ blockquote,
     padding: 1rem 1.5rem;
     margin: 1rem 3rem;
 }
+:is(blockquote, .blockquote) > p:first-of-type {
+    margin-top: 0;
+}
+:is(blockquote, .blockquote) > p:last-of-type {
+    margin-bottom: 0;
+}
 
 /* Code blocks */
 .code {
