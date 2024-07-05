@@ -311,7 +311,6 @@ hr {
 #container-wrap {
     background: url('https://fondationscp.github.io/theme/images/body_bg.png') top left repeat-x;
     background: var(--ct_bg_header-image, url('https://fondationscp.github.io/theme/images/body_bg.svg')) top left repeat-x;
-    -moz-background-size: 100px 400px;
     background-size: 100px 400px;
 }
 
