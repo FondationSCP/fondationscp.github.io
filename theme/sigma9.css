@@ -75,7 +75,7 @@ Legend:
     /* Header */
     --ct_bg_header-image: url('https://fondationscp.github.io/theme/images/body_bg.png');
     --ct_bg_header-image: url('https://fondationscp.github.io/theme/images/body_bg.svg');
-    --ct_bg_header-logo: url('https://fondationscp.github.io/theme/images/logo-belge.png');
+    --ct_bg_header-logo: url('https://fondationscp.github.io/theme/images/header-logo.svg');
     --ct_fnt_header-txt: Sans-Normalcy, Arial, sans-serif;
     --ct_col_header-txt: #eee;
     --ct_col_slogan-txt: #f0f0c0;
@@ -317,7 +317,7 @@ hr {
 /* ++++++++++++++++ Header ++++++++++++++++ */
 
 #header {
-    background: var(--ct_bg_header-logo, url('https://fondationscp.github.io/theme/images/logo-belge.png')) 10px 40px no-repeat;
+    background: var(--ct_bg_header-logo, url('https://fondationscp.github.io/theme/images/header-logo.svg')) 10px 40px no-repeat;
     background-size: 100px 100px;
     height: var(--ct_ly_header-height);
     margin: 0 auto;
