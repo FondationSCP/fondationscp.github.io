@@ -185,6 +185,8 @@ $ratebox-shadow: 1px 1px 3px rgba(0 0 0 / 50%)
   border-radius: $ratebox-brdrad
 
 .page-rate-widget-box
+  box-shadow: $ratebox-shadow
+
   span
     display: inline-flex
     justify-content: center
@@ -192,7 +194,6 @@ $ratebox-shadow: 1px 1px 3px rgba(0 0 0 / 50%)
     height: 18px
     margin: 0
     background-color: $ratebox-bg
-    box-shadow: $ratebox-shadow
     align-items: center
 
   .rate-points
@@ -378,12 +379,12 @@ $ratebox-shadow: 1px 1px 3px rgba(0 0 0 / 50%)
 .page-rate-widget-box
   display: inline-block
   background: var(--ct_col_rate-primary, #633) !important
-  border-radius: var(--ct_dim_rate-border-radius, 5px)
+  border-radius: $ratebox-brdrad
 
 .page-rate-widget-box .rate-points
   background: var(--ct_col_rate-primary, #633) !important
   border: var(--ct_brd_rate-primary, solid 1px #633)
-  border-radius: var(--ct_dim_rate-border-radius, 5px) 0 0 var(--ct_dim_rate-border-radius, 5px)
+  border-radius: $ratebox-brdrad 0 0 $ratebox-brdrad
   border-right: 0
 
 .page-rate-widget-box .rateup, .page-rate-widget-box .ratedown
@@ -406,7 +407,7 @@ $ratebox-shadow: 1px 1px 3px rgba(0 0 0 / 50%)
   background: var(--ct_col_rate-primary,#633)
   border: var(--ct_brd_rate-primary, solid 1px #633)
   border-left: 0
-  border-radius: 0 var(--ct_dim_rate-border-radius, 5px) var(--ct_dim_rate-border-radius, 5px) 0
+  border-radius: 0 $ratebox-brdrad $ratebox-brdrad 0
 
 .page-rate-widget-box .cancel a
   background: transparent
@@ -415,7 +416,7 @@ $ratebox-shadow: 1px 1px 3px rgba(0 0 0 / 50%)
 
 .page-rate-widget-box .cancel a:hover
   background: var(--ct_col_rate-primary, #633)
-  border-radius: 0 var(--ct_dim_rate-cancel-border-radius, 3px) var(--ct_dim_rate-cancel-border-radius, 3px) 0
+  border-radius: 0 $ratebox-brdrad $ratebox-brdrad 0
   color: var(--ct_col_rate-link-hover)
 
 .rate-box-with-credit-button
@@ -424,7 +425,7 @@ $ratebox-shadow: 1px 1px 3px rgba(0 0 0 / 50%)
   border: none
 
 .rate-box-with-credit-button .page-rate-widget-box .cancel
-  border-radius: 0 5px 5px 0
+  border-radius: 0 $ratebox-brdrad $ratebox-brdrad 0
   border: var(--ct_brd_rate-primary)
   border-left: none
 
@@ -446,7 +447,7 @@ $ratebox-shadow: 1px 1px 3px rgba(0 0 0 / 50%)
   height: 16px
   background-color: var(--ct_col_rate-primary, #633)
   border: var(--ct_brd_rate-primary, 1px solid #633)
-  border-radius: var(--ct_dim_rate-border-radius, 5px)
+  border-radius: $ratebox-brdrad
   box-shadow: 1px 1px 3px rgba(0 0 0 / 50%)
   margin-left: 0.3rem
   font-size: 0.8em

@@ -189,6 +189,9 @@
   border-radius: var(--ct_dim_rate-border-radius, 5px);
 }
 
+.page-rate-widget-box {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
 .page-rate-widget-box span {
   display: inline-flex;
   justify-content: center;
@@ -196,7 +199,6 @@
   height: 18px;
   margin: 0;
   background-color: var(--ct_col_rate-primary, #633);
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   align-items: center;
 }
 .page-rate-widget-box .rate-points {
@@ -434,7 +436,7 @@
 
 .page-rate-widget-box .cancel a:hover {
   background: var(--ct_col_rate-primary, #633);
-  border-radius: 0 var(--ct_dim_rate-cancel-border-radius, 3px) var(--ct_dim_rate-cancel-border-radius, 3px) 0;
+  border-radius: 0 var(--ct_dim_rate-border-radius, 5px) var(--ct_dim_rate-border-radius, 5px) 0;
   color: var(--ct_col_rate-link-hover);
 }
 
@@ -445,7 +447,7 @@
 }
 
 .rate-box-with-credit-button .page-rate-widget-box .cancel {
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 var(--ct_dim_rate-border-radius, 5px) var(--ct_dim_rate-border-radius, 5px) 0;
   border: var(--ct_brd_rate-primary);
   border-left: none;
 }
