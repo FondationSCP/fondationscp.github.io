@@ -232,6 +232,7 @@
   padding-block: 1px;
   border: var(--ct_brd_rate-primary);
   border-right: none;
+  border-radius: var(--ct_dim_rate-border-radius, 5px) 0 0 var(--ct_dim_rate-border-radius, 5px);
   /* Let general bg define color */
   background-color: transparent !important;
 }
