@@ -72,7 +72,7 @@
   min-height: 200px;
   margin-inline: 1rem;
   background-color: var(--ct_bg_body, #fff);
-  border-radius: 5px;
+  border-radius: var(--ct_dim_rate-border-radius, 5px);
   box-shadow: 0 2px 6px rgba(102, 0, 0, 0.5);
 }
 .modalbox .modalbox-title {
@@ -83,7 +83,7 @@
   min-height: 50px;
   background: #ccc;
   margin-bottom: 14px;
-  border-radius: 5px 5px 0 0;
+  border-radius: var(--ct_dim_rate-border-radius, 5px) var(--ct_dim_rate-border-radius, 5px) 0 0;
 }
 .modalbox .credit {
   margin: 1.5rem 2rem 1.75rem;
@@ -188,45 +188,32 @@
   border: none;
   border-radius: var(--ct_dim_rate-border-radius, 5px);
 }
-.rate-box-with-credit-button .page-rate-widget-box {
+
+.page-rate-widget-box span {
   display: inline-flex;
+  justify-content: center;
+  box-sizing: border-box;
   height: 18px;
+  margin: 0;
   background-color: var(--ct_col_rate-primary, #633);
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  margin: 0;
-  /* Let general bg define color */
+  align-items: center;
 }
-.rate-box-with-credit-button .page-rate-widget-box .rate-points {
+.page-rate-widget-box .rate-points {
+  font-weight: bolder;
+  font-size: 0.825rem;
+  padding-block: 1px;
+  /* Let general bg define color */
   background-color: transparent !important;
   border: none;
 }
-.rate-box-with-credit-button .page-rate-widget-box .cancel {
+.page-rate-widget-box .cancel {
   border-top: var(--ct_brd_rate-primary, 1px solid #633);
   border-bottom: var(--ct_brd_rate-primary, 1px solid #633);
   border-left: none;
   border-right: none;
   background-color: transparent;
   border-radius: 0;
-}
-.rate-box-with-credit-button .page-rate-widget-box .cancel a {
-  padding: 3px 5px;
-}
-.rate-box-with-credit-button .page-rate-widget-box span {
-  align-items: center;
-}
-
-.page-rate-widget-box span {
-  display: inline-flex;
-  justify-content: center;
-  height: 18px;
-  box-sizing: border-box;
-}
-.page-rate-widget-box .rate-points {
-  font-weight: bolder;
-  font-size: 0.825rem;
-  padding-block: 1px;
-}
-.page-rate-widget-box .cancel {
   padding: 0 2px 0 3px;
 }
 .page-rate-widget-box .cancel a {
@@ -234,7 +221,7 @@
   font-weight: 400;
   font-size: 0;
   color: #fff6f0;
-  padding: 2px 5px;
+  padding: 3px 5px;
   height: 12px;
 }
 .page-rate-widget-box .cancel a:hover {

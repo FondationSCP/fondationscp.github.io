@@ -4,11 +4,8 @@ $ratebox-border: var(--ct_brd_rate-primary, 1px solid #633)
 $ratebox-brdrad: var(--ct_dim_rate-border-radius, 5px)
 $ratebox-shadow: 1px 1px 3px rgba(0 0 0 / 50%)
 
-$modalbox-brdrad: 5px
-
 :root
   --ct_col_rate-link-hover: #c99
-
 
 #u-credit-view
   &, #u-credit-otherwise
@@ -75,7 +72,7 @@ $modalbox-brdrad: 5px
   min-height: 200px
   margin-inline: 1rem
   background-color: var(--ct_bg_body, #fff)
-  border-radius: $modalbox-brdrad
+  border-radius: $ratebox-brdrad
   box-shadow: 0 2px 6px rgba(102 0 0 / 50%)
 
   .modalbox-title
@@ -86,7 +83,7 @@ $modalbox-brdrad: 5px
     min-height: 50px
     background: #ccc
     margin-bottom: 14px
-    border-radius: $modalbox-brdrad $modalbox-brdrad 0 0
+    border-radius: $ratebox-brdrad $ratebox-brdrad 0 0
 
   .credit
     margin: 1.5rem 2rem 1.75rem
@@ -110,7 +107,6 @@ $modalbox-brdrad: 5px
 
   &::before
     content: "Back"
-
 
 /* CREDIT BUTTON */
 /* --- Primary container with rating module and credit button --- */
@@ -175,7 +171,6 @@ $modalbox-brdrad: 5px
     color: var(--ct_col_rate-link-hover, #c99)
     text-decoration: none
 
-  
 /* --- The actual rating module --- */
 
 .rate-box-with-credit-button
@@ -189,46 +184,32 @@ $modalbox-brdrad: 5px
   border: none
   border-radius: $ratebox-brdrad
 
-  .page-rate-widget-box
-    display: inline-flex
-    height: 18px
-    background-color: $ratebox-bg
-    box-shadow: $ratebox-shadow
-    margin: 0
-
-    /* Let general bg define color */
-    .rate-points
-      background-color: transparent !important
-      border: none
-
-    .cancel
-      border-top: $ratebox-border
-      border-bottom: $ratebox-border
-      border-left: none
-      border-right: none
-      background-color: transparent
-      border-radius: 0
-
-      a
-        padding: 3px 5px
-
-    span
-      align-items: center
-
 .page-rate-widget-box
-
   span
     display: inline-flex
     justify-content: center
-    height: 18px
     box-sizing: border-box
+    height: 18px
+    margin: 0
+    background-color: $ratebox-bg
+    box-shadow: $ratebox-shadow
+    align-items: center
 
   .rate-points
     font-weight: bolder
     font-size: 0.825rem
     padding-block: 1px
+    /* Let general bg define color */
+    background-color: transparent !important
+    border: none
 
   .cancel
+    border-top: $ratebox-border
+    border-bottom: $ratebox-border
+    border-left: none
+    border-right: none
+    background-color: transparent
+    border-radius: 0
     padding: 0 2px 0 3px
 
     a
@@ -236,7 +217,7 @@ $modalbox-brdrad: 5px
       font-weight: 400
       font-size: 0
       color: #fff6f0
-      padding: 2px 5px
+      padding: 3px 5px
       height: 12px
 
       &:hover
@@ -275,7 +256,6 @@ $modalbox-brdrad: 5px
      top: 0
      left: 2em
 
-
 /* ------------------------- FR SPECIFICS ------------------------- */
 
 .rate-box-with-credit-button
@@ -294,7 +274,6 @@ $modalbox-brdrad: 5px
         color: var(--ct_col_rate-link-hover, #c99)
         padding-top: 0
         padding-bottom: 0
-
 
   .creditButton
     display: inline-flex
@@ -322,10 +301,8 @@ $modalbox-brdrad: 5px
 #toc-list div:first-of-type[style*="margin-left: 2em"]
   display: none
 
-
-
 /* display: contents method */
-  
+
 .modal-wrapper
 
   &, & > li .foldable-list-container
