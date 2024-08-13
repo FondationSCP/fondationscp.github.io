@@ -1020,39 +1020,6 @@ table.page-files tr.highlight td:not(:last-child) {
     color: var(--ct_col_rate-link-hover, #c99);
 }
 
-/* Heritage Rating module */
-.heritage-rating-module {
-    background: var(--ct_col_rate-primary, #633);
-    border: solid 1px var(--ct_col_rate-border-heritage, #ccc066);
-    border-radius: var(--ct_dim_rate-heritage-border-radius, 8px);
-    box-shadow: 0 1px 3px rgba(0 0 0 / 25%);
-    display: inline-block;
-    margin-right: 2em;
-    margin-bottom: 10px;
-    padding: 2px 8px 2px 5px;
-}
-.heritage-rating-module .page-rate-widget-box {
-    box-shadow: none;
-    margin-bottom: 0;
-    margin-right: 0;
-}
-.heritage-rating-module .heritage-emblem {
-    float: left;
-    height: 16px;
-    left: 2px;
-    margin-right: 2px;
-    overflow: visible;
-    position: relative;
-    top: -2px;
-    width: 16px;
-}
-.heritage-rating-module .heritage-emblem img {
-    border: 0;
-    height: 20px;
-    max-width: 20px;
-    width: 20px;
-}
-
 /* ---------------- Standard image block ---------------- */
 .scp-image-block {
     border: var(--ct_brd_image-block, solid 1px #666);
