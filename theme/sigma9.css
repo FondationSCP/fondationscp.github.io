@@ -155,7 +155,7 @@ Legend:
     --ct_col_rate-primary: #633;
     --ct_brd_rate-primary: solid 1px var(--ct_col_rate-primary, #633);
     --ct_col_rate-secondary: #fff6f0;
-    --ct_col_rate-cancel: #966;
+    --ct_col_rate-cancel: #fff6f0;
     --ct_col_rate-link-hover: #c99;
     --ct_col_rate-border-heritage: #ccc066;
     --ct_dim_rate-border-radius: 5px;
