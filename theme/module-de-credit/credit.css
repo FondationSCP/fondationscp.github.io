@@ -236,6 +236,9 @@
   /* Let general bg define color */
   background-color: transparent !important;
 }
+.page-rate-widget-box a:hover {
+  text-decoration: none;
+}
 .page-rate-widget-box :is(.rateup, .ratedown) {
   background: var(--ct_col_rate-secondary, #fff6f0);
   border-bottom: var(--ct_brd_rate-primary, solid 1px #633);
@@ -291,7 +294,6 @@
   border-radius: 0 var(--ct_dim_rate-border-radius, 5px) var(--ct_dim_rate-border-radius, 5px) 0;
   background: var(--ct_col_rate-primary, #633);
   color: var(--ct_col_rate-link-hover, #c99);
-  text-decoration: none;
 }
 .page-rate-widget-box .cancel a::before {
   content: "\f00d";

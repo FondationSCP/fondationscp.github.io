@@ -231,6 +231,9 @@ $ratebox-shadow: 1px 1px 3px rgba(0 0 0 / 50%)
     /* Let general bg define color */
     background-color: transparent !important
 
+  a:hover
+    text-decoration: none
+
   :is(.rateup, .ratedown)
     background: var(--ct_col_rate-secondary, #fff6f0)
     border-bottom: var(--ct_brd_rate-primary, solid 1px #633)
@@ -286,7 +289,6 @@ $ratebox-shadow: 1px 1px 3px rgba(0 0 0 / 50%)
         border-radius: 0 $ratebox-brdrad $ratebox-brdrad 0
         background: var(--ct_col_rate-primary, #633)
         color: var(--ct_col_rate-link-hover, #c99)
-        text-decoration: none
 
       &::before
         content: '\f00d'
