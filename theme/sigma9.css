@@ -244,6 +244,7 @@ body {
     color: var(--ct_col_body-txt, #333);
     font-size: 15px;
     font-family: var(--ct_fnt_body, Noto Sans), sans-serif;
+    word-wrap: break-word; /* Prevent long strings from breaking the layout to the right */
 }
 #interwiki body {
 	background-color: transparent;
