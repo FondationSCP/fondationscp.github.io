@@ -223,7 +223,6 @@
   box-sizing: border-box;
   height: 18px;
   margin: 0;
-  background-color: var(--ct_col_rate-primary, #633);
   align-items: center;
 }
 .page-rate-widget-box .rate-points {
