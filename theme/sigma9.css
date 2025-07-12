@@ -75,7 +75,7 @@ Legend:
     /* Header */
     --ct_bg_header-image: url('https://fondationscp.github.io/theme/images/body_bg.png');
     --ct_bg_header-image: url('https://fondationscp.github.io/theme/images/body_bg.svg');
-    --ct_bg_header-logo: url('https://fondationscp.github.io/theme/images/pride-logo.svg');
+    --ct_bg_header-logo: url('https://fondationscp.github.io/theme/images/header-logo.svg');
     --ct_fnt_header-txt: Sans-Normalcy, Arial, sans-serif;
     --ct_col_header-txt: #eee;
     --ct_col_slogan-txt: #f0f0c0;
