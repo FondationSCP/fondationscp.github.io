@@ -27,12 +27,6 @@
 	padding: 1em;
 	text-align: center;
 }
-div#container-wrap {
-	background: url(/local--files/component:theme/body_bg.png) top left repeat-x;
-}
-#header {
-	background: url(/local--files/component:theme/logo.png) 10px 40px no-repeat;
-}
  
 .login-status-sign-in::after {
 	content: " "
