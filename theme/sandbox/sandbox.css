@@ -1,0 +1,47 @@
+@import url('https://fondationscp.github.io/theme/sigma9.min.css');
+
+/* SCP Sigma 9 - Common Theme - Sandbox Edition 1.1 - CC BY-SA 3.0 - by Dr_Grom */
+:root {
+	--ct_bg_header-image: url('https://fondationscp.github.io/theme/sandbox/images/body_bg.png');
+	--ct_bg_header-logo: url('https://fondationscp.github.io/theme/sandbox/images/logo.png');
+	--ct_col_searchbox-gradient-1: #063830;
+	--ct_col_searchbox-gradient-2: #126657;
+	--ct_col_searchbox-gradient-3: #228977;
+	--ct_col_searchbox-gradient-4: #2B9885
+}
+ 
+/* Avertissement interface de téléversement */
+#file-action-area h2::after {
+	background: #fffff0;
+	border: 1px solid #660;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 2px 6px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 2px 6px rgba(0,0,0,.5);
+	box-shadow: 0 2px 6px rgba(0,0,0,.5);
+	display: block;
+	color: 330;
+	content: "N'oubliez pas de supprimer les fichiers que vous n'utilisez plus ! Une fois votre article posté ou déplacé ailleurs, cela permettra de libérer de l'espace.";
+	font-family: verdana,arial,helvetica,sans-serif;
+	font-size: 80%;
+	margin: .7em 0;
+	padding: 1em;
+	text-align: center;
+}
+div#container-wrap {
+	background: url(/local--files/component:theme/body_bg.png) top left repeat-x;
+}
+#header {
+	background: url(/local--files/component:theme/logo.png) 10px 40px no-repeat;
+}
+ 
+.login-status-sign-in::after {
+	content: " "
+}
+.content.modal-body p:last-of-type::after {
+	content: " "
+}
+ 
+.members-button,
+.members-button + .members-content {
+	display: none;
+}
