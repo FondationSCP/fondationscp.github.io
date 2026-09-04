@@ -2186,7 +2186,7 @@ a.button:focus,
     content: " comme utilisateur Wikidot"
 }
 .content.modal-body p:last-of-type::after {
-    content: " Si vous pensez que cette erreur n'est pas normale, vous pouvez venir nous voir sur Discord."
+    content: ". Si vous pensez que cette erreur n'est pas normale, vous pouvez venir nous voir sur Discord."
 }
 /* Notice d'info affichage pubs */
 script + .page-tags:before {
