@@ -8,10 +8,3 @@
   --ct_col_searchbox-gradient-3: #228977;
   --ct_col_searchbox-gradient-4: #2B9885
 }
-
-/* Resets from the FR base */
-.login-status-sign-in::after,
-.content.modal-body p:last-of-type::after,
-script + .page-tags:before {
-  content: none;
-}
